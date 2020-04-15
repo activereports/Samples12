@@ -1,0 +1,1287 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>29.69cm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<List Name="List1">
+								<DataSetName>Customers</DataSetName>
+								<Height>11.5cm</Height>
+								<Left>1E-06cm</Left>
+								<PageBreakAtEnd>true</PageBreakAtEnd>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">27.69cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">19.8cm</dd:FixedWidth>
+								<ReportItems>
+									<Rectangle Name="Rectangle1">
+										<Height>8.9cm</Height>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<TopLeft>0cm</TopLeft>
+											<TopRight>0cm</TopRight>
+											<BottomLeft>0cm</BottomLeft>
+											<BottomRight>0cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+											<BorderWidth>
+												<Default>1.25pt</Default>
+											</BorderWidth>
+										</Style>
+										<Top>2cm</Top>
+										<Width>4.251968in</Width>
+										<ZIndex>1</ZIndex>
+										<ReportItems>
+											<Textbox Name="TextBox3">
+												<DataElementName>txtName1</DataElementName>
+												<Height>0.6973cm</Height>
+												<Left>0.5025cm</Left>
+												<Value>=Fields!Subscriber.Value</Value>
+												<Style>
+													<FontSize>14.25pt</FontSize>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>0.2079167in</Top>
+												<Width>10.2cm</Width>
+												<ZIndex>2</ZIndex>
+											</Textbox>
+											<Textbox Name="txtBarcode">
+												<Height>0.7cm</Height>
+												<Left>1.24cm</Left>
+												<Value>=Fields!BarCode.Value</Value>
+												<Style>
+													<FontSize>9pt</FontSize>
+													<TextAlign>Center</TextAlign>
+												</Style>
+												<Top>7.6cm</Top>
+												<Width>5.4cm</Width>
+												<ZIndex>8</ZIndex>
+											</Textbox>
+											<Textbox Name="txtAddress1">
+												<Height>2cm</Height>
+												<Left>0.5649999cm</Left>
+												<Value>=Fields!Address.Value</Value>
+												<Style>
+													<FontSize>9.75pt</FontSize>
+												</Style>
+												<Top>2.6175cm</Top>
+												<Width>7.1cm</Width>
+												<ZIndex>5</ZIndex>
+											</Textbox>
+											<Textbox Name="Label1">
+												<DataElementName>TextBox1</DataElementName>
+												<Height>0.1979in</Height>
+												<Left>0.07291666in</Left>
+												<Value> Company</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontWeight>500</FontWeight>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Width>3.6876in</Width>
+												<ZIndex>1</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPostalCode1">
+												<DataElementName>txtYubin</DataElementName>
+												<Height>0.5cm</Height>
+												<Left>0.5649999cm</Left>
+												<Value>="Pin: "+Fields!PostalCode.Value</Value>
+												<Style>
+													<FontSize>9.75pt</FontSize>
+												</Style>
+												<Top>2.0575cm</Top>
+												<Width>3.7cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<CustomReportItem Name="Barcode1">
+												<Type>Barcode</Type>
+												<Top>6.49cm</Top>
+												<Left>1.24cm</Left>
+												<Width>5.23cm</Width>
+												<Height>1.11cm</Height>
+												<ZIndex>7</ZIndex>
+												<Style>
+													<FontFamily>Courier New</FontFamily>
+													<FontSize>8pt</FontSize>
+												</Style>
+												<CustomProperties>
+													<CustomProperty>
+														<Name>dd:QuietZone.Left</Name>
+														<Value>0cm</Value>
+													</CustomProperty>
+													<CustomProperty>
+														<Name>dd:QuietZone.Right</Name>
+														<Value>0cm</Value>
+													</CustomProperty>
+													<CustomProperty>
+														<Name>dd:Symbology</Name>
+														<Value>Ean128Fnc1</Value>
+													</CustomProperty>
+													<CustomProperty>
+														<Name>dd:Value</Name>
+														<Value>=Fields!BarCode.Value</Value>
+													</CustomProperty>
+												</CustomProperties>
+											</CustomReportItem>
+											<Textbox Name="Label2">
+												<DataElementName>TextBox3</DataElementName>
+												<Height>0.1772in</Height>
+												<Left>0.18cm</Left>
+												<Value> Billing Address &amp; Name
+</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontWeight>500</FontWeight>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.4cm</Top>
+												<Width>3.6896in</Width>
+												<ZIndex>3</ZIndex>
+											</Textbox>
+											<Textbox Name="txtName1">
+												<Height>0.9cm</Height>
+												<Left>0.5649999cm</Left>
+												<Value>=Fields!Name.Value</Value>
+												<Style>
+													<FontSize>9.75pt</FontSize>
+												</Style>
+												<Top>4.7175cm</Top>
+												<Width>7.1cm</Width>
+												<ZIndex>6</ZIndex>
+											</Textbox>
+											<Textbox Name="Label6">
+												<Height>0.3cm</Height>
+												<Left>7.9825cm</Left>
+												<Value>Receipt Date</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>8.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+												</Style>
+												<Top>5.5cm</Top>
+												<Width>2.8cm</Width>
+												<ZIndex>9</ZIndex>
+											</Textbox>
+											<Line Name="Line3">
+												<Height>0cm</Height>
+												<Left>0.010417in</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>2.00375cm</Top>
+												<Width>10.77354cm</Width>
+												<ZIndex>12</ZIndex>
+											</Line>
+											<Line Name="Line4">
+												<Height>3.5cm</Height>
+												<Left>7.8cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>5.4cm</Top>
+												<Width>0cm</Width>
+												<ZIndex>13</ZIndex>
+											</Line>
+											<Line Name="Line6">
+												<Height>0cm</Height>
+												<Left>7.8cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>5.4cm</Top>
+												<Width>3cm</Width>
+												<ZIndex>15</ZIndex>
+											</Line>
+											<Line Name="Line5">
+												<Height>0cm</Height>
+												<Left>7.8cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>5.9cm</Top>
+												<Width>3cm</Width>
+												<ZIndex>14</ZIndex>
+											</Line>
+											<Line Name="Line1">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.3cm</Top>
+												<Width>10.8cm</Width>
+												<ZIndex>10</ZIndex>
+											</Line>
+											<Line Name="Line2">
+												<Height>0in</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>0.1979in</Top>
+												<Width>10.8cm</Width>
+												<ZIndex>16</ZIndex>
+											</Line>
+										</ReportItems>
+									</Rectangle>
+									<Textbox Name="Label4">
+										<Height>0.4cm</Height>
+										<Left>1.365cm</Left>
+										<Value>（For Convenience）</Value>
+										<Style>
+											<Color>=Code.Color()</Color>
+											<FontSize>9.75pt</FontSize>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<Top>1.005536cm</Top>
+										<Width>4.8cm</Width>
+										<ZIndex>4</ZIndex>
+									</Textbox>
+									<Textbox Name="Label3">
+										<Height>0.2384in</Height>
+										<Left>1.365cm</Left>
+										<Value> Payment Form </Value>
+										<Style>
+											<Color>=Code.Color()</Color>
+											<FontSize>14.25pt</FontSize>
+											<FontWeight>600</FontWeight>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>0.4cm</Top>
+										<Width>4.8cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Line Name="Line8">
+										<Height>11.3cm</Height>
+										<Left>10.9cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Dotted</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.1cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>7</ZIndex>
+									</Line>
+									<Rectangle Name="Rectangle2">
+										<Height>8.9cm</Height>
+										<Left>11cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<TopLeft>0cm</TopLeft>
+											<TopRight>0cm</TopRight>
+											<BottomLeft>0cm</BottomLeft>
+											<BottomRight>0cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+											<BorderWidth>
+												<Default>1.25pt</Default>
+											</BorderWidth>
+										</Style>
+										<Top>2cm</Top>
+										<Width>5cm</Width>
+										<ZIndex>8</ZIndex>
+										<ReportItems>
+											<Textbox Name="TextBox2">
+												<Height>0.1475in</Height>
+												<Left>0.12cm</Left>
+												<Value>Company</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>9pt</FontSize>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>0.02cm</Top>
+												<Width>1.7236in</Width>
+												<ZIndex>1</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox11">
+												<DataElementName>txtName2</DataElementName>
+												<Height>0.7cm</Height>
+												<Left>0.365cm</Left>
+												<Value>=Fields!Subscriber.Value</Value>
+												<Style>
+													<FontSize>8pt</FontSize>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>0.5cm</Top>
+												<Width>4cm</Width>
+												<ZIndex>2</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox4">
+												<Height>0.1354in</Height>
+												<Left>0.3229167in</Left>
+												<Value> AMOUNT</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>8.25pt</FontSize>
+													<FontWeight>800</FontWeight>
+													<TextAlign>Justify</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+													<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+												</Style>
+												<Top>1.32cm</Top>
+												<Width>1.125in</Width>
+												<ZIndex>3</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox10">
+												<DataElementName>TextBox4</DataElementName>
+												<Height>0.4cm</Height>
+												<Left>4.180417cm</Left>
+												<Value>$</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>8.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.296458cm</Top>
+												<Width>0.7cm</Width>
+												<ZIndex>3</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPrice2_6">
+												<Height>0.7cm</Height>
+												<Left>0.7cm</Left>
+												<Value>=Code._value(6, Fields!Price.Value)</Value>
+												<Style>
+													<FontSize>14.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.8cm</Top>
+												<Width>0.5cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPrice2_5">
+												<DataElementName>txtPrice2_6</DataElementName>
+												<Height>0.7cm</Height>
+												<Left>1.4cm</Left>
+												<Value>=Code._value(5, Fields!Price.Value)</Value>
+												<Style>
+													<FontSize>14.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.8cm</Top>
+												<Width>0.5cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPrice2_4">
+												<DataElementName>txtPrice2_6</DataElementName>
+												<Height>0.7cm</Height>
+												<Left>2.1cm</Left>
+												<Value>=Code._value(4, Fields!Price.Value)</Value>
+												<Style>
+													<FontSize>14.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.8cm</Top>
+												<Width>0.5cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPrice2_3">
+												<DataElementName>txtPrice2_6</DataElementName>
+												<Height>0.7cm</Height>
+												<Left>2.8cm</Left>
+												<Value>=Code._value(3, Fields!Price.Value)</Value>
+												<Style>
+													<FontSize>14.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.8cm</Top>
+												<Width>0.5cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPrice2_2">
+												<DataElementName>txtPrice2_6</DataElementName>
+												<Height>0.7cm</Height>
+												<Left>3.5cm</Left>
+												<Value>=Code._value(2, Fields!Price.Value)</Value>
+												<Style>
+													<FontSize>14.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.8cm</Top>
+												<Width>0.5cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPrice2_1">
+												<DataElementName>txtPrice2_6</DataElementName>
+												<Height>0.7cm</Height>
+												<Left>4.2cm</Left>
+												<Value>=Code._value(1, Fields!Price.Value)</Value>
+												<Style>
+													<FontSize>14.25pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.8cm</Top>
+												<Width>0.5cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Line Name="Line19">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>5.9cm</Top>
+												<Width>4.8cm</Width>
+												<ZIndex>6</ZIndex>
+											</Line>
+											<Textbox Name="TextBox29">
+												<Height>0.184in</Height>
+												<Left>0.12cm</Left>
+												<Value>Receipt Signature</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>7pt</FontSize>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>2pt</PaddingLeft>
+													<PaddingRight>2pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>6cm</Top>
+												<Width>1.7236in</Width>
+												<ZIndex>7</ZIndex>
+											</Textbox>
+											<Textbox Name="txtName2">
+												<Height>0.8cm</Height>
+												<Left>0.72cm</Left>
+												<Value>=Fields!Name.Value</Value>
+												<Style>
+													<FontSize>9.75pt</FontSize>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>2pt</PaddingLeft>
+													<PaddingRight>2pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+												</Style>
+												<Top>5cm</Top>
+												<Width>4cm</Width>
+												<ZIndex>8</ZIndex>
+											</Textbox>
+											<Textbox Name="txtAddress2">
+												<Height>1.3075cm</Height>
+												<Left>0.72cm</Left>
+												<Value>=Fields!Address.Value</Value>
+												<Style>
+													<FontSize>9pt</FontSize>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>2pt</PaddingLeft>
+													<PaddingRight>2pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+												</Style>
+												<Top>1.42in</Top>
+												<Width>4cm</Width>
+												<ZIndex>9</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPostalCode2">
+												<Height>0.4cm</Height>
+												<Left>0.72cm</Left>
+												<Value>="Pin: "+Fields!PostalCode.Value</Value>
+												<Style>
+													<FontSize>9pt</FontSize>
+												</Style>
+												<Top>3.1175cm</Top>
+												<Width>4cm</Width>
+												<ZIndex>10</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox30">
+												<Height>0.1271in</Height>
+												<Left>0.12cm</Left>
+												<Value>Billing Address &amp; Name</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>6.5pt</FontSize>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>2.62cm</Top>
+												<Width>1.6194in</Width>
+												<ZIndex>11</ZIndex>
+											</Textbox>
+											<Line Name="Line20">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>2.6cm</Top>
+												<Width>4.8cm</Width>
+												<ZIndex>12</ZIndex>
+											</Line>
+											<Line Name="Line21">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.3cm</Top>
+												<Width>4.8cm</Width>
+											</Line>
+											<Line Name="Line22">
+												<Height>0cm</Height>
+												<Left>0.6cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.7cm</Top>
+												<Width>4.2cm</Width>
+												<ZIndex>13</ZIndex>
+											</Line>
+											<Line Name="Line23">
+												<Height>0.9cm</Height>
+												<Left>1.3cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Dashed</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.7cm</Top>
+												<Width>0cm</Width>
+												<ZIndex>14</ZIndex>
+											</Line>
+											<Line Name="Line24">
+												<Height>0.9cm</Height>
+												<Left>2cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Dashed</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.7cm</Top>
+												<Width>0cm</Width>
+												<ZIndex>15</ZIndex>
+											</Line>
+											<Line Name="Line25">
+												<Height>0.9cm</Height>
+												<Left>2.7cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.7cm</Top>
+												<Width>0cm</Width>
+												<ZIndex>16</ZIndex>
+											</Line>
+											<Line Name="Line26">
+												<Height>0.9cm</Height>
+												<Left>3.4cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Dashed</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.7cm</Top>
+												<Width>0cm</Width>
+												<ZIndex>17</ZIndex>
+											</Line>
+											<Line Name="Line27">
+												<Height>1.3cm</Height>
+												<Left>4.1cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Dashed</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.3cm</Top>
+												<Width>0cm</Width>
+												<ZIndex>18</ZIndex>
+											</Line>
+											<Line Name="Line7">
+												<Height>1.3cm</Height>
+												<Left>0.25in</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Dashed</Default>
+													</BorderStyle>
+												</Style>
+												<Top>0.5in</Top>
+												<Width>0cm</Width>
+												<ZIndex>19</ZIndex>
+											</Line>
+										</ReportItems>
+									</Rectangle>
+									<Textbox Name="txtPrice1_3">
+										<DataElementName>txtPrice2_6</DataElementName>
+										<Height>0.8cm</Height>
+										<Left>9.075209cm</Left>
+										<Value>=Code._value(3,Fields!Price.Value)</Value>
+										<Style>
+											<FontSize>14.25pt</FontSize>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>1.190625cm</Top>
+										<Width>0.5cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="txtPrice1_6">
+										<DataElementName>txtPrice2_6</DataElementName>
+										<Height>0.8000001cm</Height>
+										<Left>7.565cm</Left>
+										<Value>=Code._value(6,Fields!Price.Value)</Value>
+										<Style>
+											<FontSize>14.25pt</FontSize>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>0.1675in</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="txtPrice1_5">
+										<DataElementName>txtPrice2_6</DataElementName>
+										<Height>0.8cm</Height>
+										<Left>8.043333cm</Left>
+										<Value>=Code._value(5,Fields!Price.Value)</Value>
+										<Style>
+											<FontSize>14.25pt</FontSize>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>1.190625cm</Top>
+										<Width>0.5cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox22">
+										<DataElementName>TextBox4</DataElementName>
+										<Height>0.4cm</Height>
+										<Left>10.08062cm</Left>
+										<Value>$</Value>
+										<Style>
+											<Color>=Code.Color()</Color>
+											<FontSize>8.25pt</FontSize>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>0.79375cm</Top>
+										<Width>0.5cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txtPrice1_1">
+										<DataElementName>txtPrice2_6</DataElementName>
+										<Height>0.8cm</Height>
+										<Left>10.08062cm</Left>
+										<Value>=Code._value(1, Fields!Price.Value)</Value>
+										<Style>
+											<FontSize>14.25pt</FontSize>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>1.2175cm</Top>
+										<Width>0.5cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="txtPrice1_4">
+										<DataElementName>txtPrice2_6</DataElementName>
+										<Height>0.8cm</Height>
+										<Left>8.546041cm</Left>
+										<Value>=Code._value(4,Fields!Price.Value)</Value>
+										<Style>
+											<FontSize>14.25pt</FontSize>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>1.190625cm</Top>
+										<Width>0.5cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="txtPrice1_2">
+										<DataElementName>txtPrice2_6</DataElementName>
+										<Height>0.8cm</Height>
+										<Left>9.57792cm</Left>
+										<Value>=Code._value(2,Fields!Price.Value)</Value>
+										<Style>
+											<FontSize>14.25pt</FontSize>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>1.190625cm</Top>
+										<Width>0.5cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Line Name="Line9">
+										<Height>0cm</Height>
+										<Left>7.565cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+											<BorderWidth>
+												<Default>1.25pt</Default>
+											</BorderWidth>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>3.035cm</Width>
+										<ZIndex>10</ZIndex>
+									</Line>
+									<Line Name="Line10">
+										<Height>1.2cm</Height>
+										<Left>10.6cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+											<BorderWidth>
+												<Default>1.25pt</Default>
+											</BorderWidth>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>-1E-06cm</Width>
+										<ZIndex>11</ZIndex>
+									</Line>
+									<Line Name="Line11">
+										<Height>1.2cm</Height>
+										<Left>7.565cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>12</ZIndex>
+									</Line>
+									<Line Name="Line12">
+										<Height>0cm</Height>
+										<Left>7.565cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>3.035cm</Width>
+										<ZIndex>13</ZIndex>
+									</Line>
+									<Line Name="Line13">
+										<Height>0.8cm</Height>
+										<Left>8.065cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Dashed</Default>
+											</BorderStyle>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>14</ZIndex>
+									</Line>
+									<Line Name="Line14">
+										<Height>0.8cm</Height>
+										<Left>8.565cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Dashed</Default>
+											</BorderStyle>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>15</ZIndex>
+									</Line>
+									<Line Name="Line15">
+										<Height>0.8cm</Height>
+										<Left>9.065cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>16</ZIndex>
+									</Line>
+									<Line Name="Line16">
+										<Height>0.8cm</Height>
+										<Left>9.565cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Dashed</Default>
+											</BorderStyle>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>17</ZIndex>
+									</Line>
+									<Line Name="Line17">
+										<Height>1.2cm</Height>
+										<Left>10.065cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Dashed</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>18</ZIndex>
+									</Line>
+									<Textbox Name="TextBox28">
+										<Height>0.5cm</Height>
+										<Left>11.4475cm</Left>
+										<Value> Payment &amp; Receipt</Value>
+										<Style>
+											<Color>=Code.Color()</Color>
+											<TextAlign>Center</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>1.22cm</Top>
+										<Width>1.2967in</Width>
+										<ZIndex>19</ZIndex>
+									</Textbox>
+									<Line Name="Line28">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Dotted</Default>
+											</BorderStyle>
+										</Style>
+										<Top>11.4cm</Top>
+										<Width>19.8cm</Width>
+										<ZIndex>21</ZIndex>
+									</Line>
+									<Line Name="Line29">
+										<Height>11.35646cm</Height>
+										<Left>16cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Dashed</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.1cm</Top>
+										<Width>0cm</Width>
+										<ZIndex>22</ZIndex>
+									</Line>
+									<Rectangle Name="Rectangle3">
+										<Height>3.525194in</Height>
+										<Left>16.1cm</Left>
+										<Style>
+											<BorderColor>
+												<Default>=Code.Color()</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>2cm</Top>
+										<Width>3.25cm</Width>
+										<ZIndex>23</ZIndex>
+										<ReportItems>
+											<Textbox Name="TextBox32">
+												<Height>0.3cm</Height>
+												<Left>0.03125in</Left>
+												<Value> Name</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>7pt</FontSize>
+												</Style>
+												<Top>0.01041667in</Top>
+												<Width>2.1cm</Width>
+												<ZIndex>2</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox33">
+												<Height>0.8cm</Height>
+												<Left>0.14cm</Left>
+												<Value>=Fields!Name.Value</Value>
+												<Style>
+													<FontSize>9.75pt</FontSize>
+													<TextAlign>Right</TextAlign>
+													<VerticalAlign>Bottom</VerticalAlign>
+												</Style>
+												<Top>0.4cm</Top>
+												<Width>2.5cm</Width>
+												<ZIndex>3</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox34">
+												<Height>0.3cm</Height>
+												<Left>0.020833in</Left>
+												<Value>Company</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>7pt</FontSize>
+												</Style>
+												<Top>1.352917cm</Top>
+												<Width>2.1cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="txtName3">
+												<Height>1cm</Height>
+												<Left>0.14cm</Left>
+												<Value>=Fields!Subscriber.Value</Value>
+												<Style>
+													<FontSize>9pt</FontSize>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>2pt</PaddingLeft>
+													<PaddingRight>2pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>1.7cm</Top>
+												<Width>2.8cm</Width>
+												<ZIndex>5</ZIndex>
+											</Textbox>
+											<Textbox Name="txtPrice3">
+												<Height>0.7cm</Height>
+												<Left>0.14cm</Left>
+												<Value>=Code._RemoveDecimal(Fields!Price.Value)</Value>
+												<Style>
+													<FontSize>9.75pt</FontSize>
+													<Format>c</Format>
+													<TextAlign>Right</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>3.2cm</Top>
+												<Width>2.4cm</Width>
+												<ZIndex>6</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox35">
+												<DataElementName>TextBox34</DataElementName>
+												<Height>0.3cm</Height>
+												<Left>0.020833in</Left>
+												<Value> Amount </Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>7pt</FontSize>
+												</Style>
+												<Top>2.826458cm</Top>
+												<Width>2.1cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox36">
+												<DataElementName>TextBox34</DataElementName>
+												<Height>0.5cm</Height>
+												<Left>2.6cm</Left>
+												<Value>$</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>8.25pt</FontSize>
+													<PaddingLeft>1pt</PaddingLeft>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Bottom</VerticalAlign>
+												</Style>
+												<Top>3.2cm</Top>
+												<Width>0.5cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Shape Name="Shape1">
+												<Height>2.2cm</Height>
+												<Left>0.4cm</Left>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Dashed</Default>
+													</BorderStyle>
+												</Style>
+												<Top>6.3cm</Top>
+												<Width>2.2cm</Width>
+												<ZIndex>7</ZIndex>
+												<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Ellipse</dd:ShapeStyle>
+											</Shape>
+											<Textbox Name="TextBox38">
+												<DataElementName>TextBox34</DataElementName>
+												<Height>0.3127cm</Height>
+												<Left>0.05208333in</Left>
+												<Value>Date stamp </Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>7pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>3.382083in</Top>
+												<Width>2.9277cm</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Textbox Name="TextBox39">
+												<DataElementName>TextBox34</DataElementName>
+												<Height>0.1251in</Height>
+												<Left>0.01041667in</Left>
+												<Value> Revenue stamp</Value>
+												<Style>
+													<Color>=Code.Color()</Color>
+													<FontSize>7pt</FontSize>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+												</Style>
+												<Top>5.9cm</Top>
+												<Width>1.1146in</Width>
+												<ZIndex>4</ZIndex>
+											</Textbox>
+											<Line Name="Line30">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>1.32cm</Top>
+												<Width>3cm</Width>
+												<ZIndex>1</ZIndex>
+											</Line>
+											<Line Name="Line31">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>2.8cm</Top>
+												<Width>3cm</Width>
+											</Line>
+											<Line Name="Line32">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>5.9cm</Top>
+												<Width>3cm</Width>
+												<ZIndex>9</ZIndex>
+											</Line>
+											<Line Name="Line33">
+												<Height>0cm</Height>
+												<Style>
+													<BorderColor>
+														<Default>=Code.Color()</Default>
+													</BorderColor>
+													<BorderStyle>
+														<Default>Solid</Default>
+													</BorderStyle>
+												</Style>
+												<Top>3.9cm</Top>
+												<Width>3cm</Width>
+												<ZIndex>10</ZIndex>
+											</Line>
+										</ReportItems>
+									</Rectangle>
+									<Textbox Name="TextBox41">
+										<Height>0.5cm</Height>
+										<Left>16.2475cm</Left>
+										<Value>Acknowledgement</Value>
+										<Style>
+											<Color>=Code.Color()</Color>
+											<FontSize>8pt</FontSize>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>0.9783in</Width>
+										<ZIndex>24</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox23">
+										<DataElementName>TextBox4</DataElementName>
+										<Height>0.12in</Height>
+										<Left>3.032738in</Left>
+										<Value> AMOUNT</Value>
+										<Style>
+											<Color>=Code.Color()</Color>
+											<FontSize>8.25pt</FontSize>
+											<FontWeight>600</FontWeight>
+											<TextAlign>Justify</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>0.34in</Top>
+										<Width>0.8542in</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<Width>19.8cm</Width>
+							</List>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=1</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1cm</BottomMargin>
+	<Code>Public Function Color()
+	Return "Red"
+End Function
+
+Public Function _value(i As Int16, str As String) As String
+	str = str.Split(".")(0)
+	Dim strPrice As String = "******" + str
+	Dim strdata As String
+	
+		strdata = strPrice.Substring(strPrice.Length - i, 1)
+		Return strdata
+	
+End Function
+Public Function _RemoveDecimal(str As String) As String
+	str = str.Split(".")(0)
+	Return "$"+str
+	
+End Function</Code>
+	<LeftMargin>0.09999858cm</LeftMargin>
+	<PageHeight>29.69cm</PageHeight>
+	<PageWidth>20.4cm</PageWidth>
+	<RightMargin>0.5cm</RightMargin>
+	<TopMargin>1cm</TopMargin>
+	<Width>20.4cm</Width>
+	<DataSources>
+		<DataSource Name="NWIND">
+			<DataSourceReference>C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\NWind.rdsx</DataSourceReference>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Customers">
+			<Fields>
+				<Field Name="ID">
+					<DataField>ID</DataField>
+				</Field>
+				<Field Name="Subscriber">
+					<DataField>Subscriber</DataField>
+				</Field>
+				<Field Name="Name">
+					<DataField>Name</DataField>
+				</Field>
+				<Field Name="Address">
+					<DataField>Address</DataField>
+				</Field>
+				<Field Name="PostalCode">
+					<DataField>PostalCode</DataField>
+				</Field>
+				<Field Name="Price">
+					<DataField>Price</DataField>
+				</Field>
+				<Field Name="Barcode">
+					<DataField>Barcode</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>Select Customers.CustomerID as ID, CompanyName as Subscriber, ContactName as Name, Address, PostalCode, Price, PostalCode as Barcode from Customers inner join (select CustomerID, sum(Freight) as Price from Orders group by CustomerID) as t on t.CustomerID=Customers.CustomerID</CommandText>
+				<DataSourceName>NWIND</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.2" PrintWidth="9360" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="Detail1" Height="5654.04" BackStyle="1" BackColor="16118015">
+      <Control Type="AR.Field" Name="TextBox1" Left="1529.28" Top="165.6" Width="7125.121" Height="528.48" Text="Welcome to ActiveReports SilverLight Viewer Sample" Style="color: RoyalBlue; font-family: Lucida Sans Unicode; font-size: 12pt; font-weight: normal" />
+      <Control Type="AR.Shape" Name="Shape1" Left="1320.48" Top="617.76" Width="7408.8" Height="4350.24" BackColor="13499135" BackStyle="1" />
+      <Control Type="AR.Label" Name="Label1" Left="1740.96" Top="855.36" Width="6495.84" Height="3378.24" Caption="This sample showcases the SilverLight Viewer of ActiveReports. Users will need to select the source of the report to view the report.&#xD;&#xA;&#xD;&#xA;The following reports can be viewed on SilverLight Viewer&#xD;&#xA;&#xD;&#xA;1.Section Based Code Reports&#xD;&#xA;&#xD;&#xA;2.Rpx Reports&#xD;&#xA;&#xD;&#xA;3.Rdlx Reports&#xD;&#xA;&#xD;&#xA;4.RDF Reports&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Style="color: DodgerBlue; font-weight: bold" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[public void ActiveReport_ReportStart()
+{
+	rpt.Document.Printer.PrinterName = "";
+}
+
+
+]]></Script>
+  <PageSettings PaperSize="0" PaperWidth="12240" PaperHeight="10080" PaperName="Custom paper" />
+  <Parameters />
+</ActiveReportsLayout>

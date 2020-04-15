@@ -1,0 +1,30 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "$id": "http://example.com/example.json/items",
+    "type": "object",
+    "properties": {
+      "AIRLINE_CODE": {
+        "$id": "http://example.com/example.json/items/properties/AIRLINE_CODE",
+        "type": "integer",
+        "title": "The Airline_code Schema ",
+        "default": 0,
+        "examples": [
+          19977
+        ]
+      },
+      "AIRLINE_DESC": {
+        "$id": "http://example.com/example.json/items/properties/AIRLINE_DESC",
+        "type": "string",
+        "title": "The Airline_desc Schema ",
+        "default": "",
+        "examples": [
+          "United Air Lines Inc."
+        ]
+      }
+    }
+  }
+}

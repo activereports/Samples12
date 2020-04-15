@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Export.Image.Unsafe.v12</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Export.Image.Unsafe.MonochromeBitmapTool">
+			<summary>
+            Provides a public function for creating a 1 bit per pixel bitmap.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Image.Unsafe.MonochromeBitmapTool.RgbBmpTo1BppIndexed(System.Drawing.Bitmap,System.Boolean)">
+			<summary>
+            Converts the specified Image object to a one bit per pixel (monchrome) indexed bitmap.
+            </summary>
+			<param name="bitmapSource">The source bitmap to be converted to a <see cref="F:System.Drawing.Imaging.PixelFormat.Format1bppIndexed" />.</param>
+			<param name="dither">
+            True indicates a dithering algorithm should be used to improve the color conversion.
+            </param>
+			<returns>
+            A bitmap converted to monochrome with PixelFormat of 1bppIndexed.
+            </returns>
+			<remarks>
+            When using dithering, multiple colors typically show up better, but file size will increase.
+            This method contains unsafe code. The caller is responsible for disposing the returned bitmap.
+            This method has an unsafe code block, in order to use <see cref="M:System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat)" /> and the returned <see cref="P:System.Drawing.Imaging.BitmapData.Scan0" /> so this method is marked with <see cref="T:System.Security.SuppressUnmanagedCodeSecurityAttribute" /> to prevent a full call stack walk and according to the documentation significantly improve performance.
+            </remarks>
+		</member>
+	</members>
+</doc>

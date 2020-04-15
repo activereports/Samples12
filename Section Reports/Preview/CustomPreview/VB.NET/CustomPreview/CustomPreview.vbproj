@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5896F2F8-A5E3-4984-B47C-8ED1D93F2616}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <AssemblyName>CustomPreview</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>GrapeCity.ActiveReports.Samples.CustomPreview</RootNamespace>
+    <StartupObject>GrapeCity.ActiveReports.Samples.CustomPreview.CustomPreviewForm</StartupObject>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\Debug</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GrapeCity.ActiveReports.Chart.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Diagnostics.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Document.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Excel.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Html.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Image.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Pdf.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Word.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Xml.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomPreviewForm.Designer.vb">
+      <DependentUpon>CustomPreviewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPreviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.vb">
+      <DependentUpon>ExportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportHelper.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="PreviewForm.Designer.vb">
+      <DependentUpon>PreviewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Catalog.Designer.vb">
+      <DependentUpon>Catalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Catalog.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomerLabels.Designer.vb">
+      <DependentUpon>CustomerLabels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerLabels.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EmployeeProfiles.Designer.vb">
+      <DependentUpon>EmployeeProfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EmployeeProfiles.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EmployeeSales.Designer.vb">
+      <DependentUpon>EmployeeSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EmployeeSales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Invoice.Designer.vb">
+      <DependentUpon>Invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Invoice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Letter.Designer.vb">
+      <DependentUpon>Letter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Letter.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="CustomPreviewForm.resx">
+      <DependentUpon>CustomPreviewForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    
+    <EmbeddedResource Include="PreviewForm.resx">
+      <DependentUpon>PreviewForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="Reports\Catalog.resx">
+      <DependentUpon>Catalog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="Reports\CustomerLabels.resx">
+      <DependentUpon>CustomerLabels.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="Reports\EmployeeProfiles.resx">
+      <DependentUpon>EmployeeProfiles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="Reports\EmployeeSales.resx">
+      <DependentUpon>EmployeeSales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="Reports\Invoice.resx">
+      <DependentUpon>Invoice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="Reports\Letter.resx">
+      <DependentUpon>Letter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Export16x16.ico" />
+    <EmbeddedResource Include="Resources\Save16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

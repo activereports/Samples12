@@ -1,0 +1,588 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<PageHeader>
+		<Height>1in</Height>
+		<PrintOnFirstPage>true</PrintOnFirstPage>
+		<PrintOnLastPage>true</PrintOnLastPage>
+		<ReportItems>
+			<Image Name="ReelsLogo">
+				<Height>1in</Height>
+				<MIMEType>=Theme.Images!Logo.MIMEType</MIMEType>
+				<Sizing>FitProportional</Sizing>
+				<Source>Database</Source>
+				<Value>=Theme.Images!Logo.ImageData</Value>
+				<Width>1.5in</Width>
+				<ZIndex>1</ZIndex>
+			</Image>
+			<Textbox Name="TextBox1">
+				<CanGrow>true</CanGrow>
+				<Height>0.75in</Height>
+				<Left>1.875in</Left>
+				<Value>Products to Reorder</Value>
+				<Style>
+					<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Title</dd:StyleName>
+				</Style>
+				<Width>3.875in</Width>
+				<ZIndex>2</ZIndex>
+			</Textbox>
+		</ReportItems>
+	</PageHeader>
+	<Body>
+		<Height>0.75in</Height>
+		<ReportItems>
+			<Table Name="table1">
+				<DataSetName>Reels</DataSetName>
+				<Header>
+					<RepeatOnNewPage>true</RepeatOnNewPage>
+					<TableRows>
+						<TableRow>
+							<Height>0.25in</Height>
+							<TableCells>
+								<TableCell>
+									<ColSpan>2</ColSpan>
+									<ReportItems>
+										<Textbox Name="textbox2">
+											<CanGrow>true</CanGrow>
+											<Value>Title</Value>
+											<Style>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">TableHeading</dd:StyleName>
+											</Style>
+											<ZIndex>13</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox4">
+											<CanGrow>true</CanGrow>
+											<Value>Year</Value>
+											<Style>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">TableHeading</dd:StyleName>
+											</Style>
+											<ZIndex>12</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox5">
+											<CanGrow>true</CanGrow>
+											<Value>Order Quan.</Value>
+											<Style>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">TableHeading</dd:StyleName>
+											</Style>
+											<ZIndex>11</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox6">
+											<CanGrow>true</CanGrow>
+											<Value>Prev. Price</Value>
+											<Style>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">TableHeading</dd:StyleName>
+											</Style>
+											<ZIndex>10</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Header>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>0.25in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Description">
+											<CanGrow>true</CanGrow>
+											<Value>=Fields!Description.Value</Value>
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DetailValues</dd:StyleName>
+											</Style>
+											<ZIndex>4</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Title">
+											<Bookmark>=Fields!Title.Value.Substring(0, 1)</Bookmark>
+											<CanGrow>true</CanGrow>
+											<Label>=Fields!Title.Value.Substring(0, 1)</Label>
+											<Value>=Fields!Title.Value</Value>
+											<Style>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DetailValues</dd:StyleName>
+											</Style>
+											<ZIndex>3</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="YearReleased">
+											<CanGrow>true</CanGrow>
+											<Value>=Fields!YearReleased.Value</Value>
+											<Style>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DetailNumericValues</dd:StyleName>
+											</Style>
+											<ZIndex>2</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="QuanToOrder">
+											<CanGrow>true</CanGrow>
+											<Value>=Fields!QuanToOrder.Value</Value>
+											<Style>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DetailNumericValues</dd:StyleName>
+											</Style>
+											<ZIndex>1</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="StorePrice">
+											<CanGrow>true</CanGrow>
+											<Value>=Fields!StorePrice.Value</Value>
+											<Style>
+												<Format>c</Format>
+												<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DetailNumericValues</dd:StyleName>
+											</Style>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<Footer>
+					<TableRows>
+						<TableRow>
+							<Height>0.25in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox7">
+											<CanGrow>true</CanGrow>
+											<Value />
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<ZIndex>9</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox8">
+											<CanGrow>true</CanGrow>
+											<Value />
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<ZIndex>8</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox9">
+											<CanGrow>true</CanGrow>
+											<Value />
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<ZIndex>7</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox10">
+											<CanGrow>true</CanGrow>
+											<Value />
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<ZIndex>6</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="textbox12">
+											<CanGrow>true</CanGrow>
+											<Value />
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<ZIndex>5</ZIndex>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Footer>
+				<Height>0.75in</Height>
+				<TableColumns>
+					<TableColumn>
+						<Width>0.7291667in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>2.333333in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>0.822917in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>0.9791667in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>0.8854167in</Width>
+					</TableColumn>
+				</TableColumns>
+				<Width>5.75in</Width>
+			</Table>
+		</ReportItems>
+	</Body>
+	<PageFooter>
+		<Height>0.25in</Height>
+		<PrintOnFirstPage>true</PrintOnFirstPage>
+		<PrintOnLastPage>true</PrintOnLastPage>
+		<ReportItems>
+			<Textbox Name="TextBox3">
+				<CanGrow>true</CanGrow>
+				<Height>0.25in</Height>
+				<Left>4.5in</Left>
+				<Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+				<Style>
+					<dd:StyleName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">MasterValues</dd:StyleName>
+				</Style>
+				<Width>1.25in</Width>
+			</Textbox>
+		</ReportItems>
+	</PageFooter>
+	<BottomMargin>0.75in</BottomMargin>
+	<Language>en-US</Language>
+	<LeftMargin>0.75in</LeftMargin>
+	<RightMargin>0.75in</RightMargin>
+	<TopMargin>0.75in</TopMargin>
+	<Width>5.75in</Width>
+	<dd:EmbeddedStyleSheets xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<EmbeddedStyleSheet Name="BaseStyle">
+			<Data>﻿&lt;dd:StyleSheet xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition"&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;Blue&lt;/BackgroundColor&gt;
+    &lt;Color&gt;White&lt;/Color&gt;
+    &lt;FontFamily&gt;Arial&lt;/FontFamily&gt;
+    &lt;FontSize&gt;8.25pt&lt;/FontSize&gt;
+    &lt;FontStyle&gt;Normal&lt;/FontStyle&gt;
+    &lt;FontWeight&gt;400&lt;/FontWeight&gt;
+    &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+    &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+    &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+    &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+    &lt;TextAlign&gt;Center&lt;/TextAlign&gt;
+    &lt;VerticalAlign&gt;Middle&lt;/VerticalAlign&gt;
+    &lt;dd:Name&gt;TextLabels&lt;/dd:Name&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;SteelBlue&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+    &lt;BorderStyle&gt;
+      &lt;Default&gt;Solid&lt;/Default&gt;
+    &lt;/BorderStyle&gt;
+    &lt;BorderWidth&gt;
+      &lt;Default&gt;1pt&lt;/Default&gt;
+    &lt;/BorderWidth&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;FontFamily&gt;Arial&lt;/FontFamily&gt;
+    &lt;FontSize&gt;16pt&lt;/FontSize&gt;
+    &lt;FontStyle&gt;Normal&lt;/FontStyle&gt;
+    &lt;FontWeight&gt;700&lt;/FontWeight&gt;
+    &lt;dd:Name&gt;Title&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TextLabels&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;Lavender&lt;/BackgroundColor&gt;
+    &lt;Color&gt;Black&lt;/Color&gt;
+    &lt;FontFamily&gt;Arial&lt;/FontFamily&gt;
+    &lt;FontSize&gt;9pt&lt;/FontSize&gt;
+    &lt;FontStyle&gt;Normal&lt;/FontStyle&gt;
+    &lt;FontWeight&gt;700&lt;/FontWeight&gt;
+    &lt;dd:Name&gt;TableHeading&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TextLabels&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;SteelBlue&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+    &lt;BorderStyle&gt;
+      &lt;Default&gt;Solid&lt;/Default&gt;
+    &lt;/BorderStyle&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;Transparent&lt;/BackgroundColor&gt;
+    &lt;Color&gt;Blue&lt;/Color&gt;
+    &lt;dd:Name&gt;FooterHeadings&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TextLabels&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;SteelBlue&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+    &lt;BorderStyle&gt;
+      &lt;Default&gt;Solid&lt;/Default&gt;
+    &lt;/BorderStyle&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;Color&gt;Black&lt;/Color&gt;
+    &lt;TextAlign&gt;Right&lt;/TextAlign&gt;
+    &lt;dd:Name&gt;FooterValues&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;FooterHeadings&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;=""&lt;/BackgroundColor&gt;
+    &lt;Color&gt;Black&lt;/Color&gt;
+    &lt;PaddingLeft&gt;10pt&lt;/PaddingLeft&gt;
+    &lt;TextAlign&gt;Left&lt;/TextAlign&gt;
+    &lt;dd:Name&gt;DetailValues&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TextLabels&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;PaddingRight&gt;10pt&lt;/PaddingRight&gt;
+    &lt;TextAlign&gt;Right&lt;/TextAlign&gt;
+    &lt;dd:Name&gt;DetailNumericValues&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;DetailValues&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;Transparent&lt;/BackgroundColor&gt;
+    &lt;Color&gt;Black&lt;/Color&gt;
+    &lt;FontFamily&gt;Arial&lt;/FontFamily&gt;
+    &lt;FontSize&gt;9pt&lt;/FontSize&gt;
+    &lt;FontStyle&gt;Normal&lt;/FontStyle&gt;
+    &lt;FontWeight&gt;400&lt;/FontWeight&gt;
+    &lt;TextAlign&gt;Left&lt;/TextAlign&gt;
+    &lt;dd:Name&gt;MasterValues&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TextLabels&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderStyle&gt;
+      &lt;Default&gt;None&lt;/Default&gt;
+    &lt;/BorderStyle&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;Transparent&lt;/BackgroundColor&gt;
+    &lt;Color&gt;Black&lt;/Color&gt;
+    &lt;FontFamily&gt;Arial&lt;/FontFamily&gt;
+    &lt;FontSize&gt;7pt&lt;/FontSize&gt;
+    &lt;FontStyle&gt;Normal&lt;/FontStyle&gt;
+    &lt;FontWeight&gt;400&lt;/FontWeight&gt;
+    &lt;TextAlign&gt;Left&lt;/TextAlign&gt;
+    &lt;dd:Name&gt;PageHeaderAddress&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TextLabels&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderStyle&gt;
+      &lt;Default&gt;None&lt;/Default&gt;
+    &lt;/BorderStyle&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;Transparent&lt;/BackgroundColor&gt;
+    &lt;Color&gt;Black&lt;/Color&gt;
+    &lt;FontFamily&gt;Arial&lt;/FontFamily&gt;
+    &lt;FontSize&gt;10pt&lt;/FontSize&gt;
+    &lt;FontStyle&gt;Normal&lt;/FontStyle&gt;
+    &lt;FontWeight&gt;900&lt;/FontWeight&gt;
+    &lt;TextAlign&gt;Left&lt;/TextAlign&gt;
+    &lt;VerticalAlign&gt;Top&lt;/VerticalAlign&gt;
+    &lt;dd:Name&gt;PageHeaderCompanyName&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TextLabels&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderStyle&gt;
+      &lt;Default&gt;None&lt;/Default&gt;
+    &lt;/BorderStyle&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;DarkSeaGreen&lt;/BackgroundColor&gt;
+    &lt;dd:Name&gt;Title-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;Title&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;MediumSeaGreen&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;BackgroundColor&gt;LightCyan&lt;/BackgroundColor&gt;
+    &lt;dd:Name&gt;TableHeading-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;TableHeading&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;MediumSeaGreen&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+    &lt;BorderStyle&gt;
+      &lt;Default&gt;Solid&lt;/Default&gt;
+    &lt;/BorderStyle&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;Color&gt;DarkSeaGreen&lt;/Color&gt;
+    &lt;dd:Name&gt;FooterHeadings-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;FooterHeadings&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;MediumSeaGreen&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;dd:Name&gt;FooterValues-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;FooterValues&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;MediumSeaGreen&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;dd:Name&gt;DetailValue-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;DetailValues&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+    &lt;BorderColor&gt;
+      &lt;Default&gt;MediumSeaGreen&lt;/Default&gt;
+    &lt;/BorderColor&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+    &lt;PaddingRight&gt;10pt&lt;/PaddingRight&gt;
+    &lt;TextAlign&gt;Right&lt;/TextAlign&gt;
+    &lt;dd:Name&gt;DetailNumericValue-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;DetailValue-Copy&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;dd:Name&gt;MasterValues-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;MasterValues&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;dd:Name&gt;PageHeaderAddress-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;PageHeaderAddress&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+  &lt;Style&gt;
+    &lt;dd:Name&gt;PageHeaderCompanyName-Copy&lt;/dd:Name&gt;
+    &lt;dd:Parent&gt;PageHeaderCompanyName&lt;/dd:Parent&gt;
+    &lt;dd:Type&gt;Text&lt;/dd:Type&gt;
+  &lt;/Style&gt;
+&lt;/dd:StyleSheet&gt;</Data>
+		</EmbeddedStyleSheet>
+	</dd:EmbeddedStyleSheets>
+	<DataSources>
+		<DataSource Name="Reels">
+			<DataSourceReference>C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\ReelsDataSource.rdsx</DataSourceReference>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Reels">
+			<Fields>
+				<Field Name="ProductID">
+					<DataField>ProductID</DataField>
+				</Field>
+				<Field Name="StorePrice">
+					<DataField>StorePrice</DataField>
+				</Field>
+				<Field Name="InStock">
+					<DataField>InStock</DataField>
+				</Field>
+				<Field Name="OnOrder">
+					<DataField>OnOrder</DataField>
+				</Field>
+				<Field Name="ReOrderLevel">
+					<DataField>ReOrderLevel</DataField>
+				</Field>
+				<Field Name="Discontinued">
+					<DataField>Discontinued</DataField>
+				</Field>
+				<Field Name="MediaID">
+					<DataField>MediaID</DataField>
+				</Field>
+				<Field Name="Description">
+					<DataField>Description</DataField>
+				</Field>
+				<Field Name="MovieID">
+					<DataField>MovieID</DataField>
+				</Field>
+				<Field Name="Title">
+					<DataField>Title</DataField>
+				</Field>
+				<Field Name="YearReleased">
+					<DataField>YearReleased</DataField>
+				</Field>
+				<Field Name="QuanToOrder">
+					<Value>=Fields!ReOrderLevel.Value - (Fields!InStock.Value + Fields!OnOrder.Value)</Value>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT Product.ProductID, Product.StorePrice, Product.InStock, Product.OnOrder, Product.ReOrderLevel, Product.Discontinued, MediaType.MediaID, MediaType.Description, MovieProduct.MovieID, Movie.Title, Movie.YearReleased
+FROM Movie INNER JOIN (Product INNER JOIN (MediaType INNER JOIN MovieProduct ON MediaType.MediaID = MovieProduct.MediaType) ON Product.ProductID = MovieProduct.ProductID) ON Movie.MovieID = MovieProduct.MovieID
+WHERE     (Product.ReOrderLevel &gt; Product.InStock + Product.OnOrder) AND (Product.Discontinued = 0)
+ORDER BY Movie.Title</CommandText>
+				<DataSourceName>Reels</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<dd:LocalizationResources xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<LocalizationResource Language="en-US">
+			<Data>
+				<Name>ReelsLogo.MIMEType</Name>
+				<Value>=Theme.Images!Logo.MIMEType</Value>
+			</Data>
+			<Data>
+				<Name>ReelsLogo.Source</Name>
+				<Value>Database</Value>
+			</Data>
+			<Data>
+				<Name>ReelsLogo.Value</Name>
+				<Value>=Theme.Images!Logo.ImageData</Value>
+			</Data>
+		</LocalizationResource>
+	</dd:LocalizationResources>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>Theme</Name>
+			<Value>Reels.rdlx-theme</Value>
+		</CustomProperty>
+	</CustomProperties>
+	<dd:ReportThemes xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<ThemeUri>Reels.rdlx-theme</ThemeUri>
+	</dd:ReportThemes>
+	<dd:ReportStyleSheet xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<StyleSheetSource>Embedded</StyleSheetSource>
+		<StyleSheetValue>BaseStyle</StyleSheetValue>
+	</dd:ReportStyleSheet>
+</Report>

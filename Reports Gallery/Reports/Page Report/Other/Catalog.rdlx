@@ -1,0 +1,1525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>11in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Line Name="Line1">
+								<Height>0in</Height>
+								<Style>
+									<BorderColor>
+										<Default>DarkRed</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+									<BorderWidth>
+										<Default>2pt</Default>
+									</BorderWidth>
+								</Style>
+								<Top>2.563in</Top>
+								<Width>6.5in</Width>
+							</Line>
+							<Image Name="imgNWLogo">
+								<Height>2.313in</Height>
+								<Left>1.8775in</Left>
+								<Sizing>Fit</Sizing>
+								<Source>Embedded</Source>
+								<Top>0.5in</Top>
+								<Value>imgNWLogo</Value>
+								<Width>2.75in</Width>
+								<ZIndex>1</ZIndex>
+							</Image>
+							<Textbox Name="lblTitle">
+								<Height>0.375in</Height>
+								<Left>1.8775in</Left>
+								<Style>
+									<Color>DarkRed</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>22pt</FontSize>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>3.875in</Top>
+								<Value>Fall Catalog</Value>
+								<Width>2.75in</Width>
+								<ZIndex>2</ZIndex>
+							</Textbox>
+							<Textbox Name="lblDesc1">
+								<Height>0.25in</Height>
+								<Left>1.8775in</Left>
+								<Style>
+									<Color>DarkRed</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>16pt</FontSize>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>4.375in</Top>
+								<Value>Commitment to Quality</Value>
+								<Width>2.75in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="lblDesc2">
+								<Height>0.9896in</Height>
+								<Left>0.5416667in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>14pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Distribute</dd:TextJustify>
+								</Style>
+								<Top>5.59375in</Top>
+								<Value>Northwind Traders is committed to bringing you products of the highest quality from all over the world. If at any time you are not completely satisfied with any of our products, you may return them to us for a full refund.</Value>
+								<Width>5.4375in</Width>
+								<ZIndex>4</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox13">
+								<DataElementName>lblPageFooter</DataElementName>
+								<Height>0.25in</Height>
+								<Style>
+									<BackgroundColor>DarkRed</BackgroundColor>
+									<Color>OldLace</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.5in</Top>
+								<Value>NorthWind Fall Catalog</Value>
+								<Width>6.5in</Width>
+								<ZIndex>5</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox4">
+								<Height>0.25in</Height>
+								<Style>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.75in</Top>
+								<Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+								<Width>6.5in</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+					<Page>
+						<ReportItems>
+							<Textbox Name="TextBox3">
+								<DataElementName>lblPageFooter</DataElementName>
+								<Height>0.25in</Height>
+								<Style>
+									<BackgroundColor>DarkRed</BackgroundColor>
+									<Color>OldLace</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.502083in</Top>
+								<Value>NorthWind Fall Catalog</Value>
+								<Width>6.5in</Width>
+								<ZIndex>5</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox2">
+								<DataElementName>TextBox1</DataElementName>
+								<Height>0.188in</Height>
+								<Style>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.782in</Top>
+								<Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+								<Width>6.5in</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox5">
+								<Height>0.3646in</Height>
+								<Left>0.6041667in</Left>
+								<Style>
+									<Color>DarkRed</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>18pt</FontSize>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>0.37in</Top>
+								<Value>Tour the Gastronomic World of NorthWind Traders!</Value>
+								<Width>5.3125in</Width>
+								<ZIndex>7</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox10">
+								<Height>0.8646in</Height>
+								<Left>1.020833in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+								</Style>
+								<Top>1.177083in</Top>
+								<Value>When Northwind Traders buyers set out to search for the Wonders of the Gastronomic World they found a lot more than seven of them. And here they are--tastefully presented in our Fall Catalog.</Value>
+								<Width>4.4479in</Width>
+								<ZIndex>8</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox12">
+								<Height>0.4833in</Height>
+								<Left>1.020833in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+								</Style>
+								<Top>2.141683in</Top>
+								<Value>The beverages and confections we're featuring this fall are sure to please even the most discerning palates.</Value>
+								<Width>4.4479in</Width>
+								<ZIndex>9</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox15">
+								<Height>0.6279in</Height>
+								<Left>1.020833in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+								</Style>
+								<Top>2.767917in</Top>
+								<Value>For thirst quenchers, try exotic Chang, hearty Laughing Lumberjack Lager, robust Rhönbräu Klosterbier, and refreshing Lakkalikööri.</Value>
+								<Width>4.4479in</Width>
+								<ZIndex>10</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox16">
+								<Height>0.8542in</Height>
+								<Left>1.020833in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+								</Style>
+								<Top>3.510417in</Top>
+								<Value>And for a taste of something sweet, try Pavlova, the intriguing meringue dessert from Australia; Teatime Chocolate Biscuits from England, tasty Maxilaku from Finland; and the Berlin speciality, NuNuCa Nuß-Nougat-Creme.</Value>
+								<Width>4.4479in</Width>
+								<ZIndex>11</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox17">
+								<Height>0.6762in</Height>
+								<Left>1.020833in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+								</Style>
+								<Top>4.500833in</Top>
+								<Value>Our sales representatives are ready to take your orders now. For your convenience, we've included details on ordering on the last page of this catalog.</Value>
+								<Width>4.4479in</Width>
+								<ZIndex>12</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+					<Page>
+						<ReportItems>
+							<List Name="List1">
+								<DataSetName>Categories</DataSetName>
+								<Grouping Name="List1_Detail_Group">
+									<GroupExpressions>
+										<GroupExpression>=Fields.Item("Categories.CategoryID").Value</GroupExpression>
+									</GroupExpressions>
+								</Grouping>
+								<Height>1.2604in</Height>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">8.447917in</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">6.5in</dd:FixedWidth>
+								<ReportItems>
+									<Textbox Name="txtCategoryName">
+										<Height>0.25in</Height>
+										<Style>
+											<Color>DarkRed</Color>
+											<FontSize>12pt</FontSize>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.0625in</Top>
+										<Value>=Fields!CategoryName.Value</Value>
+										<Width>2.875in</Width>
+									</Textbox>
+									<Textbox Name="txtDescription">
+										<Height>0.2708in</Height>
+										<Style>
+											<Color>Navy</Color>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.3125in</Top>
+										<Value>=Fields!Description.Value</Value>
+										<Width>6.1979in</Width>
+										<ZIndex>1</ZIndex>
+									</Textbox>
+									<Table Name="Table1">
+										<DataSetName>Categories</DataSetName>
+										<Header>
+											<TableRows>
+												<TableRow>
+													<Height>0.264423in</Height>
+													<TableCells>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="lblProductName">
+																	<Style>
+																		<BackgroundColor>Black</BackgroundColor>
+																		<Color>White</Color>
+																		<FontWeight>700</FontWeight>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																		<TextAlign>Center</TextAlign>
+																	</Style>
+																	<Value>Product Name</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="lblProductID">
+																	<Style>
+																		<BackgroundColor>Black</BackgroundColor>
+																		<Color>White</Color>
+																		<FontWeight>700</FontWeight>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																		<TextAlign>Center</TextAlign>
+																	</Style>
+																	<Value>Product ID</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="TextBox22">
+																	<Style>
+																		<BackgroundColor>Black</BackgroundColor>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value />
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="lblQtyPerUnit">
+																	<Style>
+																		<BackgroundColor>Black</BackgroundColor>
+																		<Color>White</Color>
+																		<FontWeight>700</FontWeight>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																		<TextAlign>Center</TextAlign>
+																	</Style>
+																	<Value>Quantity Per Unit</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="lblUnitPrice">
+																	<Style>
+																		<BackgroundColor>Black</BackgroundColor>
+																		<Color>White</Color>
+																		<FontWeight>700</FontWeight>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																		<TextAlign>Center</TextAlign>
+																	</Style>
+																	<Value>Unit Price</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+													</TableCells>
+												</TableRow>
+											</TableRows>
+										</Header>
+										<Details>
+											<TableRows>
+												<TableRow>
+													<Height>0.264423in</Height>
+													<TableCells>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="txtProductName">
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value>=Fields!ProductName.Value</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="txtProductID">
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																		<TextAlign>Right</TextAlign>
+																	</Style>
+																	<Value>=Fields!ProductID.Value</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="TextBox23">
+																	<Style>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value />
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="txtQtyPerUnit">
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value>=Fields!QuantityPerUnit.Value</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="txtUnitPrice">
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<Format>c</Format>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value>=Fields!UnitPrice.Value</Value>
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+													</TableCells>
+												</TableRow>
+											</TableRows>
+										</Details>
+										<Footer>
+											<TableRows>
+												<TableRow>
+													<Height>0.044071in</Height>
+													<TableCells>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="TextBox18">
+																	<Style>
+																		<BorderStyle>
+																			<Bottom>Solid</Bottom>
+																		</BorderStyle>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value />
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="TextBox19">
+																	<Style>
+																		<BorderStyle>
+																			<Bottom>Solid</Bottom>
+																		</BorderStyle>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value />
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="TextBox24">
+																	<Style>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value />
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="TextBox20">
+																	<Style>
+																		<BorderStyle>
+																			<Bottom>Solid</Bottom>
+																		</BorderStyle>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value />
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+														<TableCell>
+															<ReportItems>
+																<Textbox Name="TextBox21">
+																	<Style>
+																		<BorderStyle>
+																			<Bottom>Solid</Bottom>
+																		</BorderStyle>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<Value />
+																</Textbox>
+															</ReportItems>
+														</TableCell>
+													</TableCells>
+												</TableRow>
+											</TableRows>
+										</Footer>
+										<Height>0.5729167in</Height>
+										<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">0.833334in</dd:FixedHeight>
+										<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">7.2839in</dd:FixedWidth>
+										<TableColumns>
+											<TableColumn>
+												<Width>2.840617in</Width>
+											</TableColumn>
+											<TableColumn>
+												<Width>0.839787in</Width>
+											</TableColumn>
+											<TableColumn>
+												<Width>0.120058in</Width>
+											</TableColumn>
+											<TableColumn>
+												<Width>1.614503in</Width>
+											</TableColumn>
+											<TableColumn>
+												<Width>1.032952in</Width>
+											</TableColumn>
+										</TableColumns>
+										<Top>0.683333in</Top>
+										<Width>6.447917in</Width>
+										<ZIndex>3</ZIndex>
+									</Table>
+								</ReportItems>
+								<Style>
+									<BorderStyle>
+										<Bottom>None</Bottom>
+									</BorderStyle>
+								</Style>
+								<Width>6.5in</Width>
+								<ZIndex>4</ZIndex>
+							</List>
+							<Textbox Name="lblPageFooter">
+								<Height>0.25in</Height>
+								<Style>
+									<BackgroundColor>DarkRed</BackgroundColor>
+									<Color>OldLace</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.512083in</Top>
+								<Value>NorthWind Fall Catalog</Value>
+								<Width>6.5in</Width>
+								<ZIndex>5</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox1">
+								<Height>0.188in</Height>
+								<Style>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.782in</Top>
+								<Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+								<Width>6.5in</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+					<Page>
+						<ReportItems>
+							<Shape Name="Shape2">
+								<Height>0.9062in</Height>
+								<Left>0.25in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>7.1875in</Top>
+								<Width>1.3125in</Width>
+								<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+							</Shape>
+							<Shape Name="Shape1">
+								<Height>1.9688in</Height>
+								<Left>0.28125in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.260417in</Top>
+								<Width>5.8334in</Width>
+								<ZIndex>1</ZIndex>
+								<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+							</Shape>
+							<Image Name="SmallPictureLogo">
+								<Height>0.8021in</Height>
+								<Sizing>Fit</Sizing>
+								<Source>Embedded</Source>
+								<Value>SmallPictureLogo</Value>
+								<Width>1in</Width>
+								<ZIndex>2</ZIndex>
+							</Image>
+							<Image Name="Image1">
+								<Height>0.3958in</Height>
+								<Left>1.041667in</Left>
+								<Sizing>Fit</Sizing>
+								<Source>Embedded</Source>
+								<Top>0.2395833in</Top>
+								<Value>NameLogo</Value>
+								<Width>1.625in</Width>
+								<ZIndex>3</ZIndex>
+							</Image>
+							<Textbox Name="lblOrderForm">
+								<Height>0.323in</Height>
+								<Left>5.01in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>DarkRed</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontSize>18pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Value>ORDER FORM</Value>
+								<Width>1.49in</Width>
+								<ZIndex>4</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox25">
+								<DataElementName>lblPageFooter</DataElementName>
+								<Height>0.25in</Height>
+								<Style>
+									<BackgroundColor>DarkRed</BackgroundColor>
+									<Color>OldLace</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>12pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.52in</Top>
+								<Value>NorthWind Fall Catalog</Value>
+								<Width>6.5in</Width>
+								<ZIndex>5</ZIndex>
+							</Textbox>
+							<Line Name="Line2">
+								<Height>0in</Height>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>0.927in</Top>
+								<Width>6.5in</Width>
+								<ZIndex>5</ZIndex>
+							</Line>
+							<Textbox Name="lblAddress">
+								<Height>0.5in</Height>
+								<Left>0.02083333in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>1.03125in</Top>
+								<Value>One Portals Way Twin Points, WA  98156</Value>
+								<Width>1.1459in</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+							<Textbox Name="lblInstructionsText">
+								<Height>0.2709in</Height>
+								<Left>0.020833in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>11pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+								</Style>
+								<Top>2.3125in</Top>
+								<Value>For fast personal service, call us at 1-206-555-1417.</Value>
+								<Width>6.479167in</Width>
+								<ZIndex>7</ZIndex>
+							</Textbox>
+							<Textbox Name="lblBillTo">
+								<Height>0.188in</Height>
+								<Left>0.3in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>2.781in</Top>
+								<Value>Bill To:</Value>
+								<Width>0.427in</Width>
+								<ZIndex>8</ZIndex>
+							</Textbox>
+							<Textbox Name="lblShipTo">
+								<DataElementName>lblBillTo</DataElementName>
+								<Height>0.188in</Height>
+								<Left>3.40625in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>2.78125in</Top>
+								<Value>Ship To:</Value>
+								<Width>0.51in</Width>
+								<ZIndex>8</ZIndex>
+							</Textbox>
+							<Line Name="Line3">
+								<Height>0in</Height>
+								<Left>3.916667in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>2.958333in</Top>
+								<Width>2.197917in</Width>
+								<ZIndex>9</ZIndex>
+							</Line>
+							<Line Name="lneBillTo1">
+								<Height>0in</Height>
+								<Left>0.788in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>2.958in</Top>
+								<Width>2.197in</Width>
+								<ZIndex>9</ZIndex>
+							</Line>
+							<Line Name="lneBillTo2">
+								<Height>0in</Height>
+								<Left>0.281in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>3.135in</Top>
+								<Width>2.704in</Width>
+								<ZIndex>10</ZIndex>
+							</Line>
+							<Line Name="lneBillTo3">
+								<Height>0in</Height>
+								<Left>0.281in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>3.302in</Top>
+								<Width>2.704in</Width>
+								<ZIndex>11</ZIndex>
+							</Line>
+							<Line Name="lneBillTo4">
+								<Height>0in</Height>
+								<Left>0.28125in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>3.5in</Top>
+								<Width>2.697916in</Width>
+								<ZIndex>11</ZIndex>
+							</Line>
+							<Line Name="lneShipTo3">
+								<Height>0in</Height>
+								<Left>3.395833in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>3.3125in</Top>
+								<Width>2.708333in</Width>
+								<ZIndex>11</ZIndex>
+							</Line>
+							<Line Name="lneShipTo4">
+								<Height>0in</Height>
+								<Left>3.40625in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>3.5in</Top>
+								<Width>2.697916in</Width>
+								<ZIndex>11</ZIndex>
+							</Line>
+							<Line Name="lneShipTo2">
+								<Height>0in</Height>
+								<Left>3.396in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>3.135in</Top>
+								<Width>2.694in</Width>
+								<ZIndex>11</ZIndex>
+							</Line>
+							<Textbox Name="lblCustomerID">
+								<DataElementName>lblDateOfOrder</DataElementName>
+								<Height>0.188in</Height>
+								<Left>3.383in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>3.99in</Top>
+								<Value>Customer ID:</Value>
+								<Width>0.865in</Width>
+								<ZIndex>12</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox14">
+								<DataElementName>lblDateOfOrder</DataElementName>
+								<Height>0.188in</Height>
+								<Left>0.3in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>3.99in</Top>
+								<Value>Date Required:</Value>
+								<Width>0.865in</Width>
+								<ZIndex>12</ZIndex>
+							</Textbox>
+							<Textbox Name="lblDateOfOrder">
+								<Height>0.188in</Height>
+								<Left>0.3in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>3.74in</Top>
+								<Value>Date of Order:</Value>
+								<Width>0.813in</Width>
+								<ZIndex>12</ZIndex>
+							</Textbox>
+							<Line Name="Line4">
+								<Height>0in</Height>
+								<Left>1.145833in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>3.916667in</Top>
+								<Width>1.520833in</Width>
+								<ZIndex>13</ZIndex>
+							</Line>
+							<Line Name="Line5">
+								<Height>0in</Height>
+								<Left>1.167in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.156in</Top>
+								<Width>1.5in</Width>
+								<ZIndex>14</ZIndex>
+							</Line>
+							<Line Name="Line6">
+								<Height>0in</Height>
+								<Left>4.270833in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.166667in</Top>
+								<Width>1.833333in</Width>
+								<ZIndex>15</ZIndex>
+							</Line>
+							<Textbox Name="lblProductID2">
+								<Height>0.188in</Height>
+								<Left>0.308in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>4.281in</Top>
+								<Value>Product ID:</Value>
+								<Width>0.656in</Width>
+								<ZIndex>16</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox6">
+								<Height>0.188in</Height>
+								<Left>1.036in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>4.281in</Top>
+								<Value>Product Name:</Value>
+								<Width>2.354in</Width>
+								<ZIndex>17</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox7">
+								<Height>0.188in</Height>
+								<Left>3.427in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>4.281in</Top>
+								<Value>Unit Price:</Value>
+								<Width>0.854in</Width>
+								<ZIndex>18</ZIndex>
+							</Textbox>
+							<Textbox Name="lblQuantity2">
+								<Height>0.188in</Height>
+								<Left>4.328in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>4.28125in</Top>
+								<Value>Quantity:</Value>
+								<Width>0.833in</Width>
+								<ZIndex>19</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox8">
+								<Height>0.188in</Height>
+								<Left>5.177in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>4.281in</Top>
+								<Value>Extended Price: </Value>
+								<Width>0.91in</Width>
+								<ZIndex>20</ZIndex>
+							</Textbox>
+							<Line Name="Line8">
+								<Height>1.96875in</Height>
+								<Left>0.989583in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.260417in</Top>
+								<Width>0in</Width>
+								<ZIndex>22</ZIndex>
+							</Line>
+							<Line Name="Line9">
+								<Height>2.71875in</Height>
+								<Left>3.40625in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.260417in</Top>
+								<Width>0in</Width>
+								<ZIndex>23</ZIndex>
+							</Line>
+							<Line Name="Line10">
+								<Height>1.947917in</Height>
+								<Left>4.291667in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.260417in</Top>
+								<Width>0in</Width>
+								<ZIndex>24</ZIndex>
+							</Line>
+							<Line Name="Line11">
+								<Height>2.708333in</Height>
+								<Left>5.166667in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.260417in</Top>
+								<Width>0in</Width>
+								<ZIndex>25</ZIndex>
+							</Line>
+							<Line Name="Line7">
+								<Height>0in</Height>
+								<Left>0.3125in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.489583in</Top>
+								<Width>5.78125in</Width>
+								<ZIndex>26</ZIndex>
+							</Line>
+							<Line Name="Line12">
+								<Height>0in</Height>
+								<Left>0.2916667in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.75in</Top>
+								<Width>5.791667in</Width>
+								<ZIndex>27</ZIndex>
+							</Line>
+							<Line Name="Line13">
+								<Height>0in</Height>
+								<Left>0.2916667in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.989583in</Top>
+								<Width>5.802083in</Width>
+								<ZIndex>28</ZIndex>
+							</Line>
+							<Line Name="Line14">
+								<Height>0in</Height>
+								<Left>0.28125in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>5.270833in</Top>
+								<Width>5.802083in</Width>
+								<ZIndex>29</ZIndex>
+							</Line>
+							<Line Name="Line15">
+								<Height>0in</Height>
+								<Left>0.3020833in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>5.520833in</Top>
+								<Width>5.802083in</Width>
+								<ZIndex>30</ZIndex>
+							</Line>
+							<Line Name="Line16">
+								<Height>0in</Height>
+								<Left>0.28125in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>5.760417in</Top>
+								<Width>5.833333in</Width>
+								<ZIndex>31</ZIndex>
+							</Line>
+							<Line Name="Line17">
+								<Height>0in</Height>
+								<Left>0.28125in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>5.989583in</Top>
+								<Width>5.822917in</Width>
+								<ZIndex>32</ZIndex>
+							</Line>
+							<Textbox Name="lblSubTotal">
+								<Height>0.188in</Height>
+								<Left>3.427083in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>6.28125in</Top>
+								<Value>Subtotal:</Value>
+								<Width>0.531in</Width>
+								<ZIndex>33</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox9">
+								<Height>0.188in</Height>
+								<Left>3.427083in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>6.510417in</Top>
+								<Value>Freight: (estimated) :</Value>
+								<Width>1.094in</Width>
+								<ZIndex>34</ZIndex>
+							</Textbox>
+							<Textbox Name="lblTotal">
+								<Height>0.188in</Height>
+								<Left>3.427083in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>6.739583in</Top>
+								<Value>Total:</Value>
+								<Width>0.365in</Width>
+								<ZIndex>35</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox11">
+								<Height>0.188in</Height>
+								<Left>0.25in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>6.9375in</Top>
+								<Value>Ship via (check one)</Value>
+								<Width>1.188in</Width>
+								<ZIndex>36</ZIndex>
+							</Textbox>
+							<CheckBox Name="CheckBox1">
+								<Height>0.188in</Height>
+								<Left>0.28125in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>7.270828in</Top>
+								<Text>Speedy Express</Text>
+								<Width>1.1in</Width>
+								<ZIndex>37</ZIndex>
+							</CheckBox>
+							<CheckBox Name="CheckBox2">
+								<Height>0.188in</Height>
+								<Left>0.260416in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>7.552075in</Top>
+								<Text>United Package</Text>
+								<Width>1.1042in</Width>
+								<ZIndex>38</ZIndex>
+							</CheckBox>
+							<CheckBox Name="CheckBox3">
+								<DataElementOutput>Output</DataElementOutput>
+								<Height>0.188in</Height>
+								<Left>0.28125in</Left>
+								<Style>
+									<Color>Navy</Color>
+									<FontFamily>Arial Narrow</FontFamily>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>1pt</PaddingLeft>
+									<PaddingRight>1pt</PaddingRight>
+									<PaddingTop>1pt</PaddingTop>
+								</Style>
+								<Top>7.822905in</Top>
+								<Text>Federal Shipping</Text>
+								<Width>1.1458in</Width>
+								<ZIndex>39</ZIndex>
+							</CheckBox>
+							<Line Name="Line18">
+								<Height>0in</Height>
+								<Left>3.416667in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>7in</Top>
+								<Width>2.6875in</Width>
+								<ZIndex>40</ZIndex>
+							</Line>
+							<Line Name="Line19">
+								<Height>0.7916667in</Height>
+								<Left>6.114583in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>6.208333in</Top>
+								<Width>0in</Width>
+								<ZIndex>41</ZIndex>
+							</Line>
+							<Line Name="Line20">
+								<Height>0in</Height>
+								<Left>3.427083in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>6.489583in</Top>
+								<Width>2.6875in</Width>
+								<ZIndex>42</ZIndex>
+							</Line>
+							<Line Name="Line21">
+								<Height>0in</Height>
+								<Left>3.416667in</Left>
+								<Style>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>6.71875in</Top>
+								<Width>2.697917in</Width>
+								<ZIndex>43</ZIndex>
+							</Line>
+							<Textbox Name="TextBox26">
+								<DataElementName>lblAddress</DataElementName>
+								<Height>0.3854in</Height>
+								<Left>4.916667in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Top>0.4791667in</Top>
+								<Value>Phone: 1-206-555-1417   Fax: 1-206-555-5938</Value>
+								<Width>1.5833in</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox27">
+								<DataElementName>lblInstructionsText</DataElementName>
+								<Height>0.4688in</Height>
+								<Left>0.020833in</Left>
+								<Style>
+									<BackgroundColor>White</BackgroundColor>
+									<Color>Navy</Color>
+									<FontFamily>Times New Roman</FontFamily>
+									<FontSize>11pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>1.645833in</Top>
+								<Value>To place your order, fill out this form and return it to us at the address above. Or if you prefer, fax it to us at 1-206-555-5938.</Value>
+								<Width>6.479167in</Width>
+								<ZIndex>7</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox28">
+								<DataElementName>TextBox1</DataElementName>
+								<Height>0.188in</Height>
+								<Style>
+									<PaddingBottom>1pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.79in</Top>
+								<Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+								<Width>6.5in</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>Categories</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=1</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>1in</LeftMargin>
+	<PageHeight>11in</PageHeight>
+	<PageWidth>8.5in</PageWidth>
+	<RightMargin>1in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>8.5in</Width>
+	<EmbeddedImages>
+		<EmbeddedImage Name="imgNWLogo">
+			<ImageData>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</ImageData>
+			<MIMEType>image/jpeg</MIMEType>
+		</EmbeddedImage>
+		<EmbeddedImage Name="NameLogo">
+			<ImageData>iVBORw0KGgoAAAANSUhEUgAAAJwAAAAqCAYAAABGKzIlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAABNpJREFUeF7tnOFy3DAIhO/R783TeqZ0CFmWRfbp4oTM5EdihKTlAyHn2sfHfI0CGxV4bJxrphoFPga4gWCrAgPcVrlnsi/APR7Pj+ybydUd15mD+Y7P4ho7YxVb86/YehtlnF+76v8Yg2wVHZQ1deNapVRa4bKJns8n9enHHbb+O4pz/OyfowBlQYi+47xeTDYP8mO/q/YS95PtJWrAxnl9j/kVn4dNjJeNQ+ChuJhGmZ9sHYd952sJOAW6jsgMqgq4aqwJEgNpwsbAeHsEHKsc3hcKXDUWPTcQMkhjYmWJhxIQgdIBtzpdoP+MThMeVToFOC8UKt0sAxkM2bMqICpwttZYNXav11cOWztLAJYoMSlRbFCMfIVV4DR7VvFohcvKbOVYrSoZuOx4XAWuUynfkSBRU1VDVLlUMBWIskTLAC3ZqCocyi4f9GzRMYuU46kKdOWjel75r448lCDVnCx5WFU+Axzye/WRWgGXFhMVuLgJBl1XLDXQVebG6qdWUMUOtRZKv5OtGbUs/rLij3YlURTNLYZXHalLx/AVwMWAKZtnfSALUhV4dFlRgVbs0K22e8ybPqhlsd4RQVElnDIGxSZrN+x4VHp2lHzw9OsAp1a5HcD5aqBWNqVSZOKvXBqy+aI+EaQMirsBB1uQLnAKdDuBY/0K2xurSh0wqx4OrW8ncCherz5SWWWUbqmwNIK/SPgLhlLeK7/xeFSO2upWhQBQergzFS5LCvaqRtEvjldBYhopfSlrPapEXgaOVbqVI0GpKtWR4jebVbfvAhzqe8tguSSP0FS9md/3rwGuOv4QUJ0XtnH8dzlSVcgHuL9KrdxQOtkWS7gdCz4L2c20Ku/ZJQDNi6psZtdZk/fLbtFetyzR2Lz2rKrur65wdI8rl4YqyKxpjGPjawYmRmaLkiLa+nlVP4qdYoP2zKDIkpzNFZ89HvyTZ0rfqsQRJQAF+grgUD+nNO9M9Hn2HgW6l4a3Aaf2Ke+RcWZVFegAx2BLK+hVFS72P1Ph1BB/L7szwLHe7T8faLvqbY+NVZt+pQkem/xT2KvaKDf4rIfLoFSKzKfOcuXmlUE3wF0PySpcVZ+16pddzFKg0YOVm1fmR70ddm5gY/v5o+dn9LgiPp2mYP7VVketsT2twAB3WsJx0FFggOuoNbanFbgFcFVT61XIbBWl7E9L1c3dz6He9rIxK+uNvti6lX3vtLkNcNYYm9j+5/iSEdlUQfFjKojiWlT7Y5y9akBJovjN9pa9aN0JkzLXLYA7NmKCIjAYcMfYLkwKQGZjvllVjOs7s160FwSxEvx32NwGuBhgltExKBVwVv0YPBm4zLd/phzXLKni/qO/qXAvSp8KHg+GB4h+guHff6lQ+c6qS1ZhYn+mfkLDKnrH/kVyX+72x1e4qmohQKtA++edCqf4VdZrQGYXkcspudDhrwGOBdtXlG5PpgLn+9AYv3j0sp4sHqVVVb6QlUtc/XjgfAXLGvuVihV7OgR0dgQz4JT1eugGuEvyADuJPRG7GfpKlR098ffMf3zmA81gQ+MQ4Mp6DUZ7vVKt4YWhWHZ9uwqnfEIB2fjfebXi75n/7I/kmfqZPXpNwtYR/dv4bE/LNGwYeDvgNmgyU7xQgQHuheKO668KDHBDxVYFBritcs9kfwDUdo8gh6QtQAAAAABJRU5ErkJggg==</ImageData>
+			<MIMEType>image/png</MIMEType>
+		</EmbeddedImage>
+		<EmbeddedImage Name="SmallPictureLogo">
+			<ImageData>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</ImageData>
+			<MIMEType>image/jpeg</MIMEType>
+		</EmbeddedImage>
+	</EmbeddedImages>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<DataSourceReference>C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\NWind.rdsx</DataSourceReference>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Categories">
+			<Fields>
+				<Field Name="Categories.CategoryID">
+					<DataField>Categories.CategoryID</DataField>
+				</Field>
+				<Field Name="CategoryName">
+					<DataField>CategoryName</DataField>
+				</Field>
+				<Field Name="Description">
+					<DataField>Description</DataField>
+				</Field>
+				<Field Name="Picture">
+					<DataField>Picture</DataField>
+				</Field>
+				<Field Name="ProductID">
+					<DataField>ProductID</DataField>
+				</Field>
+				<Field Name="ProductName">
+					<DataField>ProductName</DataField>
+				</Field>
+				<Field Name="SupplierID">
+					<DataField>SupplierID</DataField>
+				</Field>
+				<Field Name="Products.CategoryID">
+					<DataField>Products.CategoryID</DataField>
+				</Field>
+				<Field Name="QuantityPerUnit">
+					<DataField>QuantityPerUnit</DataField>
+				</Field>
+				<Field Name="UnitPrice">
+					<DataField>UnitPrice</DataField>
+				</Field>
+				<Field Name="UnitsInStock">
+					<DataField>UnitsInStock</DataField>
+				</Field>
+				<Field Name="UnitsOnOrder">
+					<DataField>UnitsOnOrder</DataField>
+				</Field>
+				<Field Name="ReorderLevel">
+					<DataField>ReorderLevel</DataField>
+				</Field>
+				<Field Name="Discontinued">
+					<DataField>Discontinued</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT Categories.*, Products.*
+FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID
+ORDER BY Categories.CategoryName;</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

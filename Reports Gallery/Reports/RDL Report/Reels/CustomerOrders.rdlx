@@ -1,0 +1,934 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<PageHeader>
+		<Height>1.125in</Height>
+		<PrintOnFirstPage>true</PrintOnFirstPage>
+		<PrintOnLastPage>true</PrintOnLastPage>
+		<ReportItems>
+			<Textbox Name="PageNumberLabel">
+				<CanGrow>true</CanGrow>
+				<Height>0.25in</Height>
+				<Left>4.625in</Left>
+				<Style>
+					<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+					<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Right</TextAlign>
+				</Style>
+				<Top>0.625in</Top>
+				<Value>Page</Value>
+				<Width>1.375in</Width>
+				<ZIndex>9</ZIndex>
+			</Textbox>
+			<Textbox Name="PageNumber">
+				<CanGrow>true</CanGrow>
+				<Height>0.25in</Height>
+				<Left>6in</Left>
+				<Style>
+					<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+					<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Right</TextAlign>
+				</Style>
+				<Top>0.625in</Top>
+				<Value>=Globals!PageNumberInSection</Value>
+				<Width>0.375in</Width>
+				<ZIndex>10</ZIndex>
+			</Textbox>
+			<Textbox Name="Title">
+				<CanGrow>true</CanGrow>
+				<Height>0.625in</Height>
+				<Left>3.8125in</Left>
+				<Style>
+					<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+					<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Right</TextAlign>
+				</Style>
+				<Value>Quarterly Bonus Reward Statement</Value>
+				<Width>2.583333in</Width>
+				<ZIndex>11</ZIndex>
+			</Textbox>
+			<Image Name="logoImage">
+				<Height>1.125in</Height>
+				<MIMEType>=Theme.Images!Logo.MIMEType</MIMEType>
+				<Sizing>FitProportional</Sizing>
+				<Source>Database</Source>
+				<Value>=Theme.Images!Logo.ImageData</Value>
+				<Width>2.083333in</Width>
+				<ZIndex>12</ZIndex>
+			</Image>
+		</ReportItems>
+	</PageHeader>
+	<Body>
+		<Height>3.5in</Height>
+		<ReportItems>
+			<List Name="CustomerDetails">
+				<DataSetName>SalesData</DataSetName>
+				<Grouping Name="CustomerDetails_Details_Group">
+					<GroupExpressions>
+						<GroupExpression>=Fields!CustomerID.Value</GroupExpression>
+					</GroupExpressions>
+					<Label>=Fields!CustomerName.Value</Label>
+					<PageBreakAtEnd>true</PageBreakAtEnd>
+					<dd:NewSection xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:NewSection>
+				</Grouping>
+				<Height>3.5in</Height>
+				<KeepTogether>true</KeepTogether>
+				<ReportItems>
+					<Textbox Name="City">
+						<CanGrow>true</CanGrow>
+						<Height>0.25in</Height>
+						<RepeatWith>table</RepeatWith>
+						<Style>
+							<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+							<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<Top>0.75in</Top>
+						<Value>=Fields!City.Value &amp; ", " &amp; Fields!Region.Value &amp; "  " &amp; Fields!PostalCode.Value &amp; "  " &amp; Fields!Country.Value</Value>
+						<Width>3in</Width>
+						<ZIndex>4</ZIndex>
+					</Textbox>
+					<Textbox Name="Address1">
+						<CanGrow>true</CanGrow>
+						<Height>0.25in</Height>
+						<RepeatWith>table</RepeatWith>
+						<Style>
+							<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+							<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<Top>0.5in</Top>
+						<Value>=Fields!Address1.Value &amp; IIf( IsNothing( Fields!Address2.Value ), "", vbCrLF &amp; Fields!Address2.Value )</Value>
+						<Width>3in</Width>
+						<ZIndex>3</ZIndex>
+					</Textbox>
+					<Textbox Name="CustomerName">
+						<CanGrow>true</CanGrow>
+						<DataElementName>textbox3</DataElementName>
+						<Height>0.25in</Height>
+						<RepeatWith>table</RepeatWith>
+						<Style>
+							<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+							<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<Top>0.25in</Top>
+						<Value>=Fields!CustomerName.Value</Value>
+						<Width>3in</Width>
+						<ZIndex>2</ZIndex>
+					</Textbox>
+					<Textbox Name="AccountNumberLabel">
+						<DataElementName>textbox2</DataElementName>
+						<Height>0.25in</Height>
+						<RepeatWith>table</RepeatWith>
+						<Style>
+							<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+							<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<Value>Account #:</Value>
+						<Width>0.875in</Width>
+						<ZIndex>1</ZIndex>
+					</Textbox>
+					<Textbox Name="AccountNumber">
+						<CanGrow>true</CanGrow>
+						<Height>0.25in</Height>
+						<Left>0.875in</Left>
+						<RepeatWith>table</RepeatWith>
+						<Style>
+							<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+							<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<Value>=Fields!AccountNumber.Value</Value>
+						<Width>2.125in</Width>
+					</Textbox>
+					<Subreport Name="subreport1">
+						<Height>0.875in</Height>
+						<Left>0.02083333in</Left>
+						<Parameters>
+							<Parameter Name="CouponAmount">
+								<Value>=Code.GetCouponAmount( Sum(Fields!ItemSubtotal.Value) )</Value>
+							</Parameter>
+						</Parameters>
+						<ReportName>CustomerOrdersCoupon</ReportName>
+						<Top>2.625in</Top>
+						<Width>6.375in</Width>
+					</Subreport>
+					<Table Name="table">
+						<DataSetName>SalesData</DataSetName>
+						<Header>
+							<RepeatOnNewPage>true</RepeatOnNewPage>
+							<TableRows>
+								<TableRow>
+									<Height>0.25in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="SaleDateHeader">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox38</DataElementName>
+													<Style>
+														<BackgroundColor>=Theme.Colors(1,2)</BackgroundColor>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value>Sale Date</Value>
+													<ZIndex>56</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="SalesIDHeader">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox13</DataElementName>
+													<Style>
+														<BackgroundColor>=Theme.Colors(1,2)</BackgroundColor>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>Sales ID</Value>
+													<ZIndex>55</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TitleHeader">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox9</DataElementName>
+													<Style>
+														<BackgroundColor>=Theme.Colors(1,2)</BackgroundColor>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value>Title</Value>
+													<ZIndex>54</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="QuantityHeader">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox19</DataElementName>
+													<Style>
+														<BackgroundColor>=Theme.Colors(1,2)</BackgroundColor>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>Quan.</Value>
+													<ZIndex>53</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="PriceHeader">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox22</DataElementName>
+													<Style>
+														<BackgroundColor>=Theme.Colors(1,2)</BackgroundColor>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>Price</Value>
+													<ZIndex>52</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="DiscountHeader">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox54</DataElementName>
+													<Style>
+														<BackgroundColor>=Theme.Colors(1,2)</BackgroundColor>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>Disc.</Value>
+													<ZIndex>51</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TotalHeader">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox6</DataElementName>
+													<Style>
+														<BackgroundColor>=Theme.Colors(1,2)</BackgroundColor>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>Total</Value>
+													<ZIndex>50</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Header>
+						<Details>
+							<TableRows>
+								<TableRow>
+									<Height>0.25in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="textbox15">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value />
+													<ZIndex>6</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="textbox8">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value />
+													<ZIndex>5</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="MovieTitle">
+													<CanGrow>true</CanGrow>
+													<DataElementName>Title_1</DataElementName>
+													<Style>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value>=Fields!MediaType.Value &amp; " - " &amp; Fields!Title.Value</Value>
+													<ZIndex>4</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="Quantity">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>="x" &amp; Fields!Quantity.Value</Value>
+													<ZIndex>3</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="Price">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<Format>C2</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>=Fields!Price.Value</Value>
+													<ZIndex>2</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="Discount">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<Format>P0</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>=Fields!Discount.Value</Value>
+													<ZIndex>1</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="ItemSubtotal">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<Format>C2</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>=Fields!ItemSubtotal.Value</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Details>
+						<Footer>
+							<TableRows>
+								<TableRow>
+									<Height>0.25in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="textbox10">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value />
+													<ZIndex>34</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ColSpan>5</ColSpan>
+											<ReportItems>
+												<Textbox Name="totalLabel">
+													<DataElementName>TextBox1</DataElementName>
+													<Style>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontWeight>700</FontWeight>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>Total Spent with Reels from Oct. - Dec. 2005 (tax excluded):</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="YearTotal">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<Color>=Theme.Colors(0,2)</Color>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+														<FontWeight>700</FontWeight>
+														<Format>C2</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>=Sum(Fields!ItemSubtotal.Value)</Value>
+													<ZIndex>31</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+								<TableRow>
+									<Height>0.25in</Height>
+									<TableCells>
+										<TableCell>
+											<ColSpan>7</ColSpan>
+											<ReportItems>
+												<Textbox Name="thanksLabel">
+													<CanGrow>true</CanGrow>
+													<DataElementName>textbox21</DataElementName>
+													<Style>
+														<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+														<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value>To thank you for being such a loyal customer the past few months, here is a coupon made just for you!</Value>
+													<ZIndex>35</ZIndex>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Footer>
+						<Height>1.5in</Height>
+						<TableColumns>
+							<TableColumn>
+								<Width>0.7916667in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.6354167in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>2.458333in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.5104167in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.6354167in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.375in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.96875in</Width>
+							</TableColumn>
+						</TableColumns>
+						<TableGroups>
+							<TableGroup>
+								<Header>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="SaleDate">
+															<CanGrow>true</CanGrow>
+															<DataElementName>textbox27</DataElementName>
+															<HideDuplicates>table1_Group1</HideDuplicates>
+															<Style>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<Format>d</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>=Fields!SaleDate.Value</Value>
+															<ZIndex>42</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="SalesID">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Value>=Fields!SalesID.Value</Value>
+															<ZIndex>41</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox29">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>40</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox30">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>39</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox31">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>38</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox56">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>37</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox47">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>36</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Footer>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox32">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>12</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox33">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>11</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox34">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>10</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="textbox35">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+															<ZIndex>9</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ColSpan>2</ColSpan>
+													<ReportItems>
+														<Textbox Name="SubtotalLabel">
+															<CanGrow>true</CanGrow>
+															<DataElementName>textbox36</DataElementName>
+															<Style>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Value>Subtotal:</Value>
+															<ZIndex>8</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="SalesAmount">
+															<CanGrow>true</CanGrow>
+															<Style>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<Format>C2</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Value>=Sum(Fields!ItemSubtotal.Value)</Value>
+															<ZIndex>7</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+											<Visibility>
+												<Hidden>=Fields!TaxPercent.Value = 0</Hidden>
+											</Visibility>
+										</TableRow>
+									</TableRows>
+								</Footer>
+								<Grouping Name="table1_Group2">
+									<GroupExpressions>
+										<GroupExpression>=Fields!SalesID.Value</GroupExpression>
+									</GroupExpressions>
+								</Grouping>
+							</TableGroup>
+						</TableGroups>
+						<Top>1.125in</Top>
+						<Width>6.375in</Width>
+						<ZIndex>5</ZIndex>
+					</Table>
+				</ReportItems>
+				<Width>6.395833in</Width>
+			</List>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<Code>Public Function GetCouponAmount( Amount as Object ) As Integer
+	Select Amount
+		Case 0 to 100
+			Return 5
+		Case 100 to 200
+			Return 10
+		Case Else
+			Return 15
+	End Select
+End Function</Code>
+	<Language>en-US</Language>
+	<LeftMargin>0.5in</LeftMargin>
+	<RightMargin>0.5in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>6.395833in</Width>
+	<DataSources>
+		<DataSource Name="Reels">
+			<DataSourceReference>C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\ReelsDataSource.rdsx</DataSourceReference>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="SalesData">
+			<Fields>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="AccountNumber">
+					<DataField>AccountNumber</DataField>
+				</Field>
+				<Field Name="FirstName">
+					<DataField>FirstName</DataField>
+				</Field>
+				<Field Name="MiddleInitial">
+					<DataField>MiddleInitial</DataField>
+				</Field>
+				<Field Name="LastName">
+					<DataField>LastName</DataField>
+				</Field>
+				<Field Name="Address1">
+					<DataField>Address1</DataField>
+				</Field>
+				<Field Name="Address2">
+					<DataField>Address2</DataField>
+				</Field>
+				<Field Name="City">
+					<DataField>City</DataField>
+				</Field>
+				<Field Name="Region">
+					<DataField>Region</DataField>
+				</Field>
+				<Field Name="PostalCode">
+					<DataField>PostalCode</DataField>
+				</Field>
+				<Field Name="Country">
+					<DataField>Country</DataField>
+				</Field>
+				<Field Name="SalesID">
+					<DataField>SalesID</DataField>
+				</Field>
+				<Field Name="SaleDate">
+					<DataField>SaleDate</DataField>
+				</Field>
+				<Field Name="TaxPercent">
+					<DataField>TaxPercent</DataField>
+				</Field>
+				<Field Name="MediaType">
+					<DataField>MediaType</DataField>
+				</Field>
+				<Field Name="Title">
+					<DataField>Title</DataField>
+				</Field>
+				<Field Name="Quantity">
+					<DataField>Quantity</DataField>
+				</Field>
+				<Field Name="Price">
+					<DataField>Price</DataField>
+				</Field>
+				<Field Name="Discount">
+					<DataField>Discount</DataField>
+				</Field>
+				<Field Name="CustomerName">
+					<Value>=Fields!FirstName.Value &amp; IIf( IsNothing(Fields!MiddleInitial.Value), "", " " &amp; Fields!MiddleInitial.Value &amp; "." ) &amp; Fields!LastName.Value</Value>
+				</Field>
+				<Field Name="ItemSubtotal">
+					<Value>=((1 - Fields!Discount.Value) * Fields!Price.Value) * Fields!Quantity.Value</Value>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT Customer.CustomerID, Customer.AccountNumber, Person.FirstName, Person.MiddleInitial, Person.LastName, Address.Address1, Address.Address2, Address.City, Address.Region, Address.PostalCode, Address.Country, Sale.SalesID, Sale.SaleDate, Sale.TaxPercent, MediaType.Description AS MediaType, Movie.Title, SaleDetails.Quantity, SaleDetails.Price, SaleDetails.Discount
+FROM (((Address INNER JOIN (Person INNER JOIN Customer ON Person.PersonID=Customer.PersonID) ON Address.AddressID=Person.AddressID) INNER JOIN Sale ON Customer.CustomerID=Sale.Customer) INNER JOIN SaleDetails ON Sale.SalesID=SaleDetails.SaleID) INNER JOIN (MediaType INNER JOIN (Movie INNER JOIN MovieProduct ON Movie.MovieID=MovieProduct.MovieID) ON MediaType.MediaID=MovieProduct.MediaType) ON SaleDetails.ProductID=MovieProduct.ProductID
+WHERE DATEPART( "yyyy", Sale.SaleDate ) = 2005 AND DatePart( "m", Sale.SaleDate ) &gt;= 10
+ORDER BY Customer.CustomerID, Sale.SaleDate, Sale.SalesID;</CommandText>
+				<DataSourceName>Reels</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<dd:ReportThemes xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<ThemeUri>Reels.rdlx-theme</ThemeUri>
+	</dd:ReportThemes>
+</Report>

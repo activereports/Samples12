@@ -1,0 +1,1297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtProductID.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtProductID.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtProductID.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 0</value>
+  </data>
+  <data name="txtProductID.Text" xml:space="preserve">
+    <value>ProductID</value>
+  </data>
+  <data name="txtProductID.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtProductID.Width" type="System.Single, mscorlib">
+    <value>0.688</value>
+  </data>
+  <data name="txtProductname.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtProductname.Left" type="System.Single, mscorlib">
+    <value>0.6875</value>
+  </data>
+  <data name="txtProductname.Style" xml:space="preserve">
+    <value>font-size: 9pt; vertical-align: middle; ddo-char-set: 0</value>
+  </data>
+  <data name="txtProductname.Text" xml:space="preserve">
+    <value>ProductName</value>
+  </data>
+  <data name="txtProductname.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtProductname.Width" type="System.Single, mscorlib">
+    <value>2.1245</value>
+  </data>
+  <data name="txtQty.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtQty.Left" type="System.Single, mscorlib">
+    <value>2.812</value>
+  </data>
+  <data name="txtQty.OutputFormat" xml:space="preserve">
+    <value>###</value>
+  </data>
+  <data name="txtQty.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 0</value>
+  </data>
+  <data name="txtQty.Text" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="txtQty.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtQty.Width" type="System.Single, mscorlib">
+    <value>0.5009999</value>
+  </data>
+  <data name="txtUnitPrice.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtUnitPrice.Left" type="System.Single, mscorlib">
+    <value>3.3125</value>
+  </data>
+  <data name="txtUnitPrice.OutputFormat" xml:space="preserve">
+    <value>$###,##0.00</value>
+  </data>
+  <data name="txtUnitPrice.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 0</value>
+  </data>
+  <data name="txtUnitPrice.Text" xml:space="preserve">
+    <value>UnitPrice</value>
+  </data>
+  <data name="txtUnitPrice.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtUnitPrice.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtDiscount.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtDiscount.Left" type="System.Single, mscorlib">
+    <value>4.3125</value>
+  </data>
+  <data name="txtDiscount.OutputFormat" xml:space="preserve">
+    <value>0.00%</value>
+  </data>
+  <data name="txtDiscount.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 0</value>
+  </data>
+  <data name="txtDiscount.Text" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="txtDiscount.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDiscount.Width" type="System.Single, mscorlib">
+    <value>0.761</value>
+  </data>
+  <data name="txtExtended.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtExtended.Left" type="System.Single, mscorlib">
+    <value>5.75</value>
+  </data>
+  <data name="txtExtended.OutputFormat" xml:space="preserve">
+    <value>$###,##0.00</value>
+  </data>
+  <data name="txtExtended.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 0</value>
+  </data>
+  <data name="txtExtended.Text" xml:space="preserve">
+    <value>Extended</value>
+  </data>
+  <data name="txtExtended.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtExtended.Width" type="System.Single, mscorlib">
+    <value>0.74</value>
+  </data>
+  <data name="txtPriceDiscount.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtPriceDiscount.Left" type="System.Single, mscorlib">
+    <value>5.07300043</value>
+  </data>
+  <data name="txtPriceDiscount.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="txtPriceDiscount.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 0</value>
+  </data>
+  <data name="txtPriceDiscount.Text" xml:space="preserve">
+    <value>Price Discount</value>
+  </data>
+  <data name="txtPriceDiscount.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtPriceDiscount.Width" type="System.Single, mscorlib">
+    <value>0.677</value>
+  </data>
+  <data name="lblNorthWind.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblNorthWind.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNorthWind.Left" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblNorthWind.Style" xml:space="preserve">
+    <value>background-color: LightCyan; font-size: 20.5pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblNorthWind.Text" xml:space="preserve">
+    <value>NorthWind</value>
+  </data>
+  <data name="lblNorthWind.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblNorthWind.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblTraders.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblTraders.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTraders.Left" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblTraders.Style" xml:space="preserve">
+    <value>background-color: LightCyan; font-size: 20.5pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblTraders.Text" xml:space="preserve">
+    <value>Traders</value>
+  </data>
+  <data name="lblTraders.Top" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblTraders.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblNWAddr1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblNWAddr1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNWAddr1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblNWAddr1.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-style: italic; ddo-char-set: 0</value>
+  </data>
+  <data name="lblNWAddr1.Text" xml:space="preserve">
+    <value>One Portals Way</value>
+  </data>
+  <data name="lblNWAddr1.Top" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="lblNWAddr1.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblNWAddr2.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblNWAddr2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNWAddr2.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblNWAddr2.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-style: italic; ddo-char-set: 0</value>
+  </data>
+  <data name="lblNWAddr2.Text" xml:space="preserve">
+    <value>Twin Points WA  98156</value>
+  </data>
+  <data name="lblNWAddr2.Top" type="System.Single, mscorlib">
+    <value>0.950000048</value>
+  </data>
+  <data name="lblNWAddr2.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblInvoice.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblInvoice.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblInvoice.Left" type="System.Single, mscorlib">
+    <value>4.583333</value>
+  </data>
+  <data name="lblInvoice.Style" xml:space="preserve">
+    <value>background-color: DarkCyan; color: #FFFFFF; font-size: 20.5pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblInvoice.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="lblInvoice.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblInvoice.Width" type="System.Single, mscorlib">
+    <value>1.875</value>
+  </data>
+  <data name="lblOrderNum.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblOrderNum.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblOrderNum.Left" type="System.Single, mscorlib">
+    <value>4.583333</value>
+  </data>
+  <data name="lblOrderNum.Style" xml:space="preserve">
+    <value>font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="lblOrderNum.Text" xml:space="preserve">
+    <value>Order #:</value>
+  </data>
+  <data name="lblOrderNum.Top" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="lblOrderNum.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtOrderID.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtOrderID.Left" type="System.Single, mscorlib">
+    <value>5.458333</value>
+  </data>
+  <data name="txtOrderID.Style" xml:space="preserve">
+    <value>text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="txtOrderID.Text" xml:space="preserve">
+    <value>OrderID</value>
+  </data>
+  <data name="txtOrderID.Top" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="txtOrderID.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblOrderDate.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblOrderDate.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblOrderDate.Left" type="System.Single, mscorlib">
+    <value>4.583</value>
+  </data>
+  <data name="lblOrderDate.Style" xml:space="preserve">
+    <value>font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="lblOrderDate.Text" xml:space="preserve">
+    <value>Order Date:</value>
+  </data>
+  <data name="lblOrderDate.Top" type="System.Single, mscorlib">
+    <value>0.700000048</value>
+  </data>
+  <data name="lblOrderDate.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtOrderDate.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtOrderDate.Left" type="System.Single, mscorlib">
+    <value>5.458</value>
+  </data>
+  <data name="txtOrderDate.OutputFormat" xml:space="preserve">
+    <value>M/d/yyyy</value>
+  </data>
+  <data name="txtOrderDate.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="txtOrderDate.Text" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="txtOrderDate.Top" type="System.Single, mscorlib">
+    <value>0.700000048</value>
+  </data>
+  <data name="txtOrderDate.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="imgLogo.Height" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="imgLogo.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="imgLogo.ImageData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
+        cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
+        b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
+        AQEBCQIAAAAAAAAAAAAAAO0NAADtDQAAAQEBAQoPAgAAAO0NAAACAOgNAAD/2P/gABBKRklGAAEBAQBg
+        AGAAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0
+        NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAFcAVwMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAA
+        AAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgj
+        QrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2
+        d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj
+        5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIE
+        BAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYn
+        KCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqi
+        o6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEA
+        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
+        FAH/2Qs=
+</value>
+  </data>
+  <data name="imgLogo.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="imgLogo.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="imgLogo.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblThankYou.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblThankYou.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblThankYou.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblThankYou.Style" xml:space="preserve">
+    <value>font-size: 12pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblThankYou.Text" xml:space="preserve">
+    <value>Thank you for your business</value>
+  </data>
+  <data name="lblThankYou.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblThankYou.Width" type="System.Single, mscorlib">
+    <value>6.6875</value>
+  </data>
+  <data name="lblBillTo.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblBillTo.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillTo.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblBillTo.Style" xml:space="preserve">
+    <value>background-color: DarkCyan; color: #FFFFFF; font-weight: bold; ddo-char-set: 0</value>
+  </data>
+  <data name="lblBillTo.Text" xml:space="preserve">
+    <value>Bill To</value>
+  </data>
+  <data name="lblBillTo.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblBillTo.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblShipTo.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblShipTo.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipTo.Left" type="System.Single, mscorlib">
+    <value>3.46875</value>
+  </data>
+  <data name="lblShipTo.Style" xml:space="preserve">
+    <value>background-color: DarkCyan; color: #FFFFFF; font-weight: bold; ddo-char-set: 0</value>
+  </data>
+  <data name="lblShipTo.Text" xml:space="preserve">
+    <value>Ship To</value>
+  </data>
+  <data name="lblShipTo.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblShipTo.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lneBillTo.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneBillTo.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneBillTo.Top" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lneBillTo.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lneShipTo.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneShipTo.Left" type="System.Single, mscorlib">
+    <value>3.46875</value>
+  </data>
+  <data name="lneShipTo.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lneShipTo.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtBillToCompany.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtBillToCompany.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtBillToCompany.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtBillToCompany.Text" xml:space="preserve">
+    <value>BillToCompany</value>
+  </data>
+  <data name="txtBillToCompany.Top" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="txtBillToCompany.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtBillToAddress.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtBillToAddress.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtBillToAddress.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtBillToAddress.Text" xml:space="preserve">
+    <value>BillToAddress</value>
+  </data>
+  <data name="txtBillToAddress.Top" type="System.Single, mscorlib">
+    <value>0.450000018</value>
+  </data>
+  <data name="txtBillToAddress.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtBillToCity.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtBillToCity.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtBillToCity.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtBillToCity.Text" xml:space="preserve">
+    <value>BillToCity</value>
+  </data>
+  <data name="txtBillToCity.Top" type="System.Single, mscorlib">
+    <value>0.650000036</value>
+  </data>
+  <data name="txtBillToCity.Width" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="txtBillToRegion.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtBillToRegion.Left" type="System.Single, mscorlib">
+    <value>1.437</value>
+  </data>
+  <data name="txtBillToRegion.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtBillToRegion.Text" xml:space="preserve">
+    <value>BillToRegion</value>
+  </data>
+  <data name="txtBillToRegion.Top" type="System.Single, mscorlib">
+    <value>0.650000036</value>
+  </data>
+  <data name="txtBillToRegion.Width" type="System.Single, mscorlib">
+    <value>1.5625</value>
+  </data>
+  <data name="txtBillToPostalCode.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtBillToPostalCode.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtBillToPostalCode.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtBillToPostalCode.Text" xml:space="preserve">
+    <value>BillToPostalCode</value>
+  </data>
+  <data name="txtBillToPostalCode.Top" type="System.Single, mscorlib">
+    <value>0.85</value>
+  </data>
+  <data name="txtBillToPostalCode.Width" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="txtBillToCountry.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtBillToCountry.Left" type="System.Single, mscorlib">
+    <value>1.437</value>
+  </data>
+  <data name="txtBillToCountry.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtBillToCountry.Text" xml:space="preserve">
+    <value>BillToCountry</value>
+  </data>
+  <data name="txtBillToCountry.Top" type="System.Single, mscorlib">
+    <value>0.85</value>
+  </data>
+  <data name="txtBillToCountry.Width" type="System.Single, mscorlib">
+    <value>1.5625</value>
+  </data>
+  <data name="txtShipToCompany.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipToCompany.Left" type="System.Single, mscorlib">
+    <value>3.46875</value>
+  </data>
+  <data name="txtShipToCompany.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipToCompany.Text" xml:space="preserve">
+    <value>ShipToCompany</value>
+  </data>
+  <data name="txtShipToCompany.Top" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="txtShipToCompany.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtShipToAddress.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipToAddress.Left" type="System.Single, mscorlib">
+    <value>3.469</value>
+  </data>
+  <data name="txtShipToAddress.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipToAddress.Text" xml:space="preserve">
+    <value>ShipToAddress</value>
+  </data>
+  <data name="txtShipToAddress.Top" type="System.Single, mscorlib">
+    <value>0.450000018</value>
+  </data>
+  <data name="txtShipToAddress.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtShipToCity.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipToCity.Left" type="System.Single, mscorlib">
+    <value>3.469</value>
+  </data>
+  <data name="txtShipToCity.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipToCity.Text" xml:space="preserve">
+    <value>ShipToCity</value>
+  </data>
+  <data name="txtShipToCity.Top" type="System.Single, mscorlib">
+    <value>0.650000036</value>
+  </data>
+  <data name="txtShipToCity.Width" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="txtShipToRegion.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipToRegion.Left" type="System.Single, mscorlib">
+    <value>4.906</value>
+  </data>
+  <data name="txtShipToRegion.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipToRegion.Text" xml:space="preserve">
+    <value>ShipToRegion</value>
+  </data>
+  <data name="txtShipToRegion.Top" type="System.Single, mscorlib">
+    <value>0.650000036</value>
+  </data>
+  <data name="txtShipToRegion.Width" type="System.Single, mscorlib">
+    <value>1.563</value>
+  </data>
+  <data name="txtShipToPostalCode.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipToPostalCode.Left" type="System.Single, mscorlib">
+    <value>3.469</value>
+  </data>
+  <data name="txtShipToPostalCode.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipToPostalCode.Text" xml:space="preserve">
+    <value>ShipToPostalCode</value>
+  </data>
+  <data name="txtShipToPostalCode.Top" type="System.Single, mscorlib">
+    <value>0.85</value>
+  </data>
+  <data name="txtShipToPostalCode.Width" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="txtShipToCountry.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipToCountry.Left" type="System.Single, mscorlib">
+    <value>4.906</value>
+  </data>
+  <data name="txtShipToCountry.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipToCountry.Text" xml:space="preserve">
+    <value>ShipToCountry</value>
+  </data>
+  <data name="txtShipToCountry.Top" type="System.Single, mscorlib">
+    <value>0.85</value>
+  </data>
+  <data name="txtShipToCountry.Width" type="System.Single, mscorlib">
+    <value>1.563</value>
+  </data>
+  <data name="txtSalesPerson.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtSalesPerson.Left" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtSalesPerson.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtSalesPerson.Text" xml:space="preserve">
+    <value>SalesPerson</value>
+  </data>
+  <data name="txtSalesPerson.Top" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="txtSalesPerson.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblSalesPerson.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblSalesPerson.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblSalesPerson.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblSalesPerson.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-weight: bold; ddo-char-set: 0</value>
+  </data>
+  <data name="lblSalesPerson.Text" xml:space="preserve">
+    <value>Sales Person:</value>
+  </data>
+  <data name="lblSalesPerson.Top" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="lblSalesPerson.Width" type="System.Single, mscorlib">
+    <value>0.938</value>
+  </data>
+  <data name="lblProductID.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblProductID.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProductID.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblProductID.Style" xml:space="preserve">
+    <value>background-color: LightSeaGreen; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblProductID.Text" xml:space="preserve">
+    <value>Product ID</value>
+  </data>
+  <data name="lblProductID.Top" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="lblProductID.Width" type="System.Single, mscorlib">
+    <value>0.688</value>
+  </data>
+  <data name="lblProductName.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblProductName.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProductName.Left" type="System.Single, mscorlib">
+    <value>0.6875</value>
+  </data>
+  <data name="lblProductName.Style" xml:space="preserve">
+    <value>background-color: LightSeaGreen; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblProductName.Text" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lblProductName.Top" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="lblProductName.Width" type="System.Single, mscorlib">
+    <value>2.1245</value>
+  </data>
+  <data name="lblQty.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblQty.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblQty.Left" type="System.Single, mscorlib">
+    <value>2.812</value>
+  </data>
+  <data name="lblQty.Style" xml:space="preserve">
+    <value>background-color: LightSeaGreen; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblQty.Text" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="lblQty.Top" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="lblQty.Width" type="System.Single, mscorlib">
+    <value>0.5009999</value>
+  </data>
+  <data name="lblUnitPrice.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblUnitPrice.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblUnitPrice.Left" type="System.Single, mscorlib">
+    <value>3.3125</value>
+  </data>
+  <data name="lblUnitPrice.Style" xml:space="preserve">
+    <value>background-color: LightSeaGreen; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblUnitPrice.Text" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="lblUnitPrice.Top" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="lblUnitPrice.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblDiscount.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblDiscount.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDiscount.Left" type="System.Single, mscorlib">
+    <value>4.3125</value>
+  </data>
+  <data name="lblDiscount.Style" xml:space="preserve">
+    <value>background-color: LightSeaGreen; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblDiscount.Text" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="lblDiscount.Top" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="lblDiscount.Width" type="System.Single, mscorlib">
+    <value>0.761</value>
+  </data>
+  <data name="lblShipped.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblShipped.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipped.Left" type="System.Single, mscorlib">
+    <value>3.38500023</value>
+  </data>
+  <data name="lblShipped.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-weight: bold; ddo-char-set: 0</value>
+  </data>
+  <data name="lblShipped.Text" xml:space="preserve">
+    <value>Shipped:</value>
+  </data>
+  <data name="lblShipped.Top" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="lblShipped.Width" type="System.Single, mscorlib">
+    <value>0.646</value>
+  </data>
+  <data name="txtShipDate.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtShipDate.Left" type="System.Single, mscorlib">
+    <value>4.03125</value>
+  </data>
+  <data name="txtShipDate.OutputFormat" xml:space="preserve">
+    <value>M/d/yyyy</value>
+  </data>
+  <data name="txtShipDate.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipDate.Text" xml:space="preserve">
+    <value>ShipDate</value>
+  </data>
+  <data name="txtShipDate.Top" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="txtShipDate.Width" type="System.Single, mscorlib">
+    <value>0.8125</value>
+  </data>
+  <data name="lblShippedVia.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblShippedVia.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShippedVia.Left" type="System.Single, mscorlib">
+    <value>4.90625</value>
+  </data>
+  <data name="lblShippedVia.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-weight: bold; ddo-char-set: 0</value>
+  </data>
+  <data name="lblShippedVia.Text" xml:space="preserve">
+    <value>Via:</value>
+  </data>
+  <data name="lblShippedVia.Top" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="lblShippedVia.Width" type="System.Single, mscorlib">
+    <value>0.313</value>
+  </data>
+  <data name="txtShipper.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipper.Left" type="System.Single, mscorlib">
+    <value>5.21875</value>
+  </data>
+  <data name="txtShipper.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 0</value>
+  </data>
+  <data name="txtShipper.Text" xml:space="preserve">
+    <value>Shipper</value>
+  </data>
+  <data name="txtShipper.Top" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="txtShipper.Width" type="System.Single, mscorlib">
+    <value>1.25</value>
+  </data>
+  <data name="lblPriceDiscount.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblPriceDiscount.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPriceDiscount.Left" type="System.Single, mscorlib">
+    <value>5.07300043</value>
+  </data>
+  <data name="lblPriceDiscount.Style" xml:space="preserve">
+    <value>background-color: LightSeaGreen; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblPriceDiscount.Text" xml:space="preserve">
+    <value>Price Discount</value>
+  </data>
+  <data name="lblPriceDiscount.Top" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="lblPriceDiscount.Width" type="System.Single, mscorlib">
+    <value>0.677</value>
+  </data>
+  <data name="lblTotal.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblTotal.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTotal.Left" type="System.Single, mscorlib">
+    <value>5.75</value>
+  </data>
+  <data name="lblTotal.Style" xml:space="preserve">
+    <value>background-color: LightSeaGreen; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: center; ddo-char-set: 0</value>
+  </data>
+  <data name="lblTotal.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="lblTotal.Top" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="lblTotal.Width" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="txtDiscountTotal.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtDiscountTotal.Left" type="System.Single, mscorlib">
+    <value>5.5625</value>
+  </data>
+  <data name="txtDiscountTotal.OutputFormat" xml:space="preserve">
+    <value>$###,##0.00</value>
+  </data>
+  <data name="txtDiscountTotal.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="txtDiscountTotal.SummaryGroup" xml:space="preserve">
+    <value>ghOrderID</value>
+  </data>
+  <data name="txtDiscountTotal.Text" xml:space="preserve">
+    <value>DiscountTotal</value>
+  </data>
+  <data name="txtDiscountTotal.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDiscountTotal.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtTotal.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtTotal.Left" type="System.Single, mscorlib">
+    <value>5.56200027</value>
+  </data>
+  <data name="txtTotal.OutputFormat" xml:space="preserve">
+    <value>$###,##0.00</value>
+  </data>
+  <data name="txtTotal.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="txtTotal.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="txtTotal.Top" type="System.Single, mscorlib">
+    <value>0.6</value>
+  </data>
+  <data name="txtTotal.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtFreight.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtFreight.Left" type="System.Single, mscorlib">
+    <value>5.56200027</value>
+  </data>
+  <data name="txtFreight.OutputFormat" xml:space="preserve">
+    <value>$###,##0.00</value>
+  </data>
+  <data name="txtFreight.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="txtFreight.SummaryGroup" xml:space="preserve">
+    <value>ghOrderID</value>
+  </data>
+  <data name="txtFreight.Text" xml:space="preserve">
+    <value>Freight</value>
+  </data>
+  <data name="txtFreight.Top" type="System.Single, mscorlib">
+    <value>0.4</value>
+  </data>
+  <data name="txtFreight.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtSubTotal.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtSubTotal.Left" type="System.Single, mscorlib">
+    <value>5.56200027</value>
+  </data>
+  <data name="txtSubTotal.OutputFormat" xml:space="preserve">
+    <value>$###,##0.00</value>
+  </data>
+  <data name="txtSubTotal.Style" xml:space="preserve">
+    <value>font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="txtSubTotal.SummaryGroup" xml:space="preserve">
+    <value>ghOrderID</value>
+  </data>
+  <data name="txtSubTotal.Text" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="txtSubTotal.Top" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtSubTotal.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="lblDiscountTotal.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblDiscountTotal.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDiscountTotal.Left" type="System.Single, mscorlib">
+    <value>4.4375</value>
+  </data>
+  <data name="lblDiscountTotal.Style" xml:space="preserve">
+    <value>background-color: DarkCyan; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="lblDiscountTotal.Text" xml:space="preserve">
+    <value>Discount Total </value>
+  </data>
+  <data name="lblDiscountTotal.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblDiscountTotal.Width" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="lblSubTotal.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblSubTotal.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblSubTotal.Left" type="System.Single, mscorlib">
+    <value>4.43700027</value>
+  </data>
+  <data name="lblSubTotal.Style" xml:space="preserve">
+    <value>background-color: DarkCyan; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="lblSubTotal.Text" xml:space="preserve">
+    <value>Sub Total </value>
+  </data>
+  <data name="lblSubTotal.Top" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblSubTotal.Width" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="lblFreight.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblFreight.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblFreight.Left" type="System.Single, mscorlib">
+    <value>4.43700027</value>
+  </data>
+  <data name="lblFreight.Style" xml:space="preserve">
+    <value>background-color: DarkCyan; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="lblFreight.Text" xml:space="preserve">
+    <value>Freight</value>
+  </data>
+  <data name="lblFreight.Top" type="System.Single, mscorlib">
+    <value>0.4</value>
+  </data>
+  <data name="lblFreight.Width" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="lblGrandTotal.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblGrandTotal.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblGrandTotal.Left" type="System.Single, mscorlib">
+    <value>4.43700027</value>
+  </data>
+  <data name="lblGrandTotal.Style" xml:space="preserve">
+    <value>background-color: DarkCyan; color: #FFFFFF; font-size: 10pt; font-weight: bold; text-align: right; ddo-char-set: 0</value>
+  </data>
+  <data name="lblGrandTotal.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="lblGrandTotal.Top" type="System.Single, mscorlib">
+    <value>0.6</value>
+  </data>
+  <data name="lblGrandTotal.Width" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Script" xml:space="preserve">
+    <value>public void GFOrderID_BeforePrint()
+{
+((TextBox)rpt.Sections["GFOrderID"].Controls["txtTotal"]).Value = (System.Double)((TextBox)rpt.Sections["GFOrderID"].Controls["txtFreight"]).Value + (System.Double)((TextBox)rpt.Sections["GFOrderID"].Controls["txtSubTotal"]).Value;
+}</value>
+  </data>
+</root>

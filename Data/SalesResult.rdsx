@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Sales</Name>
+    <ConnectionProperties>
+        <ConnectString>data source=C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\SalesResult.mdb;provider=Microsoft.Jet.OLEDB.4.0;</ConnectString>
+        <Extension>OLEDB</Extension>
+    </ConnectionProperties>
+    <Transaction>true</Transaction>
+</RptDataSource>

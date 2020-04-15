@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData("Title")</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="content-wrapper">
+                <div class=".float-left">
+                    <p class="site-title">@Html.ActionLink("NorthWind Customers", "Index", "Home")
+                    </p>
+                </div>
+           </div>
+        </header>
+         <div id="main">
+            @RenderBody()
+        </div>
+</body>
+</html>

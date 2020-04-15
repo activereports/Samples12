@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ActiveReportsWithMVC5", "ActiveReportsWithMVC5\ActiveReportsWithMVC5.vbproj", "{31EAB995-71C3-4A19-8782-0B2DB613B6C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31EAB995-71C3-4A19-8782-0B2DB613B6C0}.Debug|x86.ActiveCfg = Debug|x86
+		{31EAB995-71C3-4A19-8782-0B2DB613B6C0}.Debug|x86.Build.0 = Debug|x86
+		{31EAB995-71C3-4A19-8782-0B2DB613B6C0}.Release|x86.ActiveCfg = Release|x86
+		{31EAB995-71C3-4A19-8782-0B2DB613B6C0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

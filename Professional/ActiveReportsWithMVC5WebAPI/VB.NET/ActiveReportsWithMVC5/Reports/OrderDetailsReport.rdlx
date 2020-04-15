@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>9in</Height>
+		<ReportItems>
+			<Textbox Name="TextBox1">
+				<CanGrow>true</CanGrow>
+				<Height>0.25in</Height>
+				<Left>0.04in</Left>
+				<Style>
+					<FontSize>14pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Center</TextAlign>
+				</Style>
+				<Top>0.125in</Top>
+				<Value>="Orders for " &amp; First(Fields!FirstName.Value, "CustomerNames") &amp; " " &amp; First(Fields!MiddleInitial.Value, "CustomerNames") &amp; " " &amp; First(Fields!LastName.Value, "CustomerNames")</Value>
+				<Width>6.9167in</Width>
+				<ZIndex>3</ZIndex>
+			</Textbox>
+			<Table Name="Table2">
+				<DataSetName>OrdersDataSet</DataSetName>
+				<Header>
+					<TableRows>
+						<TableRow>
+							<Height>0.25in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TxtHdr_OrderID">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox20</DataElementName>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+											</Style>
+											<Value>Order ID</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TxtHdr_ProductID">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox35</DataElementName>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+											</Style>
+											<Value>Product ID</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TxtHdr_UnitPrice">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox38</DataElementName>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>Unit Price</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TxtHdr_Quantity">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox41</DataElementName>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>Quantity</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TxtHdr_Discount">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox21</DataElementName>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>Discount</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TxtHdr_Total">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox21</DataElementName>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>Total</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Header>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>0.260417in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox23">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>WhiteSmoke</BackgroundColor>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Txt_ProductID">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox36</DataElementName>
+											<Style>
+												<BackgroundColor>WhiteSmoke</BackgroundColor>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+											</Style>
+											<Value>=Fields!ProductID.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Txt_UnitPrice">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox39</DataElementName>
+											<Style>
+												<BackgroundColor>WhiteSmoke</BackgroundColor>
+												<Format>c</Format>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>=Fields!Price.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Txt_Quantity">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox42</DataElementName>
+											<Style>
+												<BackgroundColor>WhiteSmoke</BackgroundColor>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>=Fields!Quantity.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Txt_Discount">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox24</DataElementName>
+											<Style>
+												<BackgroundColor>WhiteSmoke</BackgroundColor>
+												<Format>p</Format>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>=Fields!Discount.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Txt_Total">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox47</DataElementName>
+											<Style>
+												<BackgroundColor>WhiteSmoke</BackgroundColor>
+												<Format>c</Format>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>=Fields!Total.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<Footer>
+					<TableRows>
+						<TableRow>
+							<Height>0.270832in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox6">
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox37</DataElementName>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value>Grand total:</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox37">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox40">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<Format>c</Format>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox43">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>=Sum(Fields!Quantity.Value)</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox33">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<Format>p</Format>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox5">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>DimGray</BackgroundColor>
+												<Color>White</Color>
+												<FontWeight>700</FontWeight>
+												<Format>c</Format>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>=Sum(Fields!Total.Value)</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Footer>
+				<Height>1.28125in</Height>
+				<Left>0.04166667in</Left>
+				<PageBreakAtEnd>true</PageBreakAtEnd>
+				<TableColumns>
+					<TableColumn>
+						<Width>1.030141in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.177305in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.177305in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.177305in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.177305in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.177306in</Width>
+					</TableColumn>
+				</TableColumns>
+				<TableGroups>
+					<TableGroup>
+						<Header>
+							<TableRows>
+								<TableRow>
+									<Height>0.25in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TxtGrp_OrderID">
+													<CanGrow>true</CanGrow>
+													<DataElementName>TextBox44</DataElementName>
+													<Style>
+														<BackgroundColor>Gainsboro</BackgroundColor>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Left</TextAlign>
+													</Style>
+													<Value>=Fields!OrderID.Value</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox45">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<BackgroundColor>Gainsboro</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox46">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<BackgroundColor>Gainsboro</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox47">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<BackgroundColor>Gainsboro</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox48">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<BackgroundColor>Gainsboro</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox2">
+													<CanGrow>true</CanGrow>
+													<DataElementName>TextBox47</DataElementName>
+													<Style>
+														<BackgroundColor>Gainsboro</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Header>
+						<Footer>
+							<TableRows>
+								<TableRow>
+									<Height>0.25in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox50">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<BackgroundColor>LightGray</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value>Subtotal:</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="txtGrpFtr_Total">
+													<CanGrow>true</CanGrow>
+													<DataElementName>TextBox21</DataElementName>
+													<Style>
+														<BackgroundColor>LightGray</BackgroundColor>
+														<FontWeight>700</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Left</TextAlign>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox4">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<BackgroundColor>LightGray</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TxtGrpFtr_QtySum">
+													<CanGrow>true</CanGrow>
+													<DataElementName>TextBox53</DataElementName>
+													<Style>
+														<BackgroundColor>LightGray</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>=Sum(Fields!Quantity.Value)</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox3">
+													<CanGrow>true</CanGrow>
+													<Style>
+														<BackgroundColor>LightGray</BackgroundColor>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="txtGrpFtr_TotalSum">
+													<CanGrow>true</CanGrow>
+													<DataElementName>TextBox47</DataElementName>
+													<Style>
+														<BackgroundColor>LightGray</BackgroundColor>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<Value>=Sum( Fields!Total.Value)</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Footer>
+						<Grouping Name="Table2_Group1">
+							<GroupExpressions>
+								<GroupExpression>=Fields!OrderId.Value</GroupExpression>
+							</GroupExpressions>
+							<Label>=Fields!OrderId.Value</Label>
+						</Grouping>
+					</TableGroup>
+				</TableGroups>
+				<Top>0.6041667in</Top>
+				<Width>6.916667in</Width>
+				<ZIndex>2</ZIndex>
+			</Table>
+		</ReportItems>
+	</Body>
+	<BottomMargin>0.25in</BottomMargin>
+	<LeftMargin>0.75in</LeftMargin>
+	<PageHeight>11in</PageHeight>
+	<PageWidth>8.5in</PageWidth>
+	<RightMargin>0.75in</RightMargin>
+	<TopMargin>0.25in</TopMargin>
+	<Width>7in</Width>
+	<ReportParameters>
+		<ReportParameter Name="CustomerID">
+			<DataType>String</DataType>
+			<Prompt>CustomerID</Prompt>
+			<Hidden>true</Hidden>
+		</ReportParameter>
+	</ReportParameters>
+	<DataSources>
+		<DataSource Name="OrdersDataSource">
+			<ConnectionProperties>
+				<ConnectString>provider=Microsoft.Jet.OLEDB.4.0;data source=C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\Reels.mdb;</ConnectString>
+				<DataProvider>OLEDB</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="OrdersDataSet">
+			<Fields>
+				<Field Name="OrderID">
+					<DataField>SalesID</DataField>
+				</Field>
+				<Field Name="ProductID">
+					<DataField>ProductID</DataField>
+				</Field>
+				<Field Name="Quantity">
+					<DataField>Quantity</DataField>
+				</Field>
+				<Field Name="Price">
+					<DataField>Price</DataField>
+				</Field>
+				<Field Name="Discount">
+					<DataField>Discount</DataField>
+				</Field>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="Total">
+					<Value>=Fields!Price.Value * Fields!Quantity.Value - Fields!Discount.Value</Value>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>Select * from CustomerOrders where CustomerID=[?];</CommandText>
+				<DataSourceName>OrdersDataSource</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="CustomerID">
+						<Value>=Parameters!CustomerID.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+		<DataSet Name="CustomerNames">
+			<Fields>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="FirstName">
+					<DataField>FirstName</DataField>
+				</Field>
+				<Field Name="LastName">
+					<DataField>LastName</DataField>
+				</Field>
+				<Field Name="MiddleInitial">
+					<DataField>MiddleInitial</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>select CustomerID, FirstName,LastName,MiddleInitial from CustomerOrders where CustomerID = @CID</CommandText>
+				<DataSourceName>OrdersDataSource</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="CID">
+						<Value>=Parameters!CustomerID.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

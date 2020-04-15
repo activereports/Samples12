@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using System.IO;
+namespace GrapeCity.ActiveReports.Samples.ObjectDataSource
+{
+	partial class MainForm : Form
+	{
+		private readonly IList<Year> _dataList;
+		public MainForm()
+		{
+			_dataList = DataLayer.LoadData();
+			InitializeComponent();
+		}
+		// The handler of <see cref="PageDocument.LocateDataSource"/> that returns appropriate data for a report.
+		private void OnLocateDataSource(object sender, LocateDataSourceEventArgs args)
+		{
+			if (args.DataSetName == "Years") // ObjectsReport :bind collection to report
+			{
+				args.Data = _dataList;
+			}
+			else if (args.DataSetName == "Movies") // SubObjectsReport :bind subcollection to subreport
+			{
+				var defaultValue = 1970;
+				var parameterValue = args.Report.Parameters["YearReleased"].Values[0].Value ?? defaultValue;
+				var yearReleased = int.Parse(parameterValue.ToString());
+				for (int i = 0; i < _dataList.Count; i++)
+					if (_dataList[i].YearReleased == yearReleased)
+					{
+						args.Data = _dataList[i].Movies;
+						break;
+					}
+			}
+		}
+		// Loads and shows the report.
+		private void MainForm_Load(object sender, EventArgs e)
+		{
+			FileInfo rptPath = new FileInfo(@"..\..\ObjectsReport.rdlx");
+			PageReport pageReport = new PageReport(rptPath);
+			pageReport.Document.LocateDataSource += new LocateDataSourceEventHandler(OnLocateDataSource);
+			reportPreview.LoadDocument(pageReport.Document);
+		}
+	}
+}

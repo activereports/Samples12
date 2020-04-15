@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblNorthWind.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblNorthWind.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNorthWind.Left" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="lblNorthWind.Style" xml:space="preserve">
+    <value>background-color: rgb(255,255,192); font-size: 16pt; text-align: center</value>
+  </data>
+  <data name="lblNorthWind.Text" xml:space="preserve">
+    <value>NorthWindに</value>
+  </data>
+  <data name="lblNorthWind.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="lblNorthWind.Width" type="System.Single, mscorlib">
+    <value>1.25</value>
+  </data>
+  <data name="lblTraders.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblTraders.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTraders.Left" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="lblTraders.Style" xml:space="preserve">
+    <value>background-color: rgb(255,255,192); font-size: 16pt; text-align: center</value>
+  </data>
+  <data name="lblTraders.Text" xml:space="preserve">
+    <value>Traders</value>
+  </data>
+  <data name="lblTraders.Top" type="System.Single, mscorlib">
+    <value>0.3125</value>
+  </data>
+  <data name="lblTraders.Width" type="System.Single, mscorlib">
+    <value>1.25</value>
+  </data>
+  <data name="lblAddr1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblAddr1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAddr1.Left" type="System.Single, mscorlib">
+    <value>1.4375</value>
+  </data>
+  <data name="lblAddr1.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right</value>
+  </data>
+  <data name="lblAddr1.Text" xml:space="preserve">
+    <value>One Portals Way</value>
+  </data>
+  <data name="lblAddr1.Top" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="lblAddr1.Width" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblAddr2.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblAddr2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAddr2.Left" type="System.Single, mscorlib">
+    <value>1.437</value>
+  </data>
+  <data name="lblAddr2.Style" xml:space="preserve">
+    <value>font-size: 10pt; text-align: right</value>
+  </data>
+  <data name="lblAddr2.Text" xml:space="preserve">
+    <value>Twin Points WA  98156</value>
+  </data>
+  <data name="lblAddr2.Top" type="System.Single, mscorlib">
+    <value>0.325000018</value>
+  </data>
+  <data name="lblAddr2.Width" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="linSep1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linSep1.Left" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="linSep1.Top" type="System.Single, mscorlib">
+    <value>0.625</value>
+  </data>
+  <data name="linSep1.Width" type="System.Single, mscorlib">
+    <value>3.125</value>
+  </data>
+  <data name="txtName.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtName.Left" type="System.Single, mscorlib">
+    <value>0.0620000027</value>
+  </data>
+  <data name="txtName.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; font-weight: bold</value>
+  </data>
+  <data name="txtName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="txtName.Top" type="System.Single, mscorlib">
+    <value>0.66200006</value>
+  </data>
+  <data name="txtName.Width" type="System.Single, mscorlib">
+    <value>3.125</value>
+  </data>
+  <data name="txtAddress.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtAddress.Left" type="System.Single, mscorlib">
+    <value>0.063</value>
+  </data>
+  <data name="txtAddress.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; font-weight: bold</value>
+  </data>
+  <data name="txtAddress.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="txtAddress.Top" type="System.Single, mscorlib">
+    <value>0.862000048</value>
+  </data>
+  <data name="txtAddress.Width" type="System.Single, mscorlib">
+    <value>3.125</value>
+  </data>
+  <data name="txtCity.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtCity.Left" type="System.Single, mscorlib">
+    <value>0.063</value>
+  </data>
+  <data name="txtCity.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; font-weight: bold</value>
+  </data>
+  <data name="txtCity.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="txtCity.Top" type="System.Single, mscorlib">
+    <value>1.062</value>
+  </data>
+  <data name="txtCity.Width" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="txtRegion.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtRegion.Left" type="System.Single, mscorlib">
+    <value>1.87500012</value>
+  </data>
+  <data name="txtRegion.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; font-weight: bold</value>
+  </data>
+  <data name="txtRegion.Text" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="txtRegion.Top" type="System.Single, mscorlib">
+    <value>1.062</value>
+  </data>
+  <data name="txtRegion.Width" type="System.Single, mscorlib">
+    <value>1.3125</value>
+  </data>
+  <data name="txtPostalCode.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtPostalCode.Left" type="System.Single, mscorlib">
+    <value>0.063</value>
+  </data>
+  <data name="txtPostalCode.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; font-weight: bold</value>
+  </data>
+  <data name="txtPostalCode.Text" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="txtPostalCode.Top" type="System.Single, mscorlib">
+    <value>1.26200008</value>
+  </data>
+  <data name="txtPostalCode.Width" type="System.Single, mscorlib">
+    <value>1.0625</value>
+  </data>
+  <data name="txtCountry.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtCountry.Left" type="System.Single, mscorlib">
+    <value>1.187</value>
+  </data>
+  <data name="txtCountry.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; font-weight: bold</value>
+  </data>
+  <data name="txtCountry.Text" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="txtCountry.Top" type="System.Single, mscorlib">
+    <value>1.26200008</value>
+  </data>
+  <data name="txtCountry.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

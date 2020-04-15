@@ -1,0 +1,1299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblPrevQTD.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblCategory.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblYTD.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProduct.Text" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="lblYTDSales.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDetUnits.Width" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="txtCatQTDSales.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="lblNorthWind.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWkUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="txtCatWkUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblYTD.Left" type="System.Single, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtPQTDChange.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtYTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="txtQTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="txtCAtWkSales.Left" type="System.Single, mscorlib">
+    <value>3.625</value>
+  </data>
+  <data name="lblQTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="txtYTDSales.Left" type="System.Single, mscorlib">
+    <value>7.4375</value>
+  </data>
+  <data name="txtCatMTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatPQTDChange.Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="txtCatPQTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtDetUnits.Text" xml:space="preserve">
+    <value>DetUnits</value>
+  </data>
+  <data name="imgLogoSm.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="lblPQTDChange.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTraders.Text" xml:space="preserve">
+    <value>Traders</value>
+  </data>
+  <data name="txtDetProduct.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblWkSales.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCatYTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="txtCatYTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="Shape2.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtWkUnits.Width" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblTraders.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblYTD.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtMTDUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Line3.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPQTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="imgLogoSm.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPrevQTD.Text" xml:space="preserve">
+    <value>Last Year Qtr-to-Date</value>
+  </data>
+  <data name="lblPQTDChange.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblCurrentWeek.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtMTDSales.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtCatPQTDChange.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="lblYTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="txtMTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtPQTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="lblTitle2.Height" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="lblMTD.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblNorthWind.Text" xml:space="preserve">
+    <value>NorthWind</value>
+  </data>
+  <data name="lblTitle2.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtYTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="lblYTD.Width" type="System.Single, mscorlib">
+    <value>1.3125</value>
+  </data>
+  <data name="lblMTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="txtMTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="lblProduct.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCategoryName.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblNorthWind.Height" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="txtCAtWkSales.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="txtCatQTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtDetUnits.Left" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="lblReportDate.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCatYTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="lblCurrentWeek.Left" type="System.Single, mscorlib">
+    <value>3.25</value>
+  </data>
+  <data name="lblPQTDSales.Left" type="System.Single, mscorlib">
+    <value>8.3125</value>
+  </data>
+  <data name="imgLogoSm.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="txtMTDUnits.Left" type="System.Single, mscorlib">
+    <value>4.375</value>
+  </data>
+  <data name="txtCatPQTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="Line2.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTraders.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblYTDUnits.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDetProduct.Text" xml:space="preserve">
+    <value>DetProduct</value>
+  </data>
+  <data name="txtDetUnits.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCatWkUnits.Width" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblQTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="txtCatWkUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtCAtWkSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="lblWkSales.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="imgLogoSm.Height" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtCatQTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="lblWkUnits.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDetSales.Text" xml:space="preserve">
+    <value>DetSales</value>
+  </data>
+  <data name="lblQTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="Shape2.Width" type="System.Single, mscorlib">
+    <value>9.9375</value>
+  </data>
+  <data name="lblQTDSales.Text" xml:space="preserve">
+    <value>Net Sales</value>
+  </data>
+  <data name="txtQTDUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtYTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtWkUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="txtWkUnits.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCatMTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtQTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="lblTitle2.Width" type="System.Single, mscorlib">
+    <value>4.25</value>
+  </data>
+  <data name="lblQTD.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDetSales.Width" type="System.Single, mscorlib">
+    <value>0.625</value>
+  </data>
+  <data name="txtQTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCAtWkSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="lblPQTDSales.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMTD.Text" xml:space="preserve">
+    <value>Month-to-Date</value>
+  </data>
+  <data name="imgLogoSm.Left" type="System.Single, mscorlib">
+    <value>7.25</value>
+  </data>
+  <data name="txtWkUnits.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="lblCurrentWeek.Width" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="txtProduct.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatMTDUnits.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="txtWkSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="txtCatPQTDSales.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="lblPQTDChange.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblReportDate.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCatMTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="lblMTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtDetProduct.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatQTDUnits.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="txtProduct.Text" xml:space="preserve">
+    <value>ProductName</value>
+  </data>
+  <data name="lblCategory.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPrevQTD.Style" xml:space="preserve">
+    <value>color: rgb(255,255,255); text-align: center</value>
+  </data>
+  <data name="lblPrevQTD.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblProduct.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCategoryName.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="txtCAtWkSales.Width" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="lblPrevQTD.Left" type="System.Single, mscorlib">
+    <value>8.3125</value>
+  </data>
+  <data name="txtCatYTDUnits.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="txtCatPQTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtCAtWkSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtWkSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatQTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="lblTitle1.Height" type="System.Single, mscorlib">
+    <value>0.5625</value>
+  </data>
+  <data name="Line1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Shape1.Height" type="System.Single, mscorlib">
+    <value>1.125</value>
+  </data>
+  <data name="lblTitle1.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="lblTitle2.Style" xml:space="preserve">
+    <value>font-size: 22pt; vertical-align: bottom</value>
+  </data>
+  <data name="txtPQTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="txtCAtWkSales.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="lblMTDSales.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="lblPQTDChange.Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="txtQTDSales.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblTitleLine.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblYTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="lblYTDSales.Text" xml:space="preserve">
+    <value>Net Sales</value>
+  </data>
+  <data name="txtWkSales.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblYTDUnits.Left" type="System.Single, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtWkSales.Width" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="txtPQTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="txtMTDUnits.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDetSales.Style" xml:space="preserve">
+    <value>font-size: 8.5pt</value>
+  </data>
+  <data name="lblMTDSales.Text" xml:space="preserve">
+    <value>Net Sales</value>
+  </data>
+  <data name="txtCatYTDSales.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="lblCategory.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtCatMTDSales.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="lblQTD.Style" xml:space="preserve">
+    <value>color: rgb(255,255,255); text-align: center</value>
+  </data>
+  <data name="txtMTDSales.Left" type="System.Single, mscorlib">
+    <value>4.75</value>
+  </data>
+  <data name="lblCurrentWeek.Text" xml:space="preserve">
+    <value>Current Week</value>
+  </data>
+  <data name="lblCurrentWeek.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMTDSales.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="Line1.Width" type="System.Single, mscorlib">
+    <value>8.3125</value>
+  </data>
+  <data name="lblCategory.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblYTDSales.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtDetOrderDate.Text" xml:space="preserve">
+    <value>DetOrderDate</value>
+  </data>
+  <data name="lblWkSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatMTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblTitle1.Width" type="System.Single, mscorlib">
+    <value>1.5625</value>
+  </data>
+  <data name="txtPQTDSales.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCatPQTDChange.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblTitle2.Text" xml:space="preserve">
+    <value>Weekly Sales Report</value>
+  </data>
+  <data name="lblQTD.Text" xml:space="preserve">
+    <value>Qtr-to-Date</value>
+  </data>
+  <data name="lblMTDSales.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblReportDate.Left" type="System.Single, mscorlib">
+    <value>1.6875</value>
+  </data>
+  <data name="txtCatMTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="lblReportDate.Style" xml:space="preserve">
+    <value>font-size: 8.5pt</value>
+  </data>
+  <data name="lblYTD.Style" xml:space="preserve">
+    <value>color: rgb(255,255,255); text-align: center</value>
+  </data>
+  <data name="txtCategoryName.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTitle1.Left" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="txtDetOrderDate.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCategoryName.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblWkUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblPQTDSales.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblQTD.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblWkSales.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatWkUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="lblMTD.Left" type="System.Single, mscorlib">
+    <value>4.375</value>
+  </data>
+  <data name="txtWkUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtCatMTDUnits.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="lblWkUnits.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="txtPQTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblQTDSales.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="txtCatPQTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="txtCatYTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtYTDSales.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="lblPrevQTD.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtCatQTDSales.Left" type="System.Single, mscorlib">
+    <value>6.0625</value>
+  </data>
+  <data name="Line3.Top" type="System.Single, mscorlib">
+    <value>0.201</value>
+  </data>
+  <data name="lblNorthWind.Top" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="txtMTDUnits.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="lblTitle1.Style" xml:space="preserve">
+    <value>font-size: 28pt; font-weight: bold; vertical-align: bottom</value>
+  </data>
+  <data name="txtDetProduct.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="lblWkSales.Text" xml:space="preserve">
+    <value>Net Sales</value>
+  </data>
+  <data name="txtCatQTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblPQTDSales.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="lblYTDUnits.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblWkUnits.Width" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="txtQTDSales.Left" type="System.Single, mscorlib">
+    <value>6.0625</value>
+  </data>
+  <data name="lblPQTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="txtPQTDChange.OutputFormat" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="txtMTDSales.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCatQTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtCatMTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtQTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="txtWkSales.Left" type="System.Single, mscorlib">
+    <value>3.625</value>
+  </data>
+  <data name="txtQTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtPQTDChange.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtWkUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtCatPQTDSales.Left" type="System.Single, mscorlib">
+    <value>8.3125</value>
+  </data>
+  <data name="lblWkSales.Width" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="txtCatMTDSales.Left" type="System.Single, mscorlib">
+    <value>4.75</value>
+  </data>
+  <data name="txtQTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="Line3.Width" type="System.Single, mscorlib">
+    <value>8.3125</value>
+  </data>
+  <data name="Shape1.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Line2.Top" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblMTD.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCatQTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="lblPQTDChange.Left" type="System.Single, mscorlib">
+    <value>9.25</value>
+  </data>
+  <data name="txtCatQTDSales.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblQTDUnits.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCategoryName.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="lblTitleLine.Left" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="lblYTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtWkSales.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="lblTitle1.Text" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="lblYTDSales.Left" type="System.Single, mscorlib">
+    <value>7.4375</value>
+  </data>
+  <data name="lblQTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblQTDUnits.Left" type="System.Single, mscorlib">
+    <value>5.625</value>
+  </data>
+  <data name="lblMTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="txtPQTDSales.Left" type="System.Single, mscorlib">
+    <value>8.3125</value>
+  </data>
+  <data name="lblTitleLine.Top" type="System.Single, mscorlib">
+    <value>0.6875</value>
+  </data>
+  <data name="txtCatYTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="txtCatMTDSales.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="lblNorthWind.Left" type="System.Single, mscorlib">
+    <value>8.25</value>
+  </data>
+  <data name="txtQTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="lblMTD.Style" xml:space="preserve">
+    <value>color: rgb(255,255,255); text-align: center</value>
+  </data>
+  <data name="lblMTD.Width" type="System.Single, mscorlib">
+    <value>1.25</value>
+  </data>
+  <data name="lblProduct.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblMTDUnits.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblWkSales.Left" type="System.Single, mscorlib">
+    <value>3.625</value>
+  </data>
+  <data name="txtYTDUnits.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="imgLogoSm.ImageData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="txtPQTDChange.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblYTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatQTDUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="lblWkUnits.Left" type="System.Single, mscorlib">
+    <value>3.25</value>
+  </data>
+  <data name="lblYTDSales.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="txtMTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="lblPQTDChange.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="Line3.Left" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="Line2.Width" type="System.Single, mscorlib">
+    <value>9.9375</value>
+  </data>
+  <data name="lblQTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="txtCatYTDSales.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="txtCatQTDUnits.Left" type="System.Single, mscorlib">
+    <value>5.625</value>
+  </data>
+  <data name="txtPQTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="lblTitle2.Left" type="System.Single, mscorlib">
+    <value>1.6875</value>
+  </data>
+  <data name="txtMTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtPQTDSales.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblTitle2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtQTDUnits.Left" type="System.Single, mscorlib">
+    <value>5.625</value>
+  </data>
+  <data name="lblPQTDSales.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtYTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtMTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="txtCatYTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtYTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="txtDetSales.Left" type="System.Single, mscorlib">
+    <value>4.25</value>
+  </data>
+  <data name="lblQTDSales.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDetUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatYTDUnits.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="txtWkUnits.Left" type="System.Single, mscorlib">
+    <value>3.25</value>
+  </data>
+  <data name="Line1.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCAtWkSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="lblYTDSales.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; text-align: right</value>
+  </data>
+  <data name="lblProduct.Style" xml:space="preserve">
+    <value>color: rgb(255,255,255)</value>
+  </data>
+  <data name="txtCatWkUnits.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="txtCatPQTDChange.Left" type="System.Single, mscorlib">
+    <value>9.25</value>
+  </data>
+  <data name="lblTitle1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProduct.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtDetProduct.Style" xml:space="preserve">
+    <value>font-size: 8.5pt</value>
+  </data>
+  <data name="lblCategory.Style" xml:space="preserve">
+    <value>color: rgb(255,255,255)</value>
+  </data>
+  <data name="lblReportDate.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtWkSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtYTDUnits.Left" type="System.Single, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtDetOrderDate.Left" type="System.Single, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="txtCatQTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="lblPQTDChange.Width" type="System.Single, mscorlib">
+    <value>0.6875</value>
+  </data>
+  <data name="lblMTDSales.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="Line2.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDetOrderDate.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtPQTDChange.Left" type="System.Single, mscorlib">
+    <value>9.25</value>
+  </data>
+  <data name="lblTraders.Top" type="System.Single, mscorlib">
+    <value>0.5625</value>
+  </data>
+  <data name="lblMTDUnits.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCatQTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="txtDetUnits.Style" xml:space="preserve">
+    <value>font-size: 8.5pt</value>
+  </data>
+  <data name="Shape1.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtProduct.Style" xml:space="preserve">
+    <value>font-size: 8pt; vertical-align: middle</value>
+  </data>
+  <data name="txtPQTDChange.Width" type="System.Single, mscorlib">
+    <value>0.6875</value>
+  </data>
+  <data name="lblYTD.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblCurrentWeek.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtDetProduct.Left" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtDetSales.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblQTDSales.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblProduct.Left" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtMTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="txtCatPQTDChange.OutputFormat" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="Shape2.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblQTD.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTraders.Left" type="System.Single, mscorlib">
+    <value>8.25</value>
+  </data>
+  <data name="txtCatYTDUnits.Left" type="System.Single, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtMTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="lblYTD.Text" xml:space="preserve">
+    <value>Year-to-Date</value>
+  </data>
+  <data name="lblNorthWind.Style" xml:space="preserve">
+    <value>font-size: 20.5pt; font-weight: bold; text-align: center; vertical-align: middle</value>
+  </data>
+  <data name="txtCatQTDUnits.Top" type="System.Single, mscorlib">
+    <value>0.03472222</value>
+  </data>
+  <data name="txtCatMTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtCatYTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="txtMTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblQTDSales.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtYTDSales.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtDetOrderDate.Style" xml:space="preserve">
+    <value>font-size: 8.5pt</value>
+  </data>
+  <data name="txtCatMTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="lblPrevQTD.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNorthWind.Width" type="System.Single, mscorlib">
+    <value>1.6875</value>
+  </data>
+  <data name="lblMTD.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtYTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtYTDSales.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCatYTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtCatMTDUnits.Left" type="System.Single, mscorlib">
+    <value>4.375</value>
+  </data>
+  <data name="txtQTDSales.OutputFormat" xml:space="preserve">
+    <value>$#,##0.00</value>
+  </data>
+  <data name="lblTraders.Width" type="System.Single, mscorlib">
+    <value>1.6875</value>
+  </data>
+  <data name="lblTitleLine.Width" type="System.Single, mscorlib">
+    <value>5.875</value>
+  </data>
+  <data name="txtYTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="lblCategory.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblMTDUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatWkUnits.Left" type="System.Single, mscorlib">
+    <value>3.25</value>
+  </data>
+  <data name="txtQTDUnits.SummaryGroup" xml:space="preserve">
+    <value>ghProduct</value>
+  </data>
+  <data name="txtWkUnits.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatPQTDSales.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <data name="txtCategoryName.Style" xml:space="preserve">
+    <value>background-color: rgb(255,255,192); vertical-align: middle</value>
+  </data>
+  <data name="lblTraders.Style" xml:space="preserve">
+    <value>font-size: 20.5pt; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="txtCatMTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="txtMTDUnits.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="Line1.Left" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtYTDUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtCatPQTDSales.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblCategory.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="txtCatPQTDChange.Width" type="System.Single, mscorlib">
+    <value>0.6875</value>
+  </data>
+  <data name="txtProduct.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="Shape2.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtYTDUnits.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblQTD.Left" type="System.Single, mscorlib">
+    <value>5.625</value>
+  </data>
+  <data name="lblWkUnits.Top" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblQTDSales.Left" type="System.Single, mscorlib">
+    <value>6.0625</value>
+  </data>
+  <data name="lblMTDSales.Left" type="System.Single, mscorlib">
+    <value>4.75</value>
+  </data>
+  <data name="lblMTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="Shape1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblQTDUnits.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCatWkUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="lblMTDUnits.Left" type="System.Single, mscorlib">
+    <value>4.375</value>
+  </data>
+  <data name="lblQTD.Width" type="System.Single, mscorlib">
+    <value>1.375</value>
+  </data>
+  <data name="txtCatQTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="txtCatYTDSales.Left" type="System.Single, mscorlib">
+    <value>7.4375</value>
+  </data>
+  <data name="txtCatYTDUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtCatPQTDChange.Style" xml:space="preserve">
+    <value>font-size: 8pt; text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtDetOrderDate.Width" type="System.Single, mscorlib">
+    <value>0.6875</value>
+  </data>
+  <data name="txtQTDSales.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCurrentWeek.Style" xml:space="preserve">
+    <value>color: rgb(255,255,255); text-align: center</value>
+  </data>
+  <data name="lblReportDate.Top" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="txtCatYTDSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblYTDUnits.Text" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="txtYTDSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="txtProduct.Left" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="txtDetSales.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="txtCatMTDUnits.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtPQTDChange.Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="txtQTDUnits.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtWkSales.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="lblReportDate.Width" type="System.Single, mscorlib">
+    <value>4.25</value>
+  </data>
+  <data name="txtQTDUnits.Width" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="txtProduct.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtCatWkUnits.SummaryGroup" xml:space="preserve">
+    <value>ghCategory</value>
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+</root>

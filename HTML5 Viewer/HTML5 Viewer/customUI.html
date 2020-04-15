@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveReports HTML5 viewer - custom UI sample</title>
+    <link href="css/theme-cosmo.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/GrapeCity.ActiveReports.Viewer.Html.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HTML5 Viewer Samples</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html">Basic</a></li>
+                    <li class="active"><a href="/customUI.html">Custom UI</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container">
+        <h1><span class="glyphicon glyphicon-film"></span>Movies library</h1>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#genresList">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                
+                <a class="navbar-brand" href="javascript:void(0)">Genre</a>
+            </div>
+            <div class="collapse navbar-collapse" id="genresList">
+                <ul class="nav navbar-nav">
+                    <li class="js-genre" data-bind="Action">
+                        <a href="javascript:void(0)">
+                            <img alt="action" src="images/Movie-Genres-Action-icon.png" />
+                            <p>Action</p>
+                        </a>
+                    </li>
+                    <li class="js-genre" data-bind="Comedy">
+                        <a href="javascript:void(0)">
+                            <img alt="action" src="images/Movie-Genres-Comedy-icon.png" />
+                            <p>Comedy</p>
+                        </a>
+                    </li>
+                    <li class="js-genre" data-bind="Drama">
+                        <a href="javascript:void(0)" >
+                            <img alt="action" src="images/Movie-Genres-Drama-icon.png" />
+                            <p>Drama</p>
+                        </a>
+                    </li>
+                    <li class="js-genre" data-bind="Horror">
+                        <a href="javascript:void(0)" >
+                            <img alt="action" src="images/Movie-Genres-Horror-icon.png" />
+                            <p>Horror</p>
+                        </a>
+                    </li>
+                    <li class="js-genre" data-bind="Romance">
+                        <a href="javascript:void(0)">
+                            <img alt="action" src="images/Movie-Genres-Romance-icon.png" />
+                            <p>Romance</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="paginator" class="pagination"></ul>
+        <div id="viewerContainer2">
+        </div>
+    </div>
+
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap-3.0.0.js"></script>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/GrapeCity.ActiveReports.Viewer.Html.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var paginator = $('#paginator');
+            
+            var report = {
+                id: 'MoviesReport.rdlx',
+                parameters: [{ name: "GenreName" }]
+            };
+            var viewer = GrapeCity.ActiveReports.Viewer({
+                element: '#viewerContainer2',
+                reportService: {
+                    url: '/ActiveReports.ReportService.asmx'
+                },
+                uiType: 'custom',
+                documentLoaded : function () {
+                    setPaginator();
+                },
+                localeUri: 'Scripts/i18n/Localeuri.txt'
+            });
+            $(window).bind('beforeunload', function () {
+            	viewer.destroy();
+            });
+
+            function setPaginator() {
+                if (viewer.pageCount > 0) {
+                    for (var i = 1; i <= viewer.pageCount; i++) {
+                        $('<li data-bind="' + i + '"><a class="js-page" href="javascript:void(0)">' + i + '</a></li>').appendTo(paginator);
+                    }
+                    paginator.children(":first").addClass('active');
+                    paginator.children().click(function () {
+                        var self = $(this);
+                        viewer.goToPage(self.attr('data-bind'), 0, function () {
+                            paginator.children().removeClass('active');
+                            self.addClass('active');
+                        });
+                    });
+                }
+            }
+
+            $('li.js-genre').click(function (ev) {
+                ev.stopImmediatePropagation();
+                var li = $(this);
+                $('li.js-genre').removeClass('active');
+                li.addClass('active');
+                var genreName = li.attr('data-bind');
+                report.parameters[0].value = genreName;
+                paginator.empty();
+                viewer.option('report', report);
+            });
+        });
+
+    </script>
+</body>
+</html>

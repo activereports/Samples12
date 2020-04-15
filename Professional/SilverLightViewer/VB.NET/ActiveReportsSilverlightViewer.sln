@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SilverlightViewer.Web", "SilverlightViewer.Web\SilverlightViewer.Web.vbproj", "{885DFD7B-26A5-4C38-A147-3487CCA2FB6D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SilverlightViewer", "SilverlightViewer\SilverlightViewer.vbproj", "{E5803AB7-CE05-4DC2-9DDD-58251572D160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{885DFD7B-26A5-4C38-A147-3487CCA2FB6D}.Debug|x86.ActiveCfg = Debug|x86
+		{885DFD7B-26A5-4C38-A147-3487CCA2FB6D}.Debug|x86.Build.0 = Debug|x86
+		{885DFD7B-26A5-4C38-A147-3487CCA2FB6D}.Release|x86.ActiveCfg = Release|x86
+		{885DFD7B-26A5-4C38-A147-3487CCA2FB6D}.Release|x86.Build.0 = Release|x86
+		{E5803AB7-CE05-4DC2-9DDD-58251572D160}.Debug|x86.ActiveCfg = Debug|x86
+		{E5803AB7-CE05-4DC2-9DDD-58251572D160}.Debug|x86.Build.0 = Debug|x86
+		{E5803AB7-CE05-4DC2-9DDD-58251572D160}.Release|x86.ActiveCfg = Release|x86
+		{E5803AB7-CE05-4DC2-9DDD-58251572D160}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

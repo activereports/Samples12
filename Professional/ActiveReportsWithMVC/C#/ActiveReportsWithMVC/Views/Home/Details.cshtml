@@ -1,0 +1,74 @@
+﻿@model GrapeCity.ActiveReports.Samples.ActiveReportsWithMVC.Models.Customer
+
+@{
+    
+    Layout = "~/Views/Home/_Layout.cshtml";
+}
+<div id="body">
+<div class="centerheader">
+     <div class="display-field" style=" color:Blue">
+        @Html.ActionLink("Index","Index")
+    </div>
+    </div>
+<div class="centerheader">
+     <span class="HeaderTxt">Customer Details:</span>
+    </div>
+<div class="center">
+<fieldset style="border:none">
+    <div class="display-label" style="float:left;font-weight:bold">CompanyName:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CompanyName)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">ContactName:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContactName)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">ContactTitle:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContactTitle)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">Address:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">City:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">Region:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Region)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">PostalCode:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PostalCode)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">Country:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold" >Phone:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone)
+    </div>
+
+    <div class="display-label" style="float:left;font-weight:bold">Fax:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fax)
+    </div>
+</fieldset>
+<p id="reports" style=" font-size:small">
+
+    @Html.ActionLink("Freight Summary(Section Report)", "ViewReport", new { id = Model.CustomerId, reporttype = "Section" }) |
+    @Html.ActionLink("Order Summary(Page Report)", "ViewReport", new { id = Model.CustomerId,reporttype = "Page" })
+</p>
+</div>
+</div>

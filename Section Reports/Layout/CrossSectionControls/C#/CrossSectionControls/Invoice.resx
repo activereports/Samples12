@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="line1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line1.Left" type="System.Single, mscorlib">
+    <value>0.002</value>
+  </data>
+  <data name="line1.Top" type="System.Single, mscorlib">
+    <value>0.198</value>
+  </data>
+  <data name="line1.Width" type="System.Single, mscorlib">
+    <value>6.498</value>
+  </data>
+  <data name="qtyTextBox.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="qtyTextBox.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="qtyTextBox.Style" xml:space="preserve">
+    <value>text-align: center</value>
+  </data>
+  <data name="qtyTextBox.Text" xml:space="preserve">
+    <value>QTY</value>
+  </data>
+  <data name="qtyTextBox.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="qtyTextBox.Width" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="productNameTextBox.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="productNameTextBox.Left" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="productNameTextBox.Text" xml:space="preserve">
+    <value>ProductDescription</value>
+  </data>
+  <data name="productNameTextBox.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="productNameTextBox.Width" type="System.Single, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="unitPriceTextBox.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="unitPriceTextBox.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="unitPriceTextBox.OutputFormat" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="unitPriceTextBox.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="unitPriceTextBox.Text" xml:space="preserve">
+    <value>UnitPrice</value>
+  </data>
+  <data name="unitPriceTextBox.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="unitPriceTextBox.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="totalTextBox.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="totalTextBox.Left" type="System.Single, mscorlib">
+    <value>5.5</value>
+  </data>
+  <data name="totalTextBox.OutputFormat" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="totalTextBox.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="totalTextBox.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="totalTextBox.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalTextBox.Width" type="System.Single, mscorlib">
+    <value>1.0010004</value>
+  </data>
+  <data name="companyNameLabel.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="companyNameLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="companyNameLabel.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="companyNameLabel.Style" xml:space="preserve">
+    <value>color: Black; font-size: 20.25pt; font-weight: bold</value>
+  </data>
+  <data name="companyNameLabel.Text" xml:space="preserve">
+    <value>Northwind Traders</value>
+  </data>
+  <data name="companyNameLabel.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="companyNameLabel.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="invoiceLabel.Height" type="System.Single, mscorlib">
+    <value>0.3750001</value>
+  </data>
+  <data name="invoiceLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="invoiceLabel.Left" type="System.Single, mscorlib">
+    <value>4.501</value>
+  </data>
+  <data name="invoiceLabel.Style" xml:space="preserve">
+    <value>background-color: #49277E; color: White; font-size: 20.25pt; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="invoiceLabel.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="invoiceLabel.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="invoiceLabel.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="orderDateTextBox.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="orderDateTextBox.Left" type="System.Single, mscorlib">
+    <value>5.5</value>
+  </data>
+  <data name="orderDateTextBox.OutputFormat" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="orderDateTextBox.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="orderDateTextBox.Text" xml:space="preserve">
+    <value>OrderDate</value>
+  </data>
+  <data name="orderDateTextBox.Top" type="System.Single, mscorlib">
+    <value>0.8</value>
+  </data>
+  <data name="orderDateTextBox.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="orderIDTextBox.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="orderIDTextBox.Left" type="System.Single, mscorlib">
+    <value>5.5</value>
+  </data>
+  <data name="orderIDTextBox.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="orderIDTextBox.Text" xml:space="preserve">
+    <value>OrderID</value>
+  </data>
+  <data name="orderIDTextBox.Top" type="System.Single, mscorlib">
+    <value>0.604</value>
+  </data>
+  <data name="orderIDTextBox.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="orderIDLabel.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="orderIDLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="orderIDLabel.Left" type="System.Single, mscorlib">
+    <value>4.498001</value>
+  </data>
+  <data name="orderIDLabel.Style" xml:space="preserve">
+    <value>background-color: #49277E; color: White; font-weight: bold; ddo-char-set: 1</value>
+  </data>
+  <data name="orderIDLabel.Text" xml:space="preserve">
+    <value>Order ID:</value>
+  </data>
+  <data name="orderIDLabel.Top" type="System.Single, mscorlib">
+    <value>0.603</value>
+  </data>
+  <data name="orderIDLabel.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label2.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="label2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label2.Left" type="System.Single, mscorlib">
+    <value>4.498001</value>
+  </data>
+  <data name="label2.Style" xml:space="preserve">
+    <value>background-color: #49277E; color: White; font-weight: bold; ddo-char-set: 1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Order Date:</value>
+  </data>
+  <data name="label2.Top" type="System.Single, mscorlib">
+    <value>0.8</value>
+  </data>
+  <data name="label2.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="shape3.Height" type="System.Single, mscorlib">
+    <value>0.3978333</value>
+  </data>
+  <data name="shape3.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="shape3.Top" type="System.Single, mscorlib">
+    <value>0.6041667</value>
+  </data>
+  <data name="shape3.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pageNoFMReportInfo.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="pageNoFMReportInfo.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="pageNoFMReportInfo.Style" xml:space="preserve">
+    <value>text-align: center</value>
+  </data>
+  <data name="pageNoFMReportInfo.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pageNoFMReportInfo.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="shape1.Height" type="System.Single, mscorlib">
+    <value>0.1875833</value>
+  </data>
+  <data name="shape1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shape1.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="shape1.Width" type="System.Single, mscorlib">
+    <value>6.498</value>
+  </data>
+  <data name="shippingAddressLabel.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="shippingAddressLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="shippingAddressLabel.Left" type="System.Single, mscorlib">
+    <value>3.5</value>
+  </data>
+  <data name="shippingAddressLabel.Style" xml:space="preserve">
+    <value>background-color: #49277E; color: White; font-size: 9.75pt; font-weight: bold</value>
+  </data>
+  <data name="shippingAddressLabel.Text" xml:space="preserve">
+    <value>Shipping Address</value>
+  </data>
+  <data name="shippingAddressLabel.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shippingAddressLabel.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="billingAddressLabel.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="billingAddressLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="billingAddressLabel.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="billingAddressLabel.Style" xml:space="preserve">
+    <value>background-color: #49277E; color: White; font-size: 9.75pt; font-weight: bold</value>
+  </data>
+  <data name="billingAddressLabel.Text" xml:space="preserve">
+    <value>Billing Address</value>
+  </data>
+  <data name="billingAddressLabel.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="billingAddressLabel.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="qtyLabel.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="qtyLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="qtyLabel.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="qtyLabel.Style" xml:space="preserve">
+    <value>color: White; font-size: 9.75pt; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="qtyLabel.Text" xml:space="preserve">
+    <value>QTY</value>
+  </data>
+  <data name="qtyLabel.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="qtyLabel.Width" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="productDescLabel.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="productDescLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="productDescLabel.Left" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="productDescLabel.Style" xml:space="preserve">
+    <value>color: White; font-size: 9.75pt; font-weight: bold</value>
+  </data>
+  <data name="productDescLabel.Text" xml:space="preserve">
+    <value>Product Description</value>
+  </data>
+  <data name="productDescLabel.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="productDescLabel.Width" type="System.Single, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="unitPriceLabel.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="unitPriceLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="unitPriceLabel.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="unitPriceLabel.Style" xml:space="preserve">
+    <value>color: White; font-size: 9.75pt; font-weight: bold; text-align: right</value>
+  </data>
+  <data name="unitPriceLabel.Text" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="unitPriceLabel.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="unitPriceLabel.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="totalLabel.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="totalLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalLabel.Left" type="System.Single, mscorlib">
+    <value>5.5</value>
+  </data>
+  <data name="totalLabel.Style" xml:space="preserve">
+    <value>color: White; font-size: 9.75pt; font-weight: bold; text-align: right</value>
+  </data>
+  <data name="totalLabel.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="totalLabel.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="totalLabel.Width" type="System.Single, mscorlib">
+    <value>0.9979997</value>
+  </data>
+  <data name="crossSectionLine1.Left" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="crossSectionLine1.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="crossSectionLine2.Left" type="System.Single, mscorlib">
+    <value>4.5010004</value>
+  </data>
+  <data name="crossSectionLine2.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="crossSectionLine3.Left" type="System.Single, mscorlib">
+    <value>5.498</value>
+  </data>
+  <data name="crossSectionLine3.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="line2.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line2.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line2.Top" type="System.Single, mscorlib">
+    <value>1.253</value>
+  </data>
+  <data name="line2.Width" type="System.Single, mscorlib">
+    <value>6.5</value>
+  </data>
+  <data name="billingAddressTextBox.Height" type="System.Single, mscorlib">
+    <value>0.6</value>
+  </data>
+  <data name="billingAddressTextBox.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="billingAddressTextBox.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 1</value>
+  </data>
+  <data name="billingAddressTextBox.Text" xml:space="preserve">
+    <value>BillingAddress</value>
+  </data>
+  <data name="billingAddressTextBox.Top" type="System.Single, mscorlib">
+    <value>0.198</value>
+  </data>
+  <data name="billingAddressTextBox.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="shippingAddressTextBox.Height" type="System.Single, mscorlib">
+    <value>0.6</value>
+  </data>
+  <data name="shippingAddressTextBox.Left" type="System.Single, mscorlib">
+    <value>3.5</value>
+  </data>
+  <data name="shippingAddressTextBox.Style" xml:space="preserve">
+    <value>font-size: 10pt; ddo-char-set: 1</value>
+  </data>
+  <data name="shippingAddressTextBox.Text" xml:space="preserve">
+    <value>ShippingAddress</value>
+  </data>
+  <data name="shippingAddressTextBox.Top" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="shippingAddressTextBox.Width" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="shape4.Height" type="System.Single, mscorlib">
+    <value>0.596</value>
+  </data>
+  <data name="shape4.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="shape4.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shape4.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="freightLabel.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="freightLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="freightLabel.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="freightLabel.Style" xml:space="preserve">
+    <value>color: White; font-weight: bold; ddo-char-set: 1</value>
+  </data>
+  <data name="freightLabel.Text" xml:space="preserve">
+    <value>Shipping:</value>
+  </data>
+  <data name="freightLabel.Top" type="System.Single, mscorlib">
+    <value>0.202</value>
+  </data>
+  <data name="freightLabel.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="freightTextBox.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="freightTextBox.Left" type="System.Single, mscorlib">
+    <value>5.498</value>
+  </data>
+  <data name="freightTextBox.OutputFormat" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="freightTextBox.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="freightTextBox.Text" xml:space="preserve">
+    <value>Freight</value>
+  </data>
+  <data name="freightTextBox.Top" type="System.Single, mscorlib">
+    <value>0.202</value>
+  </data>
+  <data name="freightTextBox.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="subTotalLabel.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="subTotalLabel.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="subTotalLabel.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="subTotalLabel.Style" xml:space="preserve">
+    <value>color: White; font-weight: bold; ddo-char-set: 1</value>
+  </data>
+  <data name="subTotalLabel.Text" xml:space="preserve">
+    <value>Sub Total:</value>
+  </data>
+  <data name="subTotalLabel.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="subTotalLabel.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="subtotalTextBox.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="subtotalTextBox.Left" type="System.Single, mscorlib">
+    <value>5.498</value>
+  </data>
+  <data name="subtotalTextBox.OutputFormat" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="subtotalTextBox.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="subtotalTextBox.SummaryGroup" xml:space="preserve">
+    <value>customerGroupHeader</value>
+  </data>
+  <data name="subtotalTextBox.Text" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="subtotalTextBox.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="subtotalTextBox.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="label1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label1.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="label1.Style" xml:space="preserve">
+    <value>color: White; font-weight: bold; ddo-char-set: 1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="label1.Top" type="System.Single, mscorlib">
+    <value>0.4</value>
+  </data>
+  <data name="label1.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grandTotalTextBox.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="grandTotalTextBox.Left" type="System.Single, mscorlib">
+    <value>5.5</value>
+  </data>
+  <data name="grandTotalTextBox.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="grandTotalTextBox.Text" xml:space="preserve">
+    <value>Grand Total</value>
+  </data>
+  <data name="grandTotalTextBox.Top" type="System.Single, mscorlib">
+    <value>0.394</value>
+  </data>
+  <data name="grandTotalTextBox.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="shape2.Height" type="System.Single, mscorlib">
+    <value>0.6</value>
+  </data>
+  <data name="shape2.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="shape2.Top" type="System.Single, mscorlib">
+    <value>0.001999989</value>
+  </data>
+  <data name="shape2.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="line3.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line3.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="line3.Top" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="line3.Width" type="System.Single, mscorlib">
+    <value>1.99800014</value>
+  </data>
+  <data name="line4.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line4.Left" type="System.Single, mscorlib">
+    <value>4.5</value>
+  </data>
+  <data name="line4.Top" type="System.Single, mscorlib">
+    <value>0.394000024</value>
+  </data>
+  <data name="line4.Width" type="System.Single, mscorlib">
+    <value>1.99800014</value>
+  </data>
+  <data name="crossSectionBox1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="crossSectionBox1.Top" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="line5.Height" type="System.Single, mscorlib">
+    <value>0.004000008</value>
+  </data>
+  <data name="line5.Left" type="System.Single, mscorlib">
+    <value>4.498</value>
+  </data>
+  <data name="line5.Top" type="System.Single, mscorlib">
+    <value>0.8</value>
+  </data>
+  <data name="line5.Width" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Script" xml:space="preserve">
+    <value>public void GFOrderID_BeforePrint()
+{
+((TextBox)rpt.Sections["GFOrderID"].Controls["txtTotal"]).Value = (System.Double)((TextBox)rpt.Sections["GFOrderID"].Controls["txtFreight"]).Value + (System.Double)((TextBox)rpt.Sections["GFOrderID"].Controls["txtSubTotal"]).Value;
+}</value>
+  </data>
+</root>

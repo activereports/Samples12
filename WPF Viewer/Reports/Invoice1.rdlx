@@ -1,0 +1,1010 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>11in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Rectangle Name="Container2">
+								<Height>1.375in</Height>
+								<Top>1.125in</Top>
+								<Width>6.5in</Width>
+								<ReportItems>
+									<Textbox Name="lblBillTo">
+										<Height>0.188in</Height>
+										<Style>
+											<BackgroundColor>Black</BackgroundColor>
+											<Color>WhiteSmoke</Color>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Value>Bill To</Value>
+										<Width>1in</Width>
+									</Textbox>
+									<Line Name="Line1">
+										<Height>0in</Height>
+										<Style>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.188in</Top>
+										<Width>3in</Width>
+										<ZIndex>1</ZIndex>
+									</Line>
+									<Textbox Name="lblShipTo">
+										<Height>0.188in</Height>
+										<Left>3.469in</Left>
+										<Style>
+											<BackgroundColor>Black</BackgroundColor>
+											<Color>White</Color>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Value>Ship To</Value>
+										<Width>1in</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Line Name="Line2">
+										<Height>0in</Height>
+										<Left>3.46875in</Left>
+										<Style>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.1875in</Top>
+										<Width>3.010417in</Width>
+										<ZIndex>3</ZIndex>
+									</Line>
+									<Textbox Name="txtBillToCompany">
+										<Height>0.185in</Height>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.25in</Top>
+										<Value>=Fields.Item("Customers.CompanyName").Value</Value>
+										<Width>3in</Width>
+										<ZIndex>4</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox5">
+										<Height>0.185in</Height>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.438in</Top>
+										<Value>=Fields!Address.Value</Value>
+										<Width>3in</Width>
+										<ZIndex>5</ZIndex>
+									</Textbox>
+									<Textbox Name="txtBillToCity">
+										<Height>0.185in</Height>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.624996in</Top>
+										<Value>=Fields!City.Value</Value>
+										<Width>1.375in</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="txtBillToRegion">
+										<Height>0.185in</Height>
+										<Left>1.438in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.625in</Top>
+										<Value>=Fields!Region.Value</Value>
+										<Width>1.563in</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+									<Textbox Name="txtBillToPostalCode">
+										<Height>0.188in</Height>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.8125in</Top>
+										<Value>=Fields!PostalCode.Value</Value>
+										<Width>1.375in</Width>
+										<ZIndex>8</ZIndex>
+									</Textbox>
+									<Textbox Name="txtBillToCountry">
+										<Height>0.1875in</Height>
+										<Left>1.4375in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.8125in</Top>
+										<Value>=Fields!Country.Value</Value>
+										<Width>1.5625in</Width>
+										<ZIndex>9</ZIndex>
+									</Textbox>
+									<Textbox Name="lblSalesPerson">
+										<Height>0.188in</Height>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>1.125in</Top>
+										<Value>Sales Person:</Value>
+										<Width>0.938in</Width>
+										<ZIndex>10</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox6">
+										<Height>0.1875in</Height>
+										<Left>0.94in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>1.125in</Top>
+										<Value>=Fields!Salesperson.Value</Value>
+										<Width>2.0625in</Width>
+										<ZIndex>11</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipToName">
+										<Height>0.1875in</Height>
+										<Left>3.46875in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.25in</Top>
+										<Value>=Fields!ShipName.Value</Value>
+										<Width>3in</Width>
+										<ZIndex>12</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipToAddress">
+										<Height>0.184in</Height>
+										<Left>3.46875in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.438in</Top>
+										<Value>=Fields!ShipAddress.Value</Value>
+										<Width>3in</Width>
+										<ZIndex>13</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipToCity">
+										<Height>0.185in</Height>
+										<Left>3.469in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.625in</Top>
+										<Value>=Fields!ShipCity.Value</Value>
+										<Width>1.375in</Width>
+										<ZIndex>14</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipToRegion">
+										<Height>0.1875in</Height>
+										<Left>4.906in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.625in</Top>
+										<Value>=Fields!ShipRegion.Value</Value>
+										<Width>1.563in</Width>
+										<ZIndex>15</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipToPostalCode">
+										<Height>0.1875in</Height>
+										<Left>3.46875in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.8125in</Top>
+										<Value>=Fields!ShipPostalCode.Value</Value>
+										<Width>1.375in</Width>
+										<ZIndex>16</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipToCountry">
+										<Height>0.1875in</Height>
+										<Left>4.90625in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>0.8125in</Top>
+										<Value>=Fields!ShipCountry.Value</Value>
+										<Width>1.5625in</Width>
+										<ZIndex>17</ZIndex>
+									</Textbox>
+									<Textbox Name="lblShipped">
+										<Height>0.188in</Height>
+										<Left>3.469in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>1.125in</Top>
+										<Value>Shipped:</Value>
+										<Width>0.56in</Width>
+										<ZIndex>18</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipDate">
+										<Height>0.188in</Height>
+										<Left>4.031in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<Format>d</Format>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<Top>1.125in</Top>
+										<Value>=Fields!ShippedDate.Value</Value>
+										<Width>0.813in</Width>
+										<ZIndex>19</ZIndex>
+									</Textbox>
+									<Textbox Name="lblShippedVia">
+										<Height>0.1875in</Height>
+										<Left>4.90625in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>1.125in</Top>
+										<Value>Via:</Value>
+										<Width>0.3in</Width>
+										<ZIndex>20</ZIndex>
+									</Textbox>
+									<Textbox Name="txtShipper">
+										<Height>0.188in</Height>
+										<Left>5.2129in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<PaddingBottom>1pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+										</Style>
+										<Top>1.125in</Top>
+										<Value>=Fields.Item("Shippers.CompanyName").Value</Value>
+										<Width>1.25in</Width>
+										<ZIndex>21</ZIndex>
+									</Textbox>
+								</ReportItems>
+							</Rectangle>
+							<Rectangle Name="Container1">
+								<Height>1.1255in</Height>
+								<Width>6.5in</Width>
+								<ZIndex>1</ZIndex>
+								<ReportItems>
+									<Image Name="Image1">
+										<Height>0.75in</Height>
+										<Sizing>Fit</Sizing>
+										<Source>Embedded</Source>
+										<Value>imgLogo</Value>
+										<Width>1in</Width>
+									</Image>
+									<Textbox Name="lblNorthWind">
+										<Height>0.375in</Height>
+										<Left>1in</Left>
+										<Style>
+											<BackgroundColor>LemonChiffon</BackgroundColor>
+											<FontSize>20.5pt</FontSize>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<Value>NorthWind</Value>
+										<Width>2in</Width>
+										<ZIndex>1</ZIndex>
+									</Textbox>
+									<Textbox Name="lblTraders">
+										<Height>0.375in</Height>
+										<Left>1in</Left>
+										<Style>
+											<BackgroundColor>LemonChiffon</BackgroundColor>
+											<FontSize>20.5pt</FontSize>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<Top>0.375in</Top>
+										<Value>Traders</Value>
+										<Width>2in</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="lblInvoice">
+										<Height>0.375in</Height>
+										<Left>4.583in</Left>
+										<Style>
+											<BackgroundColor>Black</BackgroundColor>
+											<Color>White</Color>
+											<FontSize>20.5pt</FontSize>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Center</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Value>Invoice</Value>
+										<Width>1.8in</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox1">
+										<Height>0.188in</Height>
+										<Left>4.625in</Left>
+										<Style>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.499498in</Top>
+										<Value>Order#:</Value>
+										<Width>0.875in</Width>
+										<ZIndex>4</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox2">
+										<Height>0.188in</Height>
+										<Left>4.625in</Left>
+										<Style>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.687498in</Top>
+										<Value>Order Date:</Value>
+										<Width>0.875in</Width>
+										<ZIndex>5</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox3">
+										<Height>0.188in</Height>
+										<Left>5.5in</Left>
+										<Style>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.499498in</Top>
+										<Value>=Fields!OrderID.Value</Value>
+										<Width>0.9in</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="TextBox4">
+										<Height>0.188in</Height>
+										<Left>5.5in</Left>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<Format>d</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>1pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.688in</Top>
+										<Value>=Fields!OrderDate.Value</Value>
+										<Width>0.9in</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+									<Textbox Name="lblNWAddr1">
+										<Height>0.184in</Height>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<FontStyle>Italic</FontStyle>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.75in</Top>
+										<Value>One Portals Way</Value>
+										<Width>2in</Width>
+										<ZIndex>8</ZIndex>
+									</Textbox>
+									<Textbox Name="lblNWAddr2">
+										<Height>0.188in</Height>
+										<Style>
+											<FontSize>8.5pt</FontSize>
+											<FontStyle>Italic</FontStyle>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.9375in</Top>
+										<Value>Twin Points WA  98156</Value>
+										<Width>2in</Width>
+										<ZIndex>9</ZIndex>
+									</Textbox>
+								</ReportItems>
+							</Rectangle>
+							<CustomReportItem Name="BandedList1">
+								<Type>BandedList</Type>
+								<Top>2.541663in</Top>
+								<Width>6.5in</Width>
+								<Height>0.959333in</Height>
+								<ZIndex>2</ZIndex>
+								<CustomData>
+									<DataSetName>Invoice</DataSetName>
+									<DataRowGroupings>
+										<DataGroupings>
+											<DataGrouping>
+												<Grouping Name="BandedList1_Group1">
+													<GroupExpressions>
+														<GroupExpression>=Fields!OrderID.Value</GroupExpression>
+													</GroupExpressions>
+												</Grouping>
+												<dd:Container xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+													<ReportItems>
+														<Textbox Name="TextBox16">
+															<Height>0.188in</Height>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>Product ID</Value>
+															<Width>0.68in</Width>
+														</Textbox>
+														<Textbox Name="TextBox17">
+															<Height>0.188in</Height>
+															<Left>0.687498in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>Product Name</Value>
+															<Width>2.18in</Width>
+															<ZIndex>1</ZIndex>
+														</Textbox>
+														<Textbox Name="TextBox18">
+															<Height>0.188in</Height>
+															<Left>2.874997in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>Quantity</Value>
+															<Width>0.78in</Width>
+															<ZIndex>2</ZIndex>
+														</Textbox>
+														<Textbox Name="TextBox19">
+															<Height>0.188in</Height>
+															<Left>3.65625in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>Unit Price</Value>
+															<Width>0.98in</Width>
+															<ZIndex>3</ZIndex>
+														</Textbox>
+														<Textbox Name="TextBox20">
+															<Height>0.188in</Height>
+															<Left>4.645833in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<Format>p</Format>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>Discount</Value>
+															<Width>0.93in</Width>
+															<ZIndex>4</ZIndex>
+														</Textbox>
+														<Textbox Name="TextBox21">
+															<Height>0.188in</Height>
+															<Left>5.583336in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>Total</Value>
+															<Width>0.8646in</Width>
+															<ZIndex>5</ZIndex>
+														</Textbox>
+														<Textbox Name="lblSubTotal">
+															<Height>0.18in</Height>
+															<Left>4.423in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Value>Sub Total</Value>
+															<Width>1.125in</Width>
+														</Textbox>
+														<Textbox Name="lblFreight">
+															<Height>0.18in</Height>
+															<Left>4.423in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Top>0.188in</Top>
+															<Value>Freight</Value>
+															<Width>1.125in</Width>
+															<ZIndex>1</ZIndex>
+														</Textbox>
+														<Textbox Name="lblGrandTotal">
+															<Height>0.18in</Height>
+															<Left>4.423in</Left>
+															<Style>
+																<BackgroundColor>Black</BackgroundColor>
+																<Color>White</Color>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Top>0.375in</Top>
+															<Value>Total</Value>
+															<Width>1.125in</Width>
+															<ZIndex>2</ZIndex>
+														</Textbox>
+														<Textbox Name="txtSubTotal">
+															<Height>0.18in</Height>
+															<Left>5.573in</Left>
+															<Style>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<Format>c</Format>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+															</Style>
+															<Value>=Sum(Fields!ExtendedPrice.Value)</Value>
+															<Width>0.875in</Width>
+															<ZIndex>3</ZIndex>
+														</Textbox>
+														<Textbox Name="TextBox10">
+															<Height>0.18in</Height>
+															<Left>5.573in</Left>
+															<Style>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<Format>c</Format>
+																<PaddingBottom>1pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>1pt</PaddingTop>
+															</Style>
+															<Top>0.188in</Top>
+															<Value>=Sum(Fields!Freight.Value)</Value>
+															<Width>0.875in</Width>
+															<ZIndex>4</ZIndex>
+														</Textbox>
+														<Textbox Name="TextBox11">
+															<Height>0.18in</Height>
+															<Left>5.573in</Left>
+															<Style>
+																<FontSize>8.5pt</FontSize>
+																<FontWeight>700</FontWeight>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Top>0.375in</Top>
+															<Value>=Sum(Fields!ExtendedPrice.Value) + Sum(Fields!Freight.Value)</Value>
+															<Width>0.8749in</Width>
+															<ZIndex>5</ZIndex>
+														</Textbox>
+													</ReportItems>
+												</dd:Container>
+												<DataGroupings>
+													<DataGrouping>
+														<dd:Container xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+															<ReportItems>
+																<Textbox Name="TextBox7">
+																	<Height>0.188in</Height>
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<PaddingBottom>1pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>1pt</PaddingTop>
+																		<TextAlign>Center</TextAlign>
+																	</Style>
+																	<Value>=Fields!ProductID.Value</Value>
+																	<Width>0.688in</Width>
+																</Textbox>
+																<Textbox Name="TextBox8">
+																	<Height>0.188in</Height>
+																	<Left>0.697904in</Left>
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<PaddingBottom>1pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>1pt</PaddingTop>
+																		<TextAlign>Center</TextAlign>
+																	</Style>
+																	<Value>=Fields!ProductName.Value</Value>
+																	<Width>2.165in</Width>
+																	<ZIndex>1</ZIndex>
+																</Textbox>
+																<Textbox Name="TextBox9">
+																	<Height>0.188in</Height>
+																	<Left>2.865in</Left>
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<PaddingBottom>1pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>1pt</PaddingTop>
+																		<TextAlign>Center</TextAlign>
+																	</Style>
+																	<Value>=Fields!Quantity.Value</Value>
+																	<Width>0.8in</Width>
+																	<ZIndex>2</ZIndex>
+																</Textbox>
+																<Textbox Name="TextBox13">
+																	<Height>0.188in</Height>
+																	<Left>3.67in</Left>
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<Format>c</Format>
+																		<PaddingBottom>1pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>1pt</PaddingTop>
+																		<TextAlign>Right</TextAlign>
+																	</Style>
+																	<Value>=Fields!UnitPrice.Value</Value>
+																	<Width>1in</Width>
+																	<ZIndex>3</ZIndex>
+																</Textbox>
+																<Textbox Name="TextBox14">
+																	<Height>0.188in</Height>
+																	<Left>4.67in</Left>
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<Format>p</Format>
+																		<PaddingBottom>1pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>1pt</PaddingTop>
+																		<TextAlign>Right</TextAlign>
+																	</Style>
+																	<Value>=Fields!Discount.Value</Value>
+																	<Width>0.938in</Width>
+																	<ZIndex>4</ZIndex>
+																</Textbox>
+																<Textbox Name="TextBox15">
+																	<Height>0.188in</Height>
+																	<Left>5.615in</Left>
+																	<Style>
+																		<FontSize>8.5pt</FontSize>
+																		<Format>c</Format>
+																		<PaddingBottom>1pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>1pt</PaddingTop>
+																		<TextAlign>Right</TextAlign>
+																	</Style>
+																	<Value>=Fields!ExtendedPrice.Value</Value>
+																	<Width>0.8329in</Width>
+																	<ZIndex>5</ZIndex>
+																</Textbox>
+															</ReportItems>
+														</dd:Container>
+													</DataGrouping>
+												</DataGroupings>
+											</DataGrouping>
+										</DataGroupings>
+									</DataRowGroupings>
+								</CustomData>
+								<BandedListConfig xmlns="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition/">
+	<FixedWidth>6.5in</FixedWidth>
+	<FixedHeight>6.2in</FixedHeight>
+	<Groups>
+		<Group Name="BandedList1_Group1">
+			<HeaderBand>
+				<Height>0.188in</Height>
+				<ReportItems>
+					<ReportItemReference Name="TextBox16" />
+					<ReportItemReference Name="TextBox17" />
+					<ReportItemReference Name="TextBox18" />
+					<ReportItemReference Name="TextBox19" />
+					<ReportItemReference Name="TextBox20" />
+					<ReportItemReference Name="TextBox21" />
+				</ReportItems>
+			</HeaderBand>
+			<FooterBand>
+				<Height>0.5833333in</Height>
+				<ReportItems>
+					<ReportItemReference Name="lblSubTotal" />
+					<ReportItemReference Name="lblFreight" />
+					<ReportItemReference Name="lblGrandTotal" />
+					<ReportItemReference Name="txtSubTotal" />
+					<ReportItemReference Name="TextBox10" />
+					<ReportItemReference Name="TextBox11" />
+				</ReportItems>
+			</FooterBand>
+			<Visibility>
+				<Hidden>False</Hidden>
+			</Visibility>
+		</Group>
+	</Groups>
+	<Details>
+		<Height>0.188in</Height>
+		<ReportItems>
+			<ReportItemReference Name="TextBox7" />
+			<ReportItemReference Name="TextBox8" />
+			<ReportItemReference Name="TextBox9" />
+			<ReportItemReference Name="TextBox13" />
+			<ReportItemReference Name="TextBox14" />
+			<ReportItemReference Name="TextBox15" />
+		</ReportItems>
+	</Details>
+</BandedListConfig>
+							</CustomReportItem>
+							<Textbox Name="TextBox12">
+								<Height>0.25in</Height>
+								<Style>
+									<FontSize>12pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>8.75in</Top>
+								<Value>Thank you for your business</Value>
+								<Width>6.489583in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>Invoice</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=Fields!OrderID.Value</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>1in</LeftMargin>
+	<RightMargin>1in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>8.5in</Width>
+	<EmbeddedImages>
+		<EmbeddedImage Name="imgLogo">
+			<ImageData>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</ImageData>
+			<MIMEType>image/png</MIMEType>
+		</EmbeddedImage>
+	</EmbeddedImages>
+	<DataSources>
+		<DataSource Name="NWIND">
+			<DataSourceReference>C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\NWind.rdsx</DataSourceReference>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Invoice">
+			<Fields>
+				<Field Name="ShipName">
+					<DataField>ShipName</DataField>
+				</Field>
+				<Field Name="ShipAddress">
+					<DataField>ShipAddress</DataField>
+				</Field>
+				<Field Name="ShipCity">
+					<DataField>ShipCity</DataField>
+				</Field>
+				<Field Name="ShipRegion">
+					<DataField>ShipRegion</DataField>
+				</Field>
+				<Field Name="ShipPostalCode">
+					<DataField>ShipPostalCode</DataField>
+				</Field>
+				<Field Name="ShipCountry">
+					<DataField>ShipCountry</DataField>
+				</Field>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="Customers.CompanyName">
+					<DataField>Customers.CompanyName</DataField>
+				</Field>
+				<Field Name="Address">
+					<DataField>Address</DataField>
+				</Field>
+				<Field Name="City">
+					<DataField>City</DataField>
+				</Field>
+				<Field Name="Region">
+					<DataField>Region</DataField>
+				</Field>
+				<Field Name="PostalCode">
+					<DataField>PostalCode</DataField>
+				</Field>
+				<Field Name="Country">
+					<DataField>Country</DataField>
+				</Field>
+				<Field Name="Salesperson">
+					<DataField>Salesperson</DataField>
+				</Field>
+				<Field Name="OrderID">
+					<DataField>OrderID</DataField>
+				</Field>
+				<Field Name="OrderDate">
+					<DataField>OrderDate</DataField>
+				</Field>
+				<Field Name="RequiredDate">
+					<DataField>RequiredDate</DataField>
+				</Field>
+				<Field Name="ShippedDate">
+					<DataField>ShippedDate</DataField>
+				</Field>
+				<Field Name="Shippers.CompanyName">
+					<DataField>Shippers.CompanyName</DataField>
+				</Field>
+				<Field Name="ProductID">
+					<DataField>ProductID</DataField>
+				</Field>
+				<Field Name="ProductName">
+					<DataField>ProductName</DataField>
+				</Field>
+				<Field Name="UnitPrice">
+					<DataField>UnitPrice</DataField>
+				</Field>
+				<Field Name="Quantity">
+					<DataField>Quantity</DataField>
+				</Field>
+				<Field Name="Discount">
+					<DataField>Discount</DataField>
+				</Field>
+				<Field Name="ExtendedPrice">
+					<DataField>ExtendedPrice</DataField>
+				</Field>
+				<Field Name="Freight">
+					<DataField>Freight</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT * FROM Invoices 
+ORDER BY Customers.CompanyName, OrderID</CommandText>
+				<DataSourceName>NWIND</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

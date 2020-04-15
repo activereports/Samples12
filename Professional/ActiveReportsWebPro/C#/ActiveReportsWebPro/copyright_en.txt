@@ -1,0 +1,8 @@
+﻿--------------------------------
+framework_4.5.1.21328.swz
+textLayout_2.0.0.232.swz
+--------------------------------
+The Runtime Shared Libraries listed above are provided by Adobe Systems Incorporated. You can find details about these files and their usage in the following page. 
+
+[Release notes | Flex 4.5.1 SDK]
+https://helpx.adobe.com/flash-builder/release-note/release-notes-flex-4-5.html

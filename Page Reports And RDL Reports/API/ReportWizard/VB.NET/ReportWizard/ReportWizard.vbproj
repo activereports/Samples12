@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F58D5C30-1F78-4E30-9FBE-D75B3A874BCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GrapeCity.ActiveReports.Samples.ReportWizard</RootNamespace>
+    <AssemblyName>ReportWizard</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <StartupObject>GrapeCity.ActiveReports.Samples.ReportWizard.My.MyApplication</StartupObject>
+    <PlatformTarget>x86</PlatformTarget>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Constants.vb" />
+    <Compile Include="LayoutBuilder.vb" />
+    <Compile Include="MetaData\FieldMetaData.vb" />
+    <Compile Include="MetaData\ReportMetaData.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportWizardState.vb" />
+    <Compile Include="UI\DragDropListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TipControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TipControl.Designer.vb">
+      <DependentUpon>TipControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportsForm.designer.vb">
+      <DependentUpon>ReportsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WizardDialog.Designer.vb">
+      <DependentUpon>WizardDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\BaseStep.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\BaseStep.Designer.vb">
+      <DependentUpon>BaseStep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectGroupingFields.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectGroupingFields.Designer.vb">
+      <DependentUpon>SelectGroupingFields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectMasterReport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectMasterReport.Designer.vb">
+      <DependentUpon>SelectMasterReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectOutputFields.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectOutputFields.Designer.vb">
+      <DependentUpon>SelectOutputFields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectSummaryOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectSummaryOptions.Designer.vb">
+      <DependentUpon>SelectSummaryOptions.vb</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    
+    <EmbeddedResource Include="UI\DragDropListBox.resx">
+      <DependentUpon>DragDropListBox.vb</DependentUpon>
+    </EmbeddedResource>
+    
+    
+    <EmbeddedResource Include="UI\TipControl.resx">
+      <DependentUpon>TipControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportsForm.resx">
+      <DependentUpon>ReportsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardDialog.resx">
+      <DependentUpon>WizardDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\BaseStep.resx">
+      <DependentUpon>BaseStep.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectGroupingFields.resx">
+      <DependentUpon>SelectGroupingFields.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectMasterReport.resx">
+      <DependentUpon>SelectMasterReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectOutputFields.resx">
+      <DependentUpon>SelectOutputFields.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectSummaryOptions.resx">
+      <DependentUpon>SelectSummaryOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Bg_Blue.png" />
+    <Content Include="Resources\Info_02.gif" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GenreSales.rdlx-master">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="StoreSales.rdlx-master">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GrapeCity.ActiveReports.Design.Win.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>

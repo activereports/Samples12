@@ -1,0 +1,1870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtProductName.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtProductName.Left" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="txtProductName.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt</value>
+  </data>
+  <data name="txtProductName.Text" xml:space="preserve">
+    <value>ProductName</value>
+  </data>
+  <data name="txtProductName.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="txtProductName.Width" type="System.Single, mscorlib">
+    <value>2.75</value>
+  </data>
+  <data name="txtProductID.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtProductID.Left" type="System.Single, mscorlib">
+    <value>2.87500024</value>
+  </data>
+  <data name="txtProductID.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; text-align: right</value>
+  </data>
+  <data name="txtProductID.Text" xml:space="preserve">
+    <value>ProductID</value>
+  </data>
+  <data name="txtProductID.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="txtProductID.Width" type="System.Single, mscorlib">
+    <value>0.937000036</value>
+  </data>
+  <data name="txtQtyPerUnit.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtQtyPerUnit.Left" type="System.Single, mscorlib">
+    <value>3.8125</value>
+  </data>
+  <data name="txtQtyPerUnit.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt</value>
+  </data>
+  <data name="txtQtyPerUnit.Text" xml:space="preserve">
+    <value>QtyPerUnit</value>
+  </data>
+  <data name="txtQtyPerUnit.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="txtQtyPerUnit.Width" type="System.Single, mscorlib">
+    <value>1.62450027</value>
+  </data>
+  <data name="txtUnitPrice.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtUnitPrice.Left" type="System.Single, mscorlib">
+    <value>5.4375</value>
+  </data>
+  <data name="txtUnitPrice.OutputFormat" xml:space="preserve">
+    <value>$###,##0.00</value>
+  </data>
+  <data name="txtUnitPrice.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 10pt; text-align: right</value>
+  </data>
+  <data name="txtUnitPrice.Text" xml:space="preserve">
+    <value>UnitPrice</value>
+  </data>
+  <data name="txtUnitPrice.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="txtUnitPrice.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Line1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Line1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Line1.Top" type="System.Single, mscorlib">
+    <value>2.5625</value>
+  </data>
+  <data name="Line1.Width" type="System.Single, mscorlib">
+    <value>6.5</value>
+  </data>
+  <data name="lblTitle.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTitle.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTitle.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblTitle.Style" xml:space="preserve">
+    <value>font-family: Times New Roman; font-size: 22pt; font-style: italic; text-align: center</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Fall Catalog</value>
+  </data>
+  <data name="lblTitle.Top" type="System.Single, mscorlib">
+    <value>3.875</value>
+  </data>
+  <data name="lblTitle.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc1.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblDesc1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc1.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc1.Style" xml:space="preserve">
+    <value>color: rgb(128,0,0); font-family: Times New Roman; font-size: 16pt; font-style: italic; text-align: center</value>
+  </data>
+  <data name="lblDesc1.Text" xml:space="preserve">
+    <value>Commitment to Quality</value>
+  </data>
+  <data name="lblDesc1.Top" type="System.Single, mscorlib">
+    <value>4.375</value>
+  </data>
+  <data name="lblDesc1.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc2.Height" type="System.Single, mscorlib">
+    <value>1.1875</value>
+  </data>
+  <data name="lblDesc2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc2.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc2.Style" xml:space="preserve">
+    <value>color: rgb(128,0,0); font-family: Times New Roman; font-size: 12pt; font-weight: bold</value>
+  </data>
+  <data name="lblDesc2.Text" xml:space="preserve">
+    <value>Northwind Traders is committed to bringing you products of the highest quality from all over the world. If at any time you are not completely satisfied with any of our products, you may return them to us for a full refund.</value>
+  </data>
+  <data name="lblDesc2.Top" type="System.Single, mscorlib">
+    <value>4.75</value>
+  </data>
+  <data name="lblDesc2.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc3.Height" type="System.Single, mscorlib">
+    <value>0.5625</value>
+  </data>
+  <data name="lblDesc3.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc3.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc3.Style" xml:space="preserve">
+    <value>color: rgb(0,0,128); font-family: Times New Roman; font-size: 18pt; font-style: italic; text-align: center</value>
+  </data>
+  <data name="lblDesc3.Text" xml:space="preserve">
+    <value>Tour the Gastronomic World of NorthWind Traders!</value>
+  </data>
+  <data name="lblDesc3.Top" type="System.Single, mscorlib">
+    <value>6.375</value>
+  </data>
+  <data name="lblDesc3.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc4.Height" type="System.Single, mscorlib">
+    <value>1.1875</value>
+  </data>
+  <data name="lblDesc4.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc4.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc4.Style" xml:space="preserve">
+    <value>color: rgb(0,0,128); font-family: Times New Roman; font-size: 12pt; font-style: italic; font-weight: bold</value>
+  </data>
+  <data name="lblDesc4.Text" xml:space="preserve">
+    <value>When Northwind Traders buyers set out to search for the Wonders of the Gastronomic World they found a lot more than seven of them. And here they are--tastefully presented in our Fall Catalog.</value>
+  </data>
+  <data name="lblDesc4.Top" type="System.Single, mscorlib">
+    <value>7.3125</value>
+  </data>
+  <data name="lblDesc4.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc5.Height" type="System.Single, mscorlib">
+    <value>0.625</value>
+  </data>
+  <data name="lblDesc5.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc5.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc5.Style" xml:space="preserve">
+    <value>color: rgb(0,0,128); font-family: Times New Roman; font-size: 12pt; font-style: italic; font-weight: bold</value>
+  </data>
+  <data name="lblDesc5.Text" xml:space="preserve">
+    <value>The beverages and confections we're featuring this fall are sure to please even the most discerning palates.</value>
+  </data>
+  <data name="lblDesc5.Top" type="System.Single, mscorlib">
+    <value>8.75</value>
+  </data>
+  <data name="lblDesc5.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc6.Height" type="System.Single, mscorlib">
+    <value>0.8125</value>
+  </data>
+  <data name="lblDesc6.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc6.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc6.Style" xml:space="preserve">
+    <value>color: rgb(0,0,128); font-family: Times New Roman; font-size: 12pt; font-style: italic; font-weight: bold</value>
+  </data>
+  <data name="lblDesc6.Text" xml:space="preserve">
+    <value>For thirst quenchers, try exotic Chang, hearty Laughing Lumberjack Lager, robust Rh?nbr?u Klosterbier, and refreshing Lakkalik??ri.</value>
+  </data>
+  <data name="lblDesc6.Top" type="System.Single, mscorlib">
+    <value>9.625</value>
+  </data>
+  <data name="lblDesc6.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc7.Height" type="System.Single, mscorlib">
+    <value>1.1875</value>
+  </data>
+  <data name="lblDesc7.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc7.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc7.Style" xml:space="preserve">
+    <value>color: rgb(0,0,128); font-family: Times New Roman; font-size: 12pt; font-style: italic; font-weight: bold</value>
+  </data>
+  <data name="lblDesc7.Text" xml:space="preserve">
+    <value>And for a taste of something sweet, try Pavlova, the intriguing meringue dessert from Australia; Teatime Chocolate Biscuits from England, tasty Maxilaku from Finland; and the Berlin speciality, NuNuCa Nu?-Nougat-Creme.</value>
+  </data>
+  <data name="lblDesc7.Top" type="System.Single, mscorlib">
+    <value>10.6875</value>
+  </data>
+  <data name="lblDesc7.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="lblDesc8.Height" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="lblDesc8.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDesc8.Left" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblDesc8.Style" xml:space="preserve">
+    <value>color: rgb(0,0,128); font-family: Times New Roman; font-size: 12pt; font-style: italic; font-weight: bold</value>
+  </data>
+  <data name="lblDesc8.Text" xml:space="preserve">
+    <value>Our sales representatives are ready to take your orders now. For your convenience, we've included details on ordering on the last page of this catalog.</value>
+  </data>
+  <data name="lblDesc8.Top" type="System.Single, mscorlib">
+    <value>12.1875</value>
+  </data>
+  <data name="lblDesc8.Width" type="System.Single, mscorlib">
+    <value>2.9375</value>
+  </data>
+  <data name="imgNWLogo.Height" type="System.Single, mscorlib">
+    <value>2.3125</value>
+  </data>
+  <data name="imgNWLogo.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="imgNWLogo.ImageData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
+        cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
+        b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
+        AQEBCQIAAAAAAAAAAAAAAOtCAADrQgAAAQEBAQoPAgAAAOtCAAACAOZCAAD/2P/gABBKRklGAAEBAQBg
+        AGAAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0
+        NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAN4BBQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAA
+        AAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgj
+        QrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2
+        d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj
+        5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIE
+        BAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYn
+        KCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqi
+        o6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEA
+        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
+        iiigAooooA//2Qs=
+</value>
+  </data>
+  <data name="imgNWLogo.Left" type="System.Single, mscorlib">
+    <value>1.875</value>
+  </data>
+  <data name="imgNWLogo.Top" type="System.Single, mscorlib">
+    <value>0.5</value>
+  </data>
+  <data name="imgNWLogo.Width" type="System.Single, mscorlib">
+    <value>2.75</value>
+  </data>
+  <data name="PageBreak1.Height" type="System.Single, mscorlib">
+    <value>0.05555556</value>
+  </data>
+  <data name="PageBreak1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PageBreak1.Top" type="System.Single, mscorlib">
+    <value>6.125</value>
+  </data>
+  <data name="PageBreak1.Width" type="System.Single, mscorlib">
+    <value>6.5</value>
+  </data>
+  <data name="boxShip.Height" type="System.Single, mscorlib">
+    <value>0.8645833</value>
+  </data>
+  <data name="boxShip.Left" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="boxShip.Top" type="System.Single, mscorlib">
+    <value>6.625</value>
+  </data>
+  <data name="boxShip.Width" type="System.Single, mscorlib">
+    <value>1.697917</value>
+  </data>
+  <data name="boxTotals.Height" type="System.Single, mscorlib">
+    <value>0.6666667</value>
+  </data>
+  <data name="boxTotals.Left" type="System.Single, mscorlib">
+    <value>3.404167</value>
+  </data>
+  <data name="boxTotals.Top" type="System.Single, mscorlib">
+    <value>6.146528</value>
+  </data>
+  <data name="boxTotals.Width" type="System.Single, mscorlib">
+    <value>2.697917</value>
+  </data>
+  <data name="boxProducts.Height" type="System.Single, mscorlib">
+    <value>1.885417</value>
+  </data>
+  <data name="boxProducts.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="boxProducts.Top" type="System.Single, mscorlib">
+    <value>4.260417</value>
+  </data>
+  <data name="boxProducts.Width" type="System.Single, mscorlib">
+    <value>5.8</value>
+  </data>
+  <data name="lblOrderForm.Height" type="System.Single, mscorlib">
+    <value>0.3229167</value>
+  </data>
+  <data name="lblOrderForm.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblOrderForm.Left" type="System.Single, mscorlib">
+    <value>3.90200019</value>
+  </data>
+  <data name="lblOrderForm.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-size: 18pt; font-weight: bold; text-align: right</value>
+  </data>
+  <data name="lblOrderForm.Text" xml:space="preserve">
+    <value>ORDER FORM</value>
+  </data>
+  <data name="lblOrderForm.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblOrderForm.Width" type="System.Single, mscorlib">
+    <value>2.15008283</value>
+  </data>
+  <data name="lblAddress.Height" type="System.Single, mscorlib">
+    <value>0.3229167</value>
+  </data>
+  <data name="lblAddress.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAddress.Left" type="System.Single, mscorlib">
+    <value>0.3020833</value>
+  </data>
+  <data name="lblAddress.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Times New Roman; font-size: 8pt; font-style: italic; text-align: left</value>
+  </data>
+  <data name="lblAddress.Text" xml:space="preserve">
+    <value>One Portals Way, Twin Points WA  98156
+Phone: 1-206-555-1417   Fax: 1-206-555-5938</value>
+  </data>
+  <data name="lblAddress.Top" type="System.Single, mscorlib">
+    <value>0.96875</value>
+  </data>
+  <data name="lblAddress.Width" type="System.Single, mscorlib">
+    <value>2.395833</value>
+  </data>
+  <data name="lblInstructionsText.Height" type="System.Single, mscorlib">
+    <value>0.7604167</value>
+  </data>
+  <data name="lblInstructionsText.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblInstructionsText.Left" type="System.Single, mscorlib">
+    <value>0.3020833</value>
+  </data>
+  <data name="lblInstructionsText.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Times New Roman; font-size: 11pt; font-style: italic; text-align: left</value>
+  </data>
+  <data name="lblInstructionsText.Text" xml:space="preserve">
+    <value>How to order:
+To place your order, fill out this order form and return it to us. For fast personal service, call us at 1-206-555-1417. If you prefer to order by fax, prepare your order as you would for a mail-in, and then fax us at 1-206-555-5938.</value>
+  </data>
+  <data name="lblInstructionsText.Top" type="System.Single, mscorlib">
+    <value>1.59375</value>
+  </data>
+  <data name="lblInstructionsText.Width" type="System.Single, mscorlib">
+    <value>5.791667</value>
+  </data>
+  <data name="lblBillTo.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblBillTo.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillTo.Left" type="System.Single, mscorlib">
+    <value>0.249000013</value>
+  </data>
+  <data name="lblBillTo.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left; white-space: inherit; ddo-wrap-mode: inherit</value>
+  </data>
+  <data name="lblBillTo.Text" xml:space="preserve">
+    <value>Bill To:</value>
+  </data>
+  <data name="lblBillTo.Top" type="System.Single, mscorlib">
+    <value>2.77100015</value>
+  </data>
+  <data name="lblBillTo.Width" type="System.Single, mscorlib">
+    <value>0.5380001</value>
+  </data>
+  <data name="lblShipTo.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblShipTo.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipTo.Left" type="System.Single, mscorlib">
+    <value>3.38300014</value>
+  </data>
+  <data name="lblShipTo.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblShipTo.Text" xml:space="preserve">
+    <value>Ship To:</value>
+  </data>
+  <data name="lblShipTo.Top" type="System.Single, mscorlib">
+    <value>2.78125</value>
+  </data>
+  <data name="lblShipTo.Width" type="System.Single, mscorlib">
+    <value>0.531583548</value>
+  </data>
+  <data name="lblDateOfOrder.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblDateOfOrder.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDateOfOrder.Left" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="lblDateOfOrder.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblDateOfOrder.Text" xml:space="preserve">
+    <value>Date of Order:</value>
+  </data>
+  <data name="lblDateOfOrder.Top" type="System.Single, mscorlib">
+    <value>3.739583</value>
+  </data>
+  <data name="lblDateOfOrder.Width" type="System.Single, mscorlib">
+    <value>0.987499952</value>
+  </data>
+  <data name="lblDateRequired.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblDateRequired.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblDateRequired.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lblDateRequired.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblDateRequired.Text" xml:space="preserve">
+    <value>Date Required:</value>
+  </data>
+  <data name="lblDateRequired.Top" type="System.Single, mscorlib">
+    <value>3.989583</value>
+  </data>
+  <data name="lblDateRequired.Width" type="System.Single, mscorlib">
+    <value>0.8645833</value>
+  </data>
+  <data name="lblCustomerID.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblCustomerID.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCustomerID.Left" type="System.Single, mscorlib">
+    <value>3.383333</value>
+  </data>
+  <data name="lblCustomerID.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblCustomerID.Text" xml:space="preserve">
+    <value>Customer ID:</value>
+  </data>
+  <data name="lblCustomerID.Top" type="System.Single, mscorlib">
+    <value>3.989583</value>
+  </data>
+  <data name="lblCustomerID.Width" type="System.Single, mscorlib">
+    <value>0.7604167</value>
+  </data>
+  <data name="lblProductID2.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblProductID2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProductID2.Left" type="System.Single, mscorlib">
+    <value>0.3076389</value>
+  </data>
+  <data name="lblProductID2.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblProductID2.Text" xml:space="preserve">
+    <value>Product ID:</value>
+  </data>
+  <data name="lblProductID2.Top" type="System.Single, mscorlib">
+    <value>4.28125</value>
+  </data>
+  <data name="lblProductID2.Width" type="System.Single, mscorlib">
+    <value>0.65625</value>
+  </data>
+  <data name="lblProductName2.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblProductName2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProductName2.Left" type="System.Single, mscorlib">
+    <value>1.036111</value>
+  </data>
+  <data name="lblProductName2.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblProductName2.Text" xml:space="preserve">
+    <value>Product Name:</value>
+  </data>
+  <data name="lblProductName2.Top" type="System.Single, mscorlib">
+    <value>4.28125</value>
+  </data>
+  <data name="lblProductName2.Width" type="System.Single, mscorlib">
+    <value>2.354167</value>
+  </data>
+  <data name="lblUnitPrice2.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblUnitPrice2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblUnitPrice2.Left" type="System.Single, mscorlib">
+    <value>3.427083</value>
+  </data>
+  <data name="lblUnitPrice2.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblUnitPrice2.Text" xml:space="preserve">
+    <value>Unit Price:</value>
+  </data>
+  <data name="lblUnitPrice2.Top" type="System.Single, mscorlib">
+    <value>4.28125</value>
+  </data>
+  <data name="lblUnitPrice2.Width" type="System.Single, mscorlib">
+    <value>0.8541667</value>
+  </data>
+  <data name="lblQuantity2.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblQuantity2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblQuantity2.Left" type="System.Single, mscorlib">
+    <value>4.327778</value>
+  </data>
+  <data name="lblQuantity2.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblQuantity2.Text" xml:space="preserve">
+    <value>Quantity:</value>
+  </data>
+  <data name="lblQuantity2.Top" type="System.Single, mscorlib">
+    <value>4.28125</value>
+  </data>
+  <data name="lblQuantity2.Width" type="System.Single, mscorlib">
+    <value>0.8333333</value>
+  </data>
+  <data name="lblExtendedPrice2.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblExtendedPrice2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblExtendedPrice2.Left" type="System.Single, mscorlib">
+    <value>5.177083</value>
+  </data>
+  <data name="lblExtendedPrice2.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblExtendedPrice2.Text" xml:space="preserve">
+    <value>Extended Price: </value>
+  </data>
+  <data name="lblExtendedPrice2.Top" type="System.Single, mscorlib">
+    <value>4.28125</value>
+  </data>
+  <data name="lblExtendedPrice2.Width" type="System.Single, mscorlib">
+    <value>0.9099172</value>
+  </data>
+  <data name="lblSubTotal.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblSubTotal.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblSubTotal.Left" type="System.Single, mscorlib">
+    <value>3.6375</value>
+  </data>
+  <data name="lblSubTotal.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblSubTotal.Text" xml:space="preserve">
+    <value>Subtotal:</value>
+  </data>
+  <data name="lblSubTotal.Top" type="System.Single, mscorlib">
+    <value>6.167361</value>
+  </data>
+  <data name="lblSubTotal.Width" type="System.Single, mscorlib">
+    <value>0.53125</value>
+  </data>
+  <data name="lblFreight.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblFreight.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblFreight.Left" type="System.Single, mscorlib">
+    <value>3.6375</value>
+  </data>
+  <data name="lblFreight.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblFreight.Text" xml:space="preserve">
+    <value>Freight (estimated):</value>
+  </data>
+  <data name="lblFreight.Top" type="System.Single, mscorlib">
+    <value>6.386111</value>
+  </data>
+  <data name="lblFreight.Width" type="System.Single, mscorlib">
+    <value>1.09375</value>
+  </data>
+  <data name="lblTotal.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblTotal.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTotal.Left" type="System.Single, mscorlib">
+    <value>3.6375</value>
+  </data>
+  <data name="lblTotal.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblTotal.Text" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblTotal.Top" type="System.Single, mscorlib">
+    <value>6.605</value>
+  </data>
+  <data name="lblTotal.Width" type="System.Single, mscorlib">
+    <value>1.09350038</value>
+  </data>
+  <data name="lneBillTo1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneBillTo1.Left" type="System.Single, mscorlib">
+    <value>0.7875</value>
+  </data>
+  <data name="lneBillTo1.Top" type="System.Single, mscorlib">
+    <value>2.958333</value>
+  </data>
+  <data name="lneBillTo1.Width" type="System.Single, mscorlib">
+    <value>2.197917</value>
+  </data>
+  <data name="lneBillTo2.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneBillTo2.Left" type="System.Single, mscorlib">
+    <value>0.28125</value>
+  </data>
+  <data name="lneBillTo2.Top" type="System.Single, mscorlib">
+    <value>3.135417</value>
+  </data>
+  <data name="lneBillTo2.Width" type="System.Single, mscorlib">
+    <value>2.704167</value>
+  </data>
+  <data name="lneBillTo3.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneBillTo3.Left" type="System.Single, mscorlib">
+    <value>0.28125</value>
+  </data>
+  <data name="lneBillTo3.Top" type="System.Single, mscorlib">
+    <value>3.302083</value>
+  </data>
+  <data name="lneBillTo3.Width" type="System.Single, mscorlib">
+    <value>2.704167</value>
+  </data>
+  <data name="lneBillTo4.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneBillTo4.Left" type="System.Single, mscorlib">
+    <value>0.28125</value>
+  </data>
+  <data name="lneBillTo4.Top" type="System.Single, mscorlib">
+    <value>3.46875</value>
+  </data>
+  <data name="lneBillTo4.Width" type="System.Single, mscorlib">
+    <value>2.704167</value>
+  </data>
+  <data name="lneShipTo1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneShipTo1.Left" type="System.Single, mscorlib">
+    <value>3.902083</value>
+  </data>
+  <data name="lneShipTo1.Top" type="System.Single, mscorlib">
+    <value>2.958333</value>
+  </data>
+  <data name="lneShipTo1.Width" type="System.Single, mscorlib">
+    <value>2.187499</value>
+  </data>
+  <data name="lneShipTo2.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneShipTo2.Left" type="System.Single, mscorlib">
+    <value>3.395833</value>
+  </data>
+  <data name="lneShipTo2.Top" type="System.Single, mscorlib">
+    <value>3.135417</value>
+  </data>
+  <data name="lneShipTo2.Width" type="System.Single, mscorlib">
+    <value>2.693749</value>
+  </data>
+  <data name="lneShipTo3.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneShipTo3.Left" type="System.Single, mscorlib">
+    <value>3.395833</value>
+  </data>
+  <data name="lneShipTo3.Top" type="System.Single, mscorlib">
+    <value>3.302083</value>
+  </data>
+  <data name="lneShipTo3.Width" type="System.Single, mscorlib">
+    <value>2.693749</value>
+  </data>
+  <data name="lneShipTo4.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneShipTo4.Left" type="System.Single, mscorlib">
+    <value>3.395833</value>
+  </data>
+  <data name="lneShipTo4.Top" type="System.Single, mscorlib">
+    <value>3.46875</value>
+  </data>
+  <data name="lneShipTo4.Width" type="System.Single, mscorlib">
+    <value>2.693749</value>
+  </data>
+  <data name="lneDateOfOrder.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneDateOfOrder.Left" type="System.Single, mscorlib">
+    <value>1.166667</value>
+  </data>
+  <data name="lneDateOfOrder.Top" type="System.Single, mscorlib">
+    <value>3.916667</value>
+  </data>
+  <data name="lneDateOfOrder.Width" type="System.Single, mscorlib">
+    <value>1.5</value>
+  </data>
+  <data name="lneDateRequired.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneDateRequired.Left" type="System.Single, mscorlib">
+    <value>1.166667</value>
+  </data>
+  <data name="lneDateRequired.Top" type="System.Single, mscorlib">
+    <value>4.15625</value>
+  </data>
+  <data name="lneDateRequired.Width" type="System.Single, mscorlib">
+    <value>1.5</value>
+  </data>
+  <data name="lneCustomerID.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneCustomerID.Left" type="System.Single, mscorlib">
+    <value>4.18125</value>
+  </data>
+  <data name="lneCustomerID.Top" type="System.Single, mscorlib">
+    <value>4.15625</value>
+  </data>
+  <data name="lneCustomerID.Width" type="System.Single, mscorlib">
+    <value>1.90625</value>
+  </data>
+  <data name="lneProducts2.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts2.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts2.Top" type="System.Single, mscorlib">
+    <value>4.645833</value>
+  </data>
+  <data name="lneProducts2.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts3.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts3.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts3.Top" type="System.Single, mscorlib">
+    <value>4.8125</value>
+  </data>
+  <data name="lneProducts3.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts4.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts4.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts4.Top" type="System.Single, mscorlib">
+    <value>4.979167</value>
+  </data>
+  <data name="lneProducts4.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts5.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts5.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts5.Top" type="System.Single, mscorlib">
+    <value>5.145833</value>
+  </data>
+  <data name="lneProducts5.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts6.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts6.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts6.Top" type="System.Single, mscorlib">
+    <value>5.3125</value>
+  </data>
+  <data name="lneProducts6.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts7.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts7.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts7.Top" type="System.Single, mscorlib">
+    <value>5.479167</value>
+  </data>
+  <data name="lneProducts7.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts8.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts8.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts8.Top" type="System.Single, mscorlib">
+    <value>5.645833</value>
+  </data>
+  <data name="lneProducts8.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts9.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts9.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts9.Top" type="System.Single, mscorlib">
+    <value>5.8125</value>
+  </data>
+  <data name="lneProducts9.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts10.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts10.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts10.Top" type="System.Single, mscorlib">
+    <value>5.979167</value>
+  </data>
+  <data name="lneProducts10.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts1.Left" type="System.Single, mscorlib">
+    <value>0.3</value>
+  </data>
+  <data name="lneProducts1.Top" type="System.Single, mscorlib">
+    <value>4.489583</value>
+  </data>
+  <data name="lneProducts1.Width" type="System.Single, mscorlib">
+    <value>5.79999971</value>
+  </data>
+  <data name="lneProducts12.Height" type="System.Single, mscorlib">
+    <value>1.88472176</value>
+  </data>
+  <data name="lneProducts12.Left" type="System.Single, mscorlib">
+    <value>3.404167</value>
+  </data>
+  <data name="lneProducts12.Top" type="System.Single, mscorlib">
+    <value>4.259722</value>
+  </data>
+  <data name="lneProducts12.Width" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts14.Height" type="System.Single, mscorlib">
+    <value>2.5625</value>
+  </data>
+  <data name="lneProducts14.Left" type="System.Single, mscorlib">
+    <value>5.177083</value>
+  </data>
+  <data name="lneProducts14.Top" type="System.Single, mscorlib">
+    <value>4.259722</value>
+  </data>
+  <data name="lneProducts14.Width" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneProducts13.Height" type="System.Single, mscorlib">
+    <value>1.88472176</value>
+  </data>
+  <data name="lneProducts13.Left" type="System.Single, mscorlib">
+    <value>4.302083</value>
+  </data>
+  <data name="lneProducts13.Top" type="System.Single, mscorlib">
+    <value>4.259722</value>
+  </data>
+  <data name="lneProducts13.Width" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneTotal1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneTotal1.Left" type="System.Single, mscorlib">
+    <value>3.404167</value>
+  </data>
+  <data name="lneTotal1.Top" type="System.Single, mscorlib">
+    <value>6.365278</value>
+  </data>
+  <data name="lneTotal1.Width" type="System.Single, mscorlib">
+    <value>2.691666</value>
+  </data>
+  <data name="lneTotal2.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneTotal2.Left" type="System.Single, mscorlib">
+    <value>3.404167</value>
+  </data>
+  <data name="lneTotal2.Top" type="System.Single, mscorlib">
+    <value>6.594444</value>
+  </data>
+  <data name="lneTotal2.Width" type="System.Single, mscorlib">
+    <value>2.691666</value>
+  </data>
+  <data name="lblSpeedyExpress.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblSpeedyExpress.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblSpeedyExpress.Left" type="System.Single, mscorlib">
+    <value>0.65625</value>
+  </data>
+  <data name="lblSpeedyExpress.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblSpeedyExpress.Text" xml:space="preserve">
+    <value>Speedy Express</value>
+  </data>
+  <data name="lblSpeedyExpress.Top" type="System.Single, mscorlib">
+    <value>6.71875</value>
+  </data>
+  <data name="lblSpeedyExpress.Width" type="System.Single, mscorlib">
+    <value>1.041667</value>
+  </data>
+  <data name="lblUnitedPackage.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblUnitedPackage.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblUnitedPackage.Left" type="System.Single, mscorlib">
+    <value>0.65625</value>
+  </data>
+  <data name="lblUnitedPackage.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblUnitedPackage.Text" xml:space="preserve">
+    <value>United Package</value>
+  </data>
+  <data name="lblUnitedPackage.Top" type="System.Single, mscorlib">
+    <value>6.979167</value>
+  </data>
+  <data name="lblUnitedPackage.Width" type="System.Single, mscorlib">
+    <value>1.020833</value>
+  </data>
+  <data name="lblFederalShipping.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblFederalShipping.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblFederalShipping.Left" type="System.Single, mscorlib">
+    <value>0.65625</value>
+  </data>
+  <data name="lblFederalShipping.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblFederalShipping.Text" xml:space="preserve">
+    <value>Federal Shipping</value>
+  </data>
+  <data name="lblFederalShipping.Top" type="System.Single, mscorlib">
+    <value>7.229167</value>
+  </data>
+  <data name="lblFederalShipping.Width" type="System.Single, mscorlib">
+    <value>1.083333</value>
+  </data>
+  <data name="lblShipVia.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblShipVia.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipVia.Left" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblShipVia.Style" xml:space="preserve">
+    <value>background-color: White; color: Navy; font-family: Arial Narrow; font-weight: bold; text-align: left</value>
+  </data>
+  <data name="lblShipVia.Text" xml:space="preserve">
+    <value>Ship Via (check one):</value>
+  </data>
+  <data name="lblShipVia.Top" type="System.Single, mscorlib">
+    <value>6.395833</value>
+  </data>
+  <data name="lblShipVia.Width" type="System.Single, mscorlib">
+    <value>1.1875</value>
+  </data>
+  <data name="boxSpeedyExpress.Height" type="System.Single, mscorlib">
+    <value>0.1354167</value>
+  </data>
+  <data name="boxSpeedyExpress.Left" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="boxSpeedyExpress.Top" type="System.Single, mscorlib">
+    <value>6.75</value>
+  </data>
+  <data name="boxSpeedyExpress.Width" type="System.Single, mscorlib">
+    <value>0.1270833</value>
+  </data>
+  <data name="boxUnitedPackage.Height" type="System.Single, mscorlib">
+    <value>0.1354167</value>
+  </data>
+  <data name="boxUnitedPackage.Left" type="System.Single, mscorlib">
+    <value>0.4270833</value>
+  </data>
+  <data name="boxUnitedPackage.Top" type="System.Single, mscorlib">
+    <value>7.010417</value>
+  </data>
+  <data name="boxUnitedPackage.Width" type="System.Single, mscorlib">
+    <value>0.1270833</value>
+  </data>
+  <data name="boxFederalShipping.Height" type="System.Single, mscorlib">
+    <value>0.1354167</value>
+  </data>
+  <data name="boxFederalShipping.Left" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="boxFederalShipping.Top" type="System.Single, mscorlib">
+    <value>7.25</value>
+  </data>
+  <data name="boxFederalShipping.Width" type="System.Single, mscorlib">
+    <value>0.1270833</value>
+  </data>
+  <data name="SmallPictureLogo.Height" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="SmallPictureLogo.ImageData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
+        cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
+        b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
+        AQEBCQIAAAAAAAAAAAAAAO0NAADtDQAAAQEBAQoPAgAAAO0NAAACAOgNAAD/2P/gABBKRklGAAEBAQBg
+        AGAAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0
+        NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAFcAVwMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAA
+        AAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgj
+        QrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2
+        d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj
+        5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIE
+        BAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYn
+        KCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqi
+        o6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEA
+        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
+        FAH/2Qs=
+</value>
+  </data>
+  <data name="SmallPictureLogo.Left" type="System.Single, mscorlib">
+    <value>0.3020833</value>
+  </data>
+  <data name="SmallPictureLogo.Top" type="System.Single, mscorlib">
+    <value>0.01041667</value>
+  </data>
+  <data name="SmallPictureLogo.Width" type="System.Single, mscorlib">
+    <value>0.875</value>
+  </data>
+  <data name="NameLogo.Height" type="System.Single, mscorlib">
+    <value>0.4375</value>
+  </data>
+  <data name="NameLogo.ImageData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="NameLogo.Left" type="System.Single, mscorlib">
+    <value>1.1875</value>
+  </data>
+  <data name="NameLogo.Top" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="NameLogo.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="lneSeparator.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneSeparator.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneSeparator.Top" type="System.Single, mscorlib">
+    <value>0.9270833</value>
+  </data>
+  <data name="lneSeparator.Width" type="System.Single, mscorlib">
+    <value>6.5</value>
+  </data>
+  <data name="lneProducts11.Height" type="System.Single, mscorlib">
+    <value>1.88472176</value>
+  </data>
+  <data name="lneProducts11.Left" type="System.Single, mscorlib">
+    <value>0.96875</value>
+  </data>
+  <data name="lneProducts11.Top" type="System.Single, mscorlib">
+    <value>4.259722</value>
+  </data>
+  <data name="lneProducts11.Width" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPageFooter.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblPageFooter.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPageFooter.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPageFooter.Style" xml:space="preserve">
+    <value>background-color: rgb(128,0,0); color: rgb(255,255,192); font-family: Times New Roman; font-size: 12pt; font-style: italic; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblPageFooter.Text" xml:space="preserve">
+    <value>NorthWind Fall Catalog</value>
+  </data>
+  <data name="lblPageFooter.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPageFooter.Width" type="System.Single, mscorlib">
+    <value>6.4375</value>
+  </data>
+  <data name="lblPage.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblPage.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPage.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPage.Style" xml:space="preserve">
+    <value>text-align: center</value>
+  </data>
+  <data name="lblPage.Text" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="lblPage.Top" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblPage.Width" type="System.Single, mscorlib">
+    <value>6.4375</value>
+  </data>
+  <data name="txtDescription.Height" type="System.Single, mscorlib">
+    <value>1.0935</value>
+  </data>
+  <data name="txtDescription.Left" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="txtDescription.Style" xml:space="preserve">
+    <value>background-color: Transparent; color: Navy; font-size: 9.75pt; font-style: italic</value>
+  </data>
+  <data name="txtDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="txtDescription.Top" type="System.Single, mscorlib">
+    <value>0.3125</value>
+  </data>
+  <data name="txtDescription.Width" type="System.Single, mscorlib">
+    <value>2.875</value>
+  </data>
+  <data name="lblProductName.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblProductName.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProductName.Left" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="lblProductName.Style" xml:space="preserve">
+    <value>background-color: rgb(0,0,0); color: rgb(255,255,255); font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblProductName.Text" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lblProductName.Top" type="System.Single, mscorlib">
+    <value>1.406</value>
+  </data>
+  <data name="lblProductName.Width" type="System.Single, mscorlib">
+    <value>2.75</value>
+  </data>
+  <data name="lblProductID.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblProductID.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblProductID.Left" type="System.Single, mscorlib">
+    <value>2.875</value>
+  </data>
+  <data name="lblProductID.Style" xml:space="preserve">
+    <value>background-color: rgb(0,0,0); color: rgb(255,255,255); font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblProductID.Text" xml:space="preserve">
+    <value>Product ID</value>
+  </data>
+  <data name="lblProductID.Top" type="System.Single, mscorlib">
+    <value>1.406</value>
+  </data>
+  <data name="lblProductID.Width" type="System.Single, mscorlib">
+    <value>0.9375</value>
+  </data>
+  <data name="lblQtyPerUnit.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblQtyPerUnit.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblQtyPerUnit.Left" type="System.Single, mscorlib">
+    <value>3.8125</value>
+  </data>
+  <data name="lblQtyPerUnit.Style" xml:space="preserve">
+    <value>background-color: rgb(0,0,0); color: rgb(255,255,255); font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblQtyPerUnit.Text" xml:space="preserve">
+    <value>Quantity Per Unit</value>
+  </data>
+  <data name="lblQtyPerUnit.Top" type="System.Single, mscorlib">
+    <value>1.406</value>
+  </data>
+  <data name="lblQtyPerUnit.Width" type="System.Single, mscorlib">
+    <value>1.625</value>
+  </data>
+  <data name="lblUnitPrice.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblUnitPrice.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblUnitPrice.Left" type="System.Single, mscorlib">
+    <value>5.4375</value>
+  </data>
+  <data name="lblUnitPrice.Style" xml:space="preserve">
+    <value>background-color: rgb(0,0,0); color: rgb(255,255,255); font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblUnitPrice.Text" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="lblUnitPrice.Top" type="System.Single, mscorlib">
+    <value>1.406</value>
+  </data>
+  <data name="lblUnitPrice.Width" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtCategoryName.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="txtCategoryName.Left" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="txtCategoryName.Style" xml:space="preserve">
+    <value>color: Navy; font-size: 12pt</value>
+  </data>
+  <data name="txtCategoryName.Text" xml:space="preserve">
+    <value>CategoryName</value>
+  </data>
+  <data name="txtCategoryName.Top" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="txtCategoryName.Width" type="System.Single, mscorlib">
+    <value>2.875</value>
+  </data>
+  <data name="oleCategory.Height" type="System.Single, mscorlib">
+    <value>1.292</value>
+  </data>
+  <data name="oleCategory.Left" type="System.Single, mscorlib">
+    <value>4.25</value>
+  </data>
+  <data name="oleCategory.Top" type="System.Single, mscorlib">
+    <value>0.062</value>
+  </data>
+  <data name="oleCategory.Width" type="System.Single, mscorlib">
+    <value>1.729167</value>
+  </data>
+  <data name="lneSep.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneSep.Left" type="System.Single, mscorlib">
+    <value>0.125</value>
+  </data>
+  <data name="lneSep.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneSep.Width" type="System.Single, mscorlib">
+    <value>6.3125</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

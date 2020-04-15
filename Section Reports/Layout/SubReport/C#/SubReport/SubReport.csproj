@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5054375A-5173-421E-96E5-86404CE63262}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <AssemblyName>SubReportSample</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GrapeCity.ActiveReports.Samples.SubReport</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GrapeCity.ActiveReports.Chart.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Design.Win.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Diagnostics.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Image.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Rdf.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptBookmarkMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBookmarkMain.Designer.cs">
+      <DependentUpon>rptBookmarkMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptBookmarkSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBookmarkSub.Designer.cs">
+      <DependentUpon>rptBookmarkSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDSRelationChildMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDSRelationChildMain.Designer.cs">
+      <DependentUpon>rptDSRelationChildMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDSRelationChildSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDSRelationChildSub.Designer.cs">
+      <DependentUpon>rptDSRelationChildSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDSRelationParent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDSRelationParent.Designer.cs">
+      <DependentUpon>rptDSRelationParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptHierarchicalMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHierarchicalMain.Designer.cs">
+      <DependentUpon>rptHierarchicalMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptHierarchicalSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHierarchicalSub.Designer.cs">
+      <DependentUpon>rptHierarchicalSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptMasterMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMasterMain.Designer.cs">
+      <DependentUpon>rptMasterMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptMasterSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMasterSub.Designer.cs">
+      <DependentUpon>rptMasterSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptNestedChildMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptNestedChildMain.Designer.cs">
+      <DependentUpon>rptNestedChildMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptNestedChildSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptNestedChildSub.Designer.cs">
+      <DependentUpon>rptNestedChildSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptNestedParent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptNestedParent.Designer.cs">
+      <DependentUpon>rptNestedParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptParamMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptParamMain.Designer.cs">
+      <DependentUpon>rptParamMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptParamSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptParamSub.Designer.cs">
+      <DependentUpon>rptParamSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSimpleMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSimpleMain.Designer.cs">
+      <DependentUpon>rptSimpleMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSimpleSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSimpleSub.Designer.cs">
+      <DependentUpon>rptSimpleSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptUnboundDSMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptUnboundDSMain.Designer.cs">
+      <DependentUpon>rptUnboundDSMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptUnboundDSSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptUnboundDSSub.Designer.cs">
+      <DependentUpon>rptUnboundDSSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewerForm.Designer.cs">
+      <DependentUpon>ViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="ViewerForm.resx">
+      <DependentUpon>ViewerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    
+    <EmbeddedResource Include="rptBookmarkMain.resx">
+      <DependentUpon>rptBookmarkMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptBookmarkSub.resx">
+      <DependentUpon>rptBookmarkSub.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptDSRelationChildMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptDSRelationChildMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptDSRelationChildSub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptDSRelationChildSub.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptDSRelationParent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptDSRelationParent.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptHierarchicalMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptHierarchicalMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptHierarchicalSub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptHierarchicalSub.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptMasterMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptMasterMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptMasterSub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptMasterSub.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptNestedChildMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNestedChildMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptNestedChildSub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNestedChildSub.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptNestedParent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNestedParent.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptParamMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptParamMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptParamSub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptParamSub.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptSimpleMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptSimpleMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptSimpleSub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptSimpleSub.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptUnboundDSMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptUnboundDSMain.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="rptUnboundDSSub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptUnboundDSSub.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

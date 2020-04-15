@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.ArsClient.v12</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsConnection">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsConnection.ConnectWithCredentials(System.String,System.String,System.String)">
+			<summary>
+            Connects the client to a report server using the credentials. For internal use only.
+            </summary>
+			<param name="serverUri">The server URI.</param>
+			<param name="userName">The user name.</param>
+			<param name="password">The password.</param>
+			<returns>Return true, if conntect to report server is susceful.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsConnection.PreauthenticatedConnection(System.String,System.String)">
+			<summary>
+            Connects the client to a report server using the authentication token. For internal use only.
+            </summary>
+			<param name="serverUri">The server URI.</param>
+			<param name="authToken">The authentication token.</param>
+			<returns>Return true, if conntect to report server is susceful.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsConnection.Disconnect">
+			<summary>
+            Remove authentication token and current user. For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsConnection.CreateClient">
+			<summary>
+            Creates a client and connect to report server. For internal use only.
+            </summary>
+			<returns>The instance ArsRestClient class</returns>
+			<exception cref="T:GrapeCity.ActiveReports.ArsClient.NotConnectedException">Thrown when connect to report server is failure.</exception>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsConnection.CheckConnection">
+			<summary>
+            Checks the connection to the report server. For internal use only.
+            </summary>
+			<returns>Return true, if conntect to report server is susceful.</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnection.ServerUri">
+			<summary>
+            Gets the server URI to use to connect to report server. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnection.UserName">
+			<summary>
+            Gets the user name to be used for the connection to report server. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnection.AuthToken">
+			<summary>
+            Gets the authentication token used to connect to report server. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnection.Current">
+			<summary>
+            Gets the current instance of the ArsConnection class or null. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnection.IsValid">
+			<summary>
+            Gets true, if ServerUri and AuthToken contains not empty value. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnection.IsAdmin">
+			<summary>
+            Gets true, if the current user is an administrator. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDocument">
+			<summary>
+            Defines a base type for documents from ARS. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsDocument._id">
+			<summary>
+            Document Id
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDocument.Id">
+			<summary>
+            Gets or sets the identifier document. For internal use only. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDocument.Name">
+			<summary>
+            Gets or sets the name document. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDocument.Description">
+			<summary>
+            Gets or sets the document description. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDocument.Content">
+			<summary>
+            Gets or sets the document content. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.Metadata">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.Metadata.Modified">
+			<summary>
+            Gets or sets the date the document was modified. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.Metadata.ModifiedBy">
+			<summary>
+            Gets or sets the string representation of the user who last changed the document. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.Metadata.Comment">
+			<summary>
+            Gets or sets a comment for the document. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsTag">
+			<summary>
+            Represents tag/category the document.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsTag.#ctor">
+			<summary>
+            Initializes a new instance of the <c>ArsTag</c> class. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTag.Id">
+			<summary>
+            Gets or sets the identifier tag/category. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTag.DisplayName">
+			<summary>
+            Gets the display name for the tag/category. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTag.IsFavorites">
+			<summary>
+            Indicates whether the tag / category is the favorite. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTag.ChildTags">
+			<summary>
+            Gets or sets an array of identifiers of descendants of tag/category. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsReport">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsReport.#ctor">
+			<summary>
+            Initializes a new instance of the <c>ArsReport</c> class. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsReport.Type">
+			<summary>
+            Gets or sets the report type. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsReport.Tags">
+			<summary>
+            Gets or sets an array of tags/categories for report. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsReport.SubreportIds">
+			<summary>
+            Gets or sets an array of identifiers the subreports. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsReport.Version">
+			<summary>
+            Gets or sets version/revision the report. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsReport.Metadata">
+			<summary>
+            Gets or sets the metadata for the report. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsReport.IsMaster">
+			<summary>
+            Indicates whether the report is a master report. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsReport.IsParametrized">
+			<summary>
+            Specifies whether the report has parameters. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsTheme">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataSource">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsDataSource.#ctor">
+			<summary>
+            Initializes a new instance of the <c>ArsDataSource</c> class. For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsDataSource.Clone">
+			<summary>
+            Creates a new <c>ArsDataSource</c> object that is a copy of the current instance. For internal use only.
+            </summary>
+			<returns>Returns a <c>ArsDataSource</c> object reference.</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataSource.Metadata">
+			<summary>
+            Gets or sets the metadata for the datasource. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataSource.ConnectionProperties">
+			<summary>
+            Gets or sets definition of the connection properties. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataSource.Transaction">
+			<summary>
+            Gets or sets the value which indicates whether to use or not a data source transaction. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsConnectionProperties">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsConnectionProperties.Clone">
+			<summary>
+            Creates a new <c>ArsConnectionProperties</c> object that is a copy of the current instance. For internal use only.
+            </summary>
+			<returns>Returns a <c>ArsConnectionProperties</c> object reference.</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnectionProperties.DataProvider">
+			<summary>
+            Gets or sets the name of the data provider that specifies the report data. For internal use only.
+            </summary>
+			<value>A string value that represents the data provider.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnectionProperties.ConnectString">
+			<summary>
+            Returns or sets a String that represents the connection to the specified data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnectionProperties.IntegratedSecurity">
+			<summary>
+            Indicates whether the provider should use integrated security instead of a username and password. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnectionProperties.Prompt">
+			<summary>
+            Gets or sets the information which should be prompt to the user. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataSet">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsDataSet.Clone">
+			<summary>
+            Creates a new <c>ArsDataSet</c> object that is a copy of the current instance. For internal use only.
+            </summary>
+			<returns>Returns a <c>ArsDataSet</c> object reference.</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataSet.Metadata">
+			<summary>
+            Gets or sets the metadata for the dataset. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsStyleSheet">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsImage">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsImage.Thumbnail">
+			<summary>
+            Gets or sets the thumbnail encoded in the base64 string. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsGetDataSourceSchemaRequest">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsGetDataSourceSchemaRequest.UserName">
+			<summary>
+            Gets or sets the user name used to connect to data source. For internal use only.
+             </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsGetDataSourceSchemaRequest.Password">
+			<summary>
+            Gets or sets the password used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsValidateQueryRequest">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsValidateQueryRequest.CommandType">
+			<summary>
+            Gets or sets a value indicating how the <c>CommandText</c> property is to be interpreted. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsValidateQueryRequest.CommandText">
+			<summary>
+            Gets or sets a String value that contains a provider command, such as an SQL statement, a table name or a stored procedure call. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsValidateQueryRequest.Parameters">
+			<summary>
+            Gets or sets an array <c>ArsDataParameter</c> that contains the parameter definitions used in <c>CommandText</c>. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsValidateQueryRequest.UserName">
+			<summary>
+            Gets or sets the user name used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsValidateQueryRequest.Password">
+			<summary>
+            Gets or sets the password used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsStoredProcedureParametersRequest">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsStoredProcedureParametersRequest.CommandType">
+			<summary>
+            Gets or sets a value indicating how the <c>CommandText</c> property is to be interpreted. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsStoredProcedureParametersRequest.CommandText">
+			<summary>
+            Gets or sets a String value that contains a provider command, such as an SQL statement, a table name or a stored procedure call. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsStoredProcedureParametersRequest.UserName">
+			<summary>
+            Gets or sets the user name used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsStoredProcedureParametersRequest.Password">
+			<summary>
+            Gets or sets the password used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsExecuteQueryRequest">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsExecuteQueryRequest.CommandType">
+			<summary>
+            Gets or sets a value indicating how the <c>CommandText</c> property is to be interpreted. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsExecuteQueryRequest.CommandText">
+			<summary>
+            Gets or sets a String value that contains a provider command, such as an SQL statement, a table name or a stored procedure call. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsExecuteQueryRequest.Parameters">
+			<summary>
+            Gets or sets an array <c>ArsDataParameter</c> that contains the parameter definitions used in <c>CommandText</c>. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsExecuteQueryRequest.UserName">
+			<summary>
+            Gets or sets the user name used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsExecuteQueryRequest.Password">
+			<summary>
+            Gets or sets the password used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsExecuteQueryRequest.Limit">
+			<summary>
+            Gets or sets the count of rows to return. 0 is unlimited.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsQuerySchemaRequest">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsQuerySchemaRequest.CommandType">
+			<summary>
+            Gets or sets a value indicating how the <c>CommandText</c> property is to be interpreted. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsQuerySchemaRequest.CommandText">
+			<summary>
+            Gets or sets a String value that contains a provider command, such as an SQL statement, a table name or a stored procedure call. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsQuerySchemaRequest.Parameters">
+			<summary>
+            Gets or sets an array <c>ArsDataParameter</c> that contains the parameter definitions used in <c>CommandText</c>. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsQuerySchemaRequest.UserName">
+			<summary>
+            Gets or sets the user name used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsQuerySchemaRequest.Password">
+			<summary>
+            Gets or sets the password used to connect to data source. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataSnapshotRequest">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsDataSnapshotRequest.ReportParameters">
+			<summary>
+            Report parameters. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsDataSnapshotRequest.UseCache">
+			<summary>
+            Specifies whether to use cache or not. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsDataSnapshotRequest.Timeout">
+			<summary>
+            Specifies timeout. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsRenderRequest">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsRenderRequest.ExtensionName">
+			<summary>
+            Extension name. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsRenderRequest.ReportParameters">
+			<summary>
+            Report parameters. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsRenderRequest.ExtensionSettings">
+			<summary>
+            Extension settings. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsRenderRequest.UseCache">
+			<summary>
+            Specifies whether to use cache or not. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsRenderRequest.Timeout">
+			<summary>
+            Specifies timeout. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataParameter">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataParameter.ParameterName">
+			<summary>
+            Gets or sets the parameter name. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataParameter.Value">
+			<summary>
+            Gets or sets the parameter value. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataTable">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataTable.Columns">
+			<summary>
+            Gets or sets the array <c>ArsDataColumn</c> representing the table columns in the data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataTable.Rows">
+			<summary>
+            Gets or sets the array <c>ArsDataRow</c> representing the table rows in the data source. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataColumn">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataColumn.Name">
+			<summary>
+            Gets or sets the name of the table column in the data source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataColumn.DataType">
+			<summary>
+            Gets or sets <c>String</c> value, representing the type of column in the data source. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataRow">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataRow.Values">
+			<summary>
+            Gets or sets an array <c>String</c>, that represents the row of the table in the data source. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDbName">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDbName.Name">
+			<summary>
+            Gets or sets the name of the DB. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDbName.Schema">
+			<summary>
+            Gets or sets the name of the DB schema. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsColumn">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsColumn.Name">
+			<summary>
+            Gets or sets the name of column. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsColumn.DataType">
+			<summary>
+            Gets or sets the data type of column. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsColumn.IsPrimaryKey">
+			<summary>
+            Specifies whether is the primary key column. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsTable">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTable.Name">
+			<summary>
+            Gets or sets the name of table. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTable.TableType">
+			<summary>
+            Gets or sets the type of table. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTable.Columns">
+			<summary>
+            Gets or sets the columns of table. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsForeignKey">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsForeignKey.Source">
+			<summary>
+            Gets or sets the source table. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsForeignKey.Destination">
+			<summary>
+            Gets or sets the destination table. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsForeignKey.SourceColumns">
+			<summary>
+            Gets or sets the columns that defines a source. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsForeignKey.DestinationColumns">
+			<summary>
+            Gets or sets the columnts that defines a destination. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsDataSchema">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataSchema.Tables">
+			<summary>
+            Gets or sets the tables collection. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsDataSchema.ForeignKeys">
+			<summary>
+            Gets or sets the foreigh keys collection. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsTaskResult`1">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTaskResult`1.Result">
+			<summary>
+            Gets or sets the result of task. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTaskResult`1.Error">
+			<summary>
+            Gets or sets the error message. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTaskResult`1.Success">
+			<summary>
+            Specifies whether the task was succeeded. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsTestConnectionResult">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTestConnectionResult.Success">
+			<summary>
+            Specifies whether the connection was succeeded. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsTestConnectionResult.Error">
+			<summary>
+            Gets or sets the error message. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.Name">
+			<summary>
+            Gets or sets the name of parameter. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.Prompt">
+			<summary>
+            Gets or sets the information which should be prompt to the user. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.MultiValue">
+			<summary>
+            Specifies whether the parameter is multi-valued. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.Nullable">
+			<summary>
+            Specifies whether the parameter is nullable. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.SelectAllEnabled">
+			<summary>
+            Specifies whether the 'Select All' is enabled. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.State">
+			<summary>
+            Gets or sets the state of the parameter. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.DefinesValidValues">
+			<summary>
+            Specifies whether the valid values are defined. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.DataType">
+			<summary>
+            Gets or sets the data type of the parameter. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.AvailableValues">
+			<summary>
+            Gets or sets the available values of the parameter. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.DateOnly">
+			<summary>
+            Specifies whether the valid values are defined. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.Values">
+			<summary>
+            Gets or sets the initial values of the parameter. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.AllowBlank">
+			<summary>
+            Specifies whether the blank parameter value is allowed. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.MultiLine">
+			<summary>
+            Specifies whether the multiline parameter value is allowed. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.Hidden">
+			<summary>
+            Specifies whether the parameter is hidden. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.DependentParameters">
+			<summary>
+            Gets or sets the dependent parameters. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfo.SelectAllValue">
+			<summary>
+            Gets or sets the 'Select All' option value. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsParameterInfoValue">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfoValue.Label">
+			<summary>
+            Gets or sets the parameter value label. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterInfoValue.Value">
+			<summary>
+            Gets or sets the parameter value. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsParameterValue">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterValue.Value">
+			<summary>
+            Gets or sets the parameter value. For internal use only
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameterValue.IsSpecial">
+			<summary>
+            Specifies whether the value is special. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsParameter">
+			<summary>
+            For internal use
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameter.Name">
+			<summary>
+            Gets or sets the parameter value. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameter.Domain">
+			<summary>
+            Gets or sets the parameter domain. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsParameter.Values">
+			<summary>
+            Gets or sets the initial parameter values. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsErrorTypes">
+			<summary>
+            For internal use
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsErrorTypes.DocumentNotFound">
+			<summary>
+            Defines the 'Document Not Found' error type name. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Ars.ArsException">
+			<summary>
+            Represents an exception thrown when unexpected or invalid response was received from ARS.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Ars.ArsException.#ctor(System.String)">
+			<summary>
+            Initializes a new instance of the <c>ArsException</c> class. For internal use only.
+            </summary>
+			<param name="message">String setting the message of the exception.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Ars.ArsException.#ctor(System.String,System.Exception)">
+			<summary>
+            Initializes a new instance of the <c>ArsException</c> class. For internal use only.
+            </summary>
+			<param name="message">String setting the message of the exception.</param>
+			<param name="innerException">Sets a reference to the InnerException.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsHelper">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsHelper.Serialize(System.Object)">
+			<summary>
+            Serialize an entry to JSON string.
+            For internal use only.
+            </summary>
+			<param name="entry">Instance of the entry to be serialized</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsHelper.RequestServerAuthInfo(System.String)">
+			<summary>
+            Returns authentication information from the server.
+            For internal use only.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsHelper.RequestServerAuthInfo(System.String,System.Windows.Forms.Design.IUIService)">
+			<summary>
+            Returns authentication information from the server.
+            For internal use only.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsHelper.RequestServerAuthInfo(System.String,System.Windows.Forms.Design.IUIService,GrapeCity.ActiveReports.ArsClient.Services.IArsService)">
+			<summary>
+            Returns authentication information from the server.
+            For internal use only.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsHelper.RequestServerAuthInfo(System.String,System.Windows.Forms.Form)">
+			<summary>
+            Returns authentication information from the server.
+            For internal use only.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsJsonSelector">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.ById(System.String)">
+			<summary>
+            Returns the value of the field by its Id.
+            For internal use only.
+            </summary>
+			<param name="id">Field Id</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.ByName(System.String)">
+			<summary>
+            Returns the value of the field by its name.
+            For internal use only.
+            </summary>
+			<param name="name">Field name</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.FilterFlags">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.FilterFlags.ShowMastersOnly">
+			<summary>
+            Specifies whether only the master reports should be shown. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.FilterFlags.ShowCplOnly">
+			<summary>
+            Specifies whether only the CPL reports should be shown. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.FilterFlags.ShowReportsWithoutSemanticModel">
+			<summary>
+            Indicates that only reports that do not contain semantic model  should be shown
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsQuery">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsQuery.AddParameter(System.String,System.Object)">
+			<summary>
+            Adds a parameter to the query.
+            For internal use only.
+            </summary>
+			<param name="name">Parameter name</param>
+			<param name="value">Parameter value</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsQuery.AddSelector(System.String)">
+			<summary>
+            Adds a selector to the query.
+            For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsQuery.ToUri">
+			<summary>
+            Returns the query as a string.
+            For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsQuery.ById(System.String)">
+			<summary>
+            Returns the query string with the specified field.
+            For internal use only.
+            </summary>
+			<param name="id">Field Id</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsQuery.ByName(System.String)">
+			<summary>
+            Returns the query string with the specified field.
+            For internal use only.
+            </summary>
+			<param name="name">Field name</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsReportType">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsReportType.Unknown">
+			<summary>
+            Unknown report nype. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsReportType.SemanticReport">
+			<summary>
+            Semantic report. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsReportType.SectionReport">
+			<summary>
+            Section report. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsReportType.PageReport">
+			<summary>
+            Page report. For internal use only.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsReportType.CodeBasedSectionReport">
+			<summary>
+            Code based section report. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsConnectedEventArgs">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnectedEventArgs.Url">
+			<summary>
+            Gets or sets the URL of the connected server. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsConnectedEventArgs.UserName">
+			<summary>
+            Gets or sets the username of the user connected to the server. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsConnectedEventHandler">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsRestClient">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.GetDocumentByName``1(System.String,System.Nullable{System.Int32})">
+			<summary>
+            Load report definition specified by report name from ARS. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="name">The name of report to find.</param>
+			<param name="version">The report version number.</param>
+			<returns>First report found by name <paramref name="name" /> or <c>null</c> otherwise.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.UploadDocumentContent``1(``0,System.Boolean,System.Boolean)">
+			<summary>
+            Upload the document to the ARS. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="document">Document to be uploaded to the ARS.</param>
+			<param name="createNew">True if new document should be create; otherwise, false.</param>
+			<param name="overwrite">True if document should be overwrite; otherwise, false.</param>
+			<returns>Uploaded document identifier.</returns>
+			<exception cref="T:System.ArgumentNullException">Thrown when <paramref name="document" /> is equal to <c>null</c>.</exception>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.UploadTemporaryDocument``1(System.Byte[],System.String)">
+			<summary>
+            Upload the temporary document to the ARS. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="content">Document to be uploaded to the ARS.</param>
+			<param name="reportName">The name of the report.</param>
+			<returns>Uploaded document identifier.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.UpdateDocWithContent``1(System.String,System.Byte[],System.String,System.String)">
+			<summary>
+            Update the existing document on the ARS. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="id">The identifier of the document.</param>
+			<param name="content">Content of the document to be updated on the ARS.</param>
+			<param name="description">The description of the document.</param>
+			<param name="comment">The comment of the document.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.GetDocumentContentStream``1(System.String)">
+			<summary>
+            Returns a document content stream. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="id">The identifier of the document.</param>
+			<returns>First report found by identifier <paramref name="id" /> or <c>null</c> otherwise.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.GetReportParameters(System.String)">
+			<summary>
+            Returns the report parameters. For internal use only.
+            </summary>
+			<param name="reportId">The identifier of the report.</param>
+			<returns>Report parameters.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.ValidateReportParameters(System.String,System.Collections.Generic.IEnumerable{GrapeCity.ActiveReports.ArsClient.ArsParameter})">
+			<summary>
+            Returns the validated report parameters. For internal use only.
+            </summary>
+			<param name="reportId">The identifier of the report.</param>
+			<param name="parameters">The report parameters to validation.</param>
+			<returns>Validated report parameters.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.GetDocument``1(System.String,System.Nullable{System.Int32})">
+			<summary>
+            Load report definition specified by report identifier from ARS. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="id">The identifier of the report.</param>
+			<param name="version">The version of the report.</param>
+			<returns>First report found by identifier <paramref name="id" />.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.GetDocuments``1(System.String)">
+			<summary>
+            Load report definitions specified by the query from ARS. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="query">A query, specified the reports set.</param>
+			<returns>All reports that match to the query <paramref name="query" />.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.UpdateDocumentContent``1(``0)">
+			<summary>
+            Update the document content on the ARS. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="document">Document to update.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.GetDefaultTheme">
+			<summary>
+            Gets the default theme from ARS. For internal use only.
+            </summary>
+			<returns>Default theme.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.DoTask``2(``0,System.String)">
+			<summary>
+            Performs the task, specified by request, on the ARS. For internal use only.
+            </summary>
+			<typeparam name="T">The type of the request.</typeparam>
+			<typeparam name="TR">The type of the result.</typeparam>
+			<param name="request">Request for execution on the ARS.</param>
+			<param name="routeParameter">Optional routing parameters.</param>
+			<returns>The result of the performed task.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.IsAdmin">
+			<summary>
+            Determines whether the current user is administrator or not. For internal use only.
+            </summary>
+			<returns>
+				<c>true</c> if the user is the administrator or <c>false</c> otherwise</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.ConnectToServer(System.String,System.String)">
+			<summary>
+            Tries to connect to the ARS using the authentication token. For internal use only.
+            </summary>
+			<param name="endpoint">The endpoint of the connection.</param>
+			<param name="authToken">The authentication token.</param>
+			<returns>
+				<c>true</c> if connection is successful or <c>false</c> otherwise.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.ConnectToServer(System.String,System.String,System.String)">
+			<summary>
+            Tries to connect to the ARS using the user credentials. For internal use only.
+            </summary>
+			<param name="endpoint">The endpoint of the connection.</param>
+			<param name="userName">The user name.</param>
+			<param name="password">The password.</param>
+			<returns>
+				<c>true</c> if connection is successful or <c>false</c> otherwise.</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsRestClient.AuthToken">
+			<summary>
+            Gets the authentication token used to connect to report server. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsRestClient.Endpoint">
+			<summary>
+            Gets the endpoint address to web service. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsRestClient.IsConnected">
+			<summary>
+				<c>True</c> if connection opened.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.ArsRestClient.Connected">
+			<summary>
+            Occurs when the connection is established. For internal use only.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.ArsRestClient.Disconnected">
+			<summary>
+            Occurs when the connection is closed. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsRestClient.ErrorCodes">
+			<summary>
+            Represents the codes of errors.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsRestClient.ErrorCodes.InvalidName">
+			<summary>
+            The code for the error related with invalid name.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsRestClient.RemoteReportException">
+			<summary>
+            Represents an exception thrown if rendering takes more time then specified timeout.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClient.RemoteReportException.#ctor(System.String)">
+			<summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsRestClient.RemoteReportException" /> class.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsRestClientException">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsRestClientException.ErrorType">
+			<summary>
+            Gets the type of error. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsRestClientException.ErrorCode">
+			<summary>
+            Gets the code of exception. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.DocumentNotFoundException">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.DocumentNotFoundException.Collection">
+			<summary>
+            Gets the name of the collection in which the document was not found. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.DocumentNotFoundException.DocumentId">
+			<summary>
+            Gets the identifier of the document that was not found. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ValidationErrorException">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ValidationErrorException.Parameters">
+			<summary>
+            Gets the list of parameters of the exception. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.AccessDeniedException">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsRestClientExtensions">
+			<summary>
+            Implements the extension methods for <see cref="N:GrapeCity.ActiveReports.ArsClient" /> class.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClientExtensions.GetDocumentContent``1(GrapeCity.ActiveReports.ArsClient.ArsRestClient,``0)">
+			<summary>
+            Gets the contents of the document from the server. For internal use only.
+            </summary>
+			<typeparam name="T">A derivation of <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsDocument" />.</typeparam>
+			<param name="document">The document whose content you want to retrieve.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClientExtensions.DownloadReportContent(GrapeCity.ActiveReports.ArsClient.ArsRestClient,GrapeCity.ActiveReports.ArsClient.ArsReport)">
+			<summary>
+            Gets the contents of the report from the server. For internal use only.
+            </summary>
+			<param name="report">The report whose content you want to retrieve.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClientExtensions.GetRootReportList(GrapeCity.ActiveReports.ArsClient.ArsRestClient,GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.FilterFlags,GrapeCity.ActiveReports.ArsClient.ArsReportType[])">
+			<summary>
+            Gets an array of reports from the server root. For internal use only.
+            </summary>
+			<param name="filterFlags">Serves to filter the displayed reports. When this parameter is set, for example, you can not display subreports.</param>
+			<param name="filter">Serves to filter the displayed reports.When this option is set, you can display reports specific types presented in the enum <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsReportType" />.</param>
+			<returns>An array the reports.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClientExtensions.GetTagReportList(GrapeCity.ActiveReports.ArsClient.ArsRestClient,GrapeCity.ActiveReports.ArsClient.ArsTag,GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.FilterFlags,GrapeCity.ActiveReports.ArsClient.ArsReportType[])">
+			<summary>
+            Gets an array of reports from server the specific category.For internal use only.
+            </summary>
+			<param name="tag">Specifies the category of reports.</param>
+			<param name="filterFlags">Serves to filter the displayed reports. When this parameter is set, for example, you can not display subreports.</param>
+			<param name="filter">Serves to filter the displayed reports.When this option is set, you can display reports specific types presented in the enum <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsReportType" />.</param>
+			<returns>An array the reports.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClientExtensions.GetReportByName(GrapeCity.ActiveReports.ArsClient.ArsRestClient,GrapeCity.ActiveReports.ArsClient.ArsTag,System.String,GrapeCity.ActiveReports.ArsClient.ArsReportType[])">
+			<summary>
+            Gets a report by name.For internal use only.
+            </summary>
+			<param name="tag">Specifies the category of report.</param>
+			<param name="name">Specifies the name of report.</param>
+			<param name="filter">When this option is set, you can get a report of concrete the types presented in the enum <see cref="T:GrapeCity.ActiveReports.ArsClient.ArsReportType" />.</param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsRestClientReportingExtenisons">
+			<summary>
+            For internal use. Implements methods for high-level work with ARS.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClientReportingExtenisons.GetReportDef(GrapeCity.ActiveReports.ArsClient.ArsRestClient,System.String,System.Nullable{System.Int32})">
+			<summary>
+            For internal use. Load report definition from ARS.
+            </summary>
+			<param name="client">ARS low-level client instance.</param>
+			<param name="reportId">The report identifier.</param>
+			<param name="revisionNumber">The report revision number.</param>
+			<returns>Instance of PageReport or SectionReport.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsRestClientReportingExtenisons.GetReportDefByName(GrapeCity.ActiveReports.ArsClient.ArsRestClient,System.String,System.Nullable{System.Int32})">
+			<summary>
+            For itnernal use. Load report definition specified by report name from ARS.
+            </summary>
+			<param name="client">ARS low-level client instance.</param>
+			<param name="reportName">The name of report to find.</param>
+			<param name="revisionNumber">The report revision number.</param>
+			<returns>
+				<see cref="!:ReportInfo" /> if found, <c>null</c> othervise.</returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsReportNotFoundException">
+			<summary>
+            Represents an exception thrown when report not found from ARS.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsReportNotFoundException.#ctor">
+			<summary>
+            Initializes a new instance of the <c>ArsReportNotFoundException</c> class. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsSettingStore">
+			<summary>
+            For internal use.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsSettingStore.ReportNavigation">
+			<summary>
+            Contains the current transition stack by categories/tags
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ReportNavigation">
+			<summary>
+            Represents report navigation to use the transition between tags / categories on the server ARS.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ReportNavigation.StackOpenedTags">
+			<summary>
+            Gets or sets stack opened tags.For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ReportNavigation.LastSelectedItemId">
+			<summary>
+            Gets or sets last selected item Id.For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.Services.ArsService">
+			<summary>
+            For internal use only. Provides methods to show ArsConnection dialog.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.Services.IArsService">
+			<summary>
+            For internal use only
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.IArsService.EnsureConnection(System.String,System.Boolean)">
+			<summary>
+            Check if connection exists and show ConnectToServer dialog if necessary. For internal use.
+            </summary>
+			<param name="serverUri">The server uri</param>
+			<param name="showConnectionDialog"></param>
+			<returns>
+				<c>True</c> if connected, <c>False</c> if the user is unable to provide valid credentials.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.IArsService.IsConnected">
+			<summary>
+             For internal use. Gets the status of the connection to the server.
+            </summary>
+			<returns>Return <c>True</c>if connected.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.IArsService.Disconnect">
+			<summary>
+            Closes the current connection. For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.IArsService.ShowConnectDialog">
+			<summary>
+            For internal use. Show ConnectToServer dialog with stored credentials by default and update the connection state if valid credentials provided by user.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.Services.IArsService.ConnectionStateChanged">
+			<summary>
+            Occurs after changing connection to ActiveReports Server. For internal use.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.ArsService.#ctor(System.Func{System.Windows.Forms.Design.IUIService})">
+			<summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.ArsClient.Services.ArsService" /> class. For internal use only.
+            </summary>
+			<param name="getUiService">delegate that returns a value of the type <see cref="T:System.Windows.Forms.Design.IUIService" /></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.ArsService.IsConnected">
+			<summary>
+            For internal use. Gets the status of the connection to the server
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.ArsService.ShowConnectDialog">
+			<summary>
+            For internal use. Show ConnectToServer dialog with stored credentials by default and update the connection state if valid credentials provided by user.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.ArsService.ShowConnectDialog(System.String,System.String)">
+			<summary>
+            For internal use. Show ConnectToServer dialog and update the connection state if valid credentials provided by user.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.ArsService.EnsureConnection(System.String,System.Boolean)">
+			<summary>
+            Check if connection exists and show ConnectToServer dialog if necessary.
+            </summary>
+			<param name="serverUri">The server uri</param>
+			<param name="showConnectionDialog"></param>
+			<returns>
+				<c>True</c> if connected, <c>False</c> if the user is unable to provide valid credentials.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.ArsService.Disconnect">
+			<summary>
+            Closes the current connection. For internal use.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.Services.ArsService.ConnectionStateChanged">
+			<summary>
+            Occurs after changing connection to ActiveReports Server.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.Services.ConnectionChangedEventArgs">
+			<summary>
+            For internal use only. Information about connection with ARS
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.Services.ConnectionChangedEventArgs.#ctor(System.Boolean,System.String)">
+			<summary>
+            Initializes a new instance of the <see cref="!:ServerConnectionChangedEventArgs" /> class.
+            </summary>
+			<param name="connected">The connection state.</param>
+			<param name="serverUrl">The server URL.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.Services.ConnectionChangedEventArgs.Connected">
+			<summary>
+            Gets the connection state.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.Services.ConnectionChangedEventArgs.ServerUrl">
+			<summary>
+            Gets the server URL.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog.#ctor">
+			<summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog" /> class. For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog.#ctor(System.String,System.String)">
+			<summary>
+            Initializes a new instance of the <see cref="T:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog" /> class. For internal use only.
+            </summary>
+			<param name="url">The URL of the server to which you want to connect.</param>
+			<param name="userName">The username for connected to the server.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog.ServerUri">
+			<summary>
+            Gets the server URI to use to connect to report server. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.ConnectToServerDialog.UserName">
+			<summary>
+            Gets the user name to be used for the connection to report server. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.WinForms.OpenFromServerDialog">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.OpenFromServerDialog.#ctor(GrapeCity.ActiveReports.ArsClient.ArsReportType[])">
+			<summary>
+            Initializes a new instance of the dialog to open the reports of specified types. For internal use only.
+            </summary>
+			<param name="arsReportTypes">The appropriate report types.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.OpenFromServerDialog.LoadSelectedReport">
+			<summary>
+            Loads the selected report. For internal use only.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.OpenFromServerDialog.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.OpenFromServerDialog.SelectedReport">
+			<summary>
+            Gets the selected through the dialog report. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser">
+			<summary>
+            Represents the the list of server reports.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.Init(System.Action{GrapeCity.ActiveReports.ArsClient.ArsReport},System.Boolean,GrapeCity.ActiveReports.ArsClient.ArsJsonSelector.FilterFlags,GrapeCity.ActiveReports.ArsClient.ArsReportType[])">
+			<summary>
+            Initializes the server reports browser.
+            </summary>
+			<param name="defaultAction">The default action with report.</param>
+			<param name="autoSelectFirstRow">Defines if first row is selected by default or not.</param>
+			<param name="filterFlags">Filter flags.</param>
+			<param name="reportTypes">Defines reports of wich ars report types to show.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.UpOnLevel">
+			<summary>
+            Show reports from upper tags level.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.RefreshReportList(System.String)">
+			<summary>
+            Refreshes the report list.
+            </summary>
+			<param name="reportIdForSelect">Id of the selected report.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.SelectReportByRevision">
+			<summary>
+            Returns the report of choosen revision.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.SelectReportByRevision(System.Boolean,System.Boolean@)">
+			<summary>
+            Returns the report of choosen revision.
+            </summary>
+			<param name="showExtendedOpenOtions">Defines if extended options of Open button visible or not.</param>
+			<param name="asLibrary">The revision of report was open as Library.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.SetConnectedState(System.String,System.String)">
+			<summary>
+            Sets state of the server report browser when server is connected.
+            </summary>
+			<param name="serverUri"> server address </param>
+			<param name="userName"> user account name </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.SetDisconnectedState">
+			<summary>
+            Sets state of the server report browser when server is disconnected.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.SelectedTag">
+			<summary>
+            Gets selected tag/category.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.SelectedReport">
+			<summary>
+            Gets selected report.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.BrowserPath">
+			<summary>
+            Gets the path from wich reports are listed.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.SelectedReportChanged">
+			<summary>
+            Occurs when selected report is changed.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.WinForms.ServerReportBrowser.ReportListChanged">
+			<summary>
+            Occurs when the list of reports is changed.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.#ctor">
+			<summary>
+            Initializes the new instance of the <see cref="T:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton" /> class. For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnCreateControl">
+			<summary>
+            Performs the action after creating the <see cref="T:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton" />. For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+			<summary>
+            Raises the MouseMove event. For internal use only.
+            </summary>
+			<param name="mevent">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnMouseLeave(System.EventArgs)">
+			<summary>
+            Raises the MouseLeave event. For internal use only.
+            </summary>
+			<param name="e">Provides missing information for the event.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+			<summary>
+            Raises the MouseDown event. For internal use only.
+            </summary>
+			<param name="mevent">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+			<summary>
+            Raises the MouseUp event. For internal use only.
+            </summary>
+			<param name="mevent">A System.Windows.Forms.MouseEventArgs that contains the event data.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnEnabledChanged(System.EventArgs)">
+			<summary>
+            Raises the EnabledChanged event. For internal use only.
+            </summary>
+			<param name="e">Provides missing information for the event.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnGotFocus(System.EventArgs)">
+			<summary>
+            Raises the GotFocus event. For internal use only.
+            </summary>
+			<param name="e">Provides missing information for the event.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnLostFocus(System.EventArgs)">
+			<summary>
+            Raises the LostFocus event. For internal use only.
+            </summary>
+			<param name="e">Provides missing information for the event.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnClick(System.EventArgs)">
+			<summary>
+            Raises the Click event. For internal use only.
+            </summary>
+			<param name="e">Provides missing information for the event.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.OnDoubleClick(System.EventArgs)">
+			<summary>
+            Raises the DoubleClick event. For internal use only.
+            </summary>
+			<param name="e">Provides missing information for the event.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.ButtonClick">
+			<summary>
+            Occurs when the button part of the SplitButton is clicked. For Internal use only.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.ButtonDoubleClick">
+			<summary>
+            Occurs when the button part of the SplitButton is double clicked. For Internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.DoubleClickedEnabled">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.AlwaysDropDown">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.AlwaysHoverChange">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.SplitVisible">
+			<summary>
+            Indicates whether the split is visible.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.CalculateSplitRect">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.FillSplitHeight">
+			<summary>
+            Gets or sets a value indicating whether [fill split height].
+            </summary>
+			<value>
+				<c>true</c> if [fill split height]; otherwise, <c>false</c>.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.SplitHeight">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.SplitWidth">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.NormalImage">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.HoverImage">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.ClickedImage">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.DisabledImage">
+			<summary></summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.WinForms.SplitButton.FocusedImage">
+			<summary></summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.ArsResourceLocator">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.ArsClient.ArsResourceLocator.ReportServerUri">
+			<summary>
+            The of the property contained th report server uri. For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsResourceLocator.Set(GrapeCity.ActiveReports.PageReport)">
+			<summary>
+            Sets the report used for ResourceLocator. For internal use only.
+            </summary>
+			<param name="pageReport"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsResourceLocator.GetResource(GrapeCity.ActiveReports.Extensibility.ResourceInfo)">
+			<summary>
+             Returns the report resource. For internal use only.
+            </summary>
+			<param name="resourceInfo">The information about resource.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.ArsClient.ArsResourceLocator.GetResource(GrapeCity.ActiveReports.Extensibility.ResourceInfo,System.IServiceProvider)">
+			<summary>
+            Returns the report resource. For internal use only.
+            </summary>
+			<param name="resourceInfo">The information about resource.</param>
+			<param name="serviceProvider">The service provider.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsResourceLocator.Report">
+			<summary>
+            Gets the current report definition object. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.ArsClient.ArsResourceLocator.Locator">
+			<summary>
+            Gets the <see cref="T:System.IServiceProvider" /> instance used to obtain Report services. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.SharedMasterReportNotFoundException">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.ArsClient.NotConnectedException">
+			<summary>
+            FOR INTERNAL USE ONLY
+            </summary>
+		</member>
+	</members>
+</doc>

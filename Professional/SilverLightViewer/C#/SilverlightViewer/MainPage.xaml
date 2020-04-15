@@ -1,0 +1,53 @@
+<UserControl x:Class="GrapeCity.ActiveReports.Samples.ActiveReportsSilverlightViewer.MainPage"
+    xmlns:my="clr-namespace:GrapeCity.ActiveReports;assembly=GrapeCity.ActiveReports.Viewer.Silverlight.v12"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="400" d:DesignWidth="650">
+
+    <Grid x:Name="LayoutRoot" Style="{StaticResource LayoutRootGridStyle}" >
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" x:Name="ContentStackPanel">
+                <Border x:Name="BlankBorder" Style="{StaticResource BlankBorderStyle2 }"></Border>
+                <ContentPresenter x:Name="LoadFunctionContainer">
+                    <StackPanel x:Name="LoadTypePanel" Style="{StaticResource SamplePanelStyle}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Border x:Name="RDFContainerborder" Style="{StaticResource BlankBorderStyle2}" MouseEnter="Containerborder_MouseEnter"  MouseLeave="Containerborder_MouseLeave">
+                                <StackPanel x:Name="RDFContainer" Style="{StaticResource DescContainerStyle}" MouseLeftButtonDown="Container_MouseLeftButtonDown">
+                                    <Image Source="/ActiveReportsSilverlightViewer;component/Images/FileRdf.png" Margin="2,0,2,0"/>
+                                    <TextBlock Text="RDF" Style="{StaticResource SampleNameTextBlockStyle}"/>
+                                </StackPanel>
+                            </Border>
+                            <Border Style="{StaticResource BlankBorderStyle2}" MouseEnter="Containerborder_MouseEnter" MouseLeave="Containerborder_MouseLeave">
+                                <StackPanel x:Name="RDLXContainer" Style="{StaticResource DescContainerStyle}" MouseLeftButtonDown="Container_MouseLeftButtonDown">
+                                    <Image Source="/ActiveReportsSilverlightViewer;component/Images/FileRdlx.png" Margin="2,0,2,0"/>
+                                    <TextBlock Text="RDLX" Style="{StaticResource SampleNameTextBlockStyle}"/>
+                                </StackPanel>
+                            </Border>
+                            <Border Style="{StaticResource BlankBorderStyle2}" MouseEnter="Containerborder_MouseEnter" MouseLeave="Containerborder_MouseLeave" >
+                                <StackPanel x:Name="RPXContainer" Style="{StaticResource DescContainerStyle}" MouseLeftButtonDown="Container_MouseLeftButtonDown">
+                                    <Image Source="/ActiveReportsSilverlightViewer;component/Images/FileRpx.png" Margin="2,0,2,0"/>
+                                    <TextBlock Text="RPX" Style="{StaticResource SampleNameTextBlockStyle}"/>
+                                </StackPanel>
+                            </Border>
+                            <Border Style="{StaticResource BlankBorderStyle2}" MouseEnter="Containerborder_MouseEnter" MouseLeave="Containerborder_MouseLeave" >
+                                <StackPanel x:Name="CodeContainer" Style="{StaticResource DescContainerStyle}" MouseLeftButtonDown="Container_MouseLeftButtonDown">
+                                    <Image Source="/ActiveReportsSilverlightViewer;component/Images/code.png" Margin="2,0,2,0"/>
+                                    <TextBlock Text="Code" Style="{StaticResource SampleNameTextBlockStyle}"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+
+                    </StackPanel>
+                </ContentPresenter>
+                <Border x:Name="Separator4" Style="{StaticResource BlankBorderStyle2}"></Border>
+                <my:Viewer x:Name="ReportViewer" />
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+
+</UserControl>
+

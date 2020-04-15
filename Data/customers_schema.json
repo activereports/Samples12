@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "Customers": {
+            "id": "/properties/Customers",
+            "items": {
+                "id": "/properties/Customers/items",
+                "properties": {
+                    "Address": {
+                        "id": "/properties/Customers/items/properties/Address",
+                        "type": "string"
+                    },
+                    "City": {
+                        "id": "/properties/Customers/items/properties/City",
+                        "type": "string"
+                    },
+                    "CompanyName": {
+                        "id": "/properties/Customers/items/properties/CompanyName",
+                        "type": "string"
+                    },
+                    "ContactName": {
+                        "id": "/properties/Customers/items/properties/ContactName",
+                        "type": "string"
+                    },
+                    "ContactTitle": {
+                        "id": "/properties/Customers/items/properties/ContactTitle",
+                        "type": "string"
+                    },
+                    "Country": {
+                        "id": "/properties/Customers/items/properties/Country",
+                        "type": "string"
+                    },
+                    "Fax": {
+                        "id": "/properties/Customers/items/properties/Fax",
+                        "type": "string"
+                    },
+                    "Id": {
+                        "id": "/properties/Customers/items/properties/Id",
+                        "type": "string"
+                    },
+                    "Phone": {
+                        "id": "/properties/Customers/items/properties/Phone",
+                        "type": "string"
+                    },
+                    "PostalCode": {
+                        "id": "/properties/Customers/items/properties/PostalCode",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "ResponseStatus": {
+            "id": "/properties/ResponseStatus",
+            "properties": {},
+            "type": "object"
+        }
+    },
+    "type": "object"
+}

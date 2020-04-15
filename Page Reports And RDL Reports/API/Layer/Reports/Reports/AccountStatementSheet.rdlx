@@ -1,0 +1,404 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>11in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Table Name="tblTransactions">
+								<DataSetName>AccountDetails</DataSetName>
+								<Header>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="lblTDate">
+															<DataElementName>TextBox1</DataElementName>
+															<Value>Transaction Date</Value>
+															<Style>
+																<BackgroundColor>Silver</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<FontSize>12pt</FontSize>
+																<FontWeight>600</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="lblDetails">
+															<DataElementName>TextBox10</DataElementName>
+															<Value>Note/Details</Value>
+															<Style>
+																<BackgroundColor>Silver</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<FontSize>12pt</FontSize>
+																<FontWeight>600</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="lblType">
+															<DataElementName>TextBox2</DataElementName>
+															<Value>Credit/Debit</Value>
+															<Style>
+																<BackgroundColor>Silver</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<FontSize>12pt</FontSize>
+																<FontWeight>600</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="lblAmt">
+															<DataElementName>TextBox13</DataElementName>
+															<Value>Amount</Value>
+															<Style>
+																<BackgroundColor>Silver</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<FontSize>12pt</FontSize>
+																<FontWeight>600</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="lblBalance">
+															<DataElementName>TextBox3</DataElementName>
+															<Value>Balance</Value>
+															<Style>
+																<BackgroundColor>Silver</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<FontSize>12pt</FontSize>
+																<FontWeight>600</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="tbDate">
+															<DataElementName>TextBox4</DataElementName>
+															<Value>=Fields!TransactionDate.Value</Value>
+															<Style>
+																<BackgroundColor>=IIF(RowNumber() Mod 2=0, "White", "LightCyan")</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<FontSize>11pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="tbDetails">
+															<DataElementName>TextBox11</DataElementName>
+															<Value>=Fields!TransactionDetails.Value</Value>
+															<Style>
+																<BackgroundColor>=IIF(RowNumber() Mod 2=0, "White", "LightCyan")</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="tbType">
+															<DataElementName>TextBox5</DataElementName>
+															<Value>=Fields!TransactionType.Value</Value>
+															<Style>
+																<BackgroundColor>=IIF(RowNumber() Mod 2=0, "White", "LightCyan")</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="tbAmt">
+															<DataElementName>TextBox14</DataElementName>
+															<Value>=Fields!Amount.Value</Value>
+															<Style>
+																<BackgroundColor>=IIF(RowNumber() Mod 2=0, "White", "LightCyan")</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="tbBalance">
+															<DataElementName>TextBox6</DataElementName>
+															<Value>=Fields!Balance.Value</Value>
+															<Style>
+																<BackgroundColor>=IIF(RowNumber() Mod 2=0, "White", "LightCyan")</BackgroundColor>
+																<FontFamily>Segoe UI Light</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<ToggleImage>
+																<InitialState>False</InitialState>
+															</ToggleImage>
+															<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Height>0.5in</Height>
+								<Left>0.5in</Left>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">5.875in</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">0in</dd:FixedWidth>
+								<dd:OverflowName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">OverflowPlaceHolder</dd:OverflowName>
+								<Style>
+									<BorderColor>
+										<Default>Silver</Default>
+									</BorderColor>
+								</Style>
+								<TableColumns>
+									<TableColumn>
+										<Width>1.31in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1.5in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>0.968347in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>0.968347in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>0.968347in</Width>
+									</TableColumn>
+								</TableColumns>
+								<Top>2.25in</Top>
+								<Width>5.715041in</Width>
+								<ZIndex>2</ZIndex>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer3</dd:LayerName>
+							</Table>
+							<CustomReportItem Name="headerFormattedText">
+								<Type>FormattedText</Type>
+								<Top>0.375in</Top>
+								<Left>1.625in</Left>
+								<Width>4.125in</Width>
+								<Height>0.5in</Height>
+								<ZIndex>10</ZIndex>
+								<Style />
+								<CustomProperties>
+									<CustomProperty>
+										<Name>Month</Name>
+										<Value>=Fields!StatementMonth.Value</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>Year</Name>
+										<Value>=Fields!StatementYear.Value</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>Html</Name>
+										<Value>&lt;html&gt;  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      body { font-family:Arial; font-size: 13pt;font-weight:600; }
+    &lt;/style&gt;
+  &lt;/head&gt;&lt;body&gt;&lt;p&gt;Account Statement for &lt;%Month/%&gt; &lt;%Year/%&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</Value>
+									</CustomProperty>
+								</CustomProperties>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer2</dd:LayerName>
+							</CustomReportItem>
+							<CustomReportItem Name="summaryFormattedText">
+								<Type>FormattedText</Type>
+								<Top>1in</Top>
+								<Left>0.5in</Left>
+								<Width>5.25in</Width>
+								<Height>0.5in</Height>
+								<ZIndex>11</ZIndex>
+								<Style />
+								<CustomProperties>
+									<CustomProperty>
+										<Name>AccountNumber</Name>
+										<Value>=Fields!AccountNumber.Value</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>AccountHolder</Name>
+										<Value>=Fields!Name.Value</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>StartDate</Name>
+										<Value>=Fields!TransactionDate.Value</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>EndDate</Name>
+										<Value>=Last( Fields!TransactionDate.Value )</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>Html</Name>
+										<Value>&lt;html&gt;  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      body { font-family: Arial; font-size: 12pt;font-weight:normal }
+    &lt;/style&gt;
+  &lt;/head&gt;&lt;body&gt;&lt;p&gt;This account statement is for account number &lt;%AccountNumber/%&gt; for account holder &lt;%AccountHolder/%&gt;. This statement includes all transaction from &lt;%StartDate/%&gt; to &lt;%EndDate/%&gt; .&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt; In case of any questions regarding this document please contact your nearest branch.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</Value>
+									</CustomProperty>
+								</CustomProperties>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer2</dd:LayerName>
+							</CustomReportItem>
+							<Textbox Name="txtFooter">
+								<DataElementName>TextBox16</DataElementName>
+								<Height>0.25in</Height>
+								<Left>0.5in</Left>
+								<Value>Private &amp; Confidential Information</Value>
+								<Style>
+									<FontFamily>Segoe UI Light</FontFamily>
+									<FontSize>12pt</FontSize>
+									<FontWeight>600</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>8.625in</Top>
+								<Width>2.875in</Width>
+								<ZIndex>12</ZIndex>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Layer1</dd:LayerName>
+							</Textbox>
+						</ReportItems>
+						<Style />
+					</Page>
+				</Pages>
+				<DataSetName>AccountDetails</DataSetName>
+			</FixedPage>
+		</ReportItems>
+		<Style />
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>1in</LeftMargin>
+	<PageHeight>11in</PageHeight>
+	<PageWidth>8.5in</PageWidth>
+	<RightMargin>1in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>8.5in</Width>
+	<DataSources>
+		<DataSource Name="BankStatement">
+			<ConnectionProperties>
+				<ConnectString>XmlData=&lt;CUSTOMERS&gt;&lt;CUSTOMER&gt;&lt;NAME&gt;John Doe&lt;/NAME&gt;                 &lt;MONTH&gt;January&lt;/MONTH&gt;&lt;YEAR&gt;2013&lt;/YEAR&gt; &lt;ACCOUNTNUMBER&gt;1123664652&lt;/ACCOUNTNUMBER&gt;                &lt;TRANSACTIONS&gt;  &lt;TRANSACTION&gt;&lt;TDATE&gt;1/1/2013&lt;/TDATE&gt;&lt;DETAILS&gt;B/F&lt;/DETAILS&gt;&lt;TTYPE&gt;&lt;/TTYPE&gt;&lt;AMOUNT&gt;&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$5600&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/6/2013&lt;/TDATE&gt;&lt;DETAILS&gt;Transfer to 9900908&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$1000&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$4600&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/8/2013&lt;/TDATE&gt;&lt;DETAILS&gt;Transfer to 1403932&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$500&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$4100&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/10/2013&lt;/TDATE&gt;&lt;DETAILS&gt;IKEA MERCHANT&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$100&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$4000&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/12/2013&lt;/TDATE&gt;&lt;DETAILS&gt;Morgan Stanley Dividend&lt;/DETAILS&gt;&lt;TTYPE&gt;CR&lt;/TTYPE&gt;&lt;AMOUNT&gt;$5000&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$9000&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/14/2013&lt;/TDATE&gt;&lt;DETAILS&gt;Transfer from 0920283021&lt;/DETAILS&gt;&lt;TTYPE&gt;CR&lt;/TTYPE&gt;&lt;AMOUNT&gt;$1000&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$10000&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/16/2013&lt;/TDATE&gt;&lt;DETAILS&gt;DTH Recharge&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$100&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$9900&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/18/2013&lt;/TDATE&gt;&lt;DETAILS&gt;Lynda.com Subscription&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$200&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$9700&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/19/2013&lt;/TDATE&gt;&lt;DETAILS&gt;ATM Withdrawal&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$2000&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$7700&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/19/2013&lt;/TDATE&gt;&lt;DETAILS&gt;STARBUCKS Coffe&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$50&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$7650&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/19/2013&lt;/TDATE&gt;&lt;DETAILS&gt;KARMA CLOTHING&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$650&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$7000&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/22/2013&lt;/TDATE&gt;&lt;DETAILS&gt;EXPEDIA TRAVEL CO&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$1000&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$6000&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/26/2013&lt;/TDATE&gt;&lt;DETAILS&gt;JANE DOE CO&lt;/DETAILS&gt;&lt;TTYPE&gt;CR&lt;/TTYPE&gt;&lt;AMOUNT&gt;$10000&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$16000&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/29/2013&lt;/TDATE&gt;&lt;DETAILS&gt;KFC&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$300&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$15700&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;&lt;TRANSACTION&gt;&lt;TDATE&gt;1/31/2013&lt;/TDATE&gt;&lt;DETAILS&gt;TAXI CAB PVT LCC&lt;/DETAILS&gt;&lt;TTYPE&gt;DR&lt;/TTYPE&gt;&lt;AMOUNT&gt;-$700&lt;/AMOUNT&gt;                        &lt;BALANCE&gt;$15000&lt;/BALANCE&gt;&lt;/TRANSACTION&gt;               &lt;/TRANSACTIONS&gt;&lt;/CUSTOMER&gt;&lt;/CUSTOMERS&gt;;</ConnectString>
+				<DataProvider>XML</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="AccountDetails">
+			<Fields>
+				<Field Name="TransactionDate">
+					<DataField>TDATE</DataField>
+				</Field>
+				<Field Name="Name">
+					<DataField>../../NAME</DataField>
+				</Field>
+				<Field Name="TransactionDetails">
+					<DataField>DETAILS</DataField>
+				</Field>
+				<Field Name="TransactionType">
+					<DataField>TTYPE</DataField>
+				</Field>
+				<Field Name="Amount">
+					<DataField>AMOUNT</DataField>
+				</Field>
+				<Field Name="Balance">
+					<DataField>BALANCE</DataField>
+				</Field>
+				<Field Name="AccountNumber">
+					<DataField>../../ACCOUNTNUMBER</DataField>
+				</Field>
+				<Field Name="StatementMonth">
+					<DataField>../../MONTH</DataField>
+				</Field>
+				<Field Name="StatementYear">
+					<DataField>../../YEAR</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>//TRANSACTION</CommandText>
+				<DataSourceName>BankStatement</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<dd:Layers xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<dd:Layer>
+			<dd:Name>Layer1</dd:Name>
+			<dd:TargetDevice>Screen</dd:TargetDevice>
+		</dd:Layer>
+		<dd:Layer>
+			<dd:Name>Layer2</dd:Name>
+			<dd:TargetDevice>Screen, Paper</dd:TargetDevice>
+		</dd:Layer>
+		<dd:Layer>
+			<dd:Name>Layer3</dd:Name>
+		</dd:Layer>
+	</dd:Layers>
+</Report>

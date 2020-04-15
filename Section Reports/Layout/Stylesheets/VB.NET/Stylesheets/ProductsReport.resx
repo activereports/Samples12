@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTotalNumber.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTotalNumber.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTotalNumber.Left" type="System.Single, mscorlib">
+    <value>2.552</value>
+  </data>
+  <data name="lblTotalNumber.Style" xml:space="preserve">
+    <value>background-color: Transparent; font-size: 14.5pt</value>
+  </data>
+  <data name="lblTotalNumber.Text" xml:space="preserve">
+    <value>Total Number of Products</value>
+  </data>
+  <data name="lblTotalNumber.Top" type="System.Single, mscorlib">
+    <value>0.0730000138</value>
+  </data>
+  <data name="lblTotalNumber.Width" type="System.Single, mscorlib">
+    <value>2.6875</value>
+  </data>
+  <data name="txtProductCount.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="txtProductCount.Left" type="System.Single, mscorlib">
+    <value>5.2395</value>
+  </data>
+  <data name="txtProductCount.Style" xml:space="preserve">
+    <value>font-size: 14.5pt; text-align: right</value>
+  </data>
+  <data name="txtProductCount.Text" xml:space="preserve">
+    <value>ProductCount</value>
+  </data>
+  <data name="txtProductCount.Top" type="System.Single, mscorlib">
+    <value>0.0730000138</value>
+  </data>
+  <data name="txtProductCount.Width" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="lneReportFooter.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneReportFooter.Left" type="System.Single, mscorlib">
+    <value>0.01023622</value>
+  </data>
+  <data name="lneReportFooter.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lneReportFooter.Width" type="System.Single, mscorlib">
+    <value>6.42726374</value>
+  </data>
+  <data name="lblTitle.ClassName" xml:space="preserve">
+    <value>ReportTitle</value>
+  </data>
+  <data name="lblTitle.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblTitle.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTitle.Left" type="System.Single, mscorlib">
+    <value>0.01023622</value>
+  </data>
+  <data name="lblTitle.Style" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Product Listing</value>
+  </data>
+  <data name="lblTitle.Top" type="System.Single, mscorlib">
+    <value>0.06259842</value>
+  </data>
+  <data name="lblTitle.Width" type="System.Single, mscorlib">
+    <value>6.479134</value>
+  </data>
+  <data name="reportInfo1.Height" type="System.Single, mscorlib">
+    <value>0.1979167</value>
+  </data>
+  <data name="reportInfo1.Left" type="System.Single, mscorlib">
+    <value>2.625</value>
+  </data>
+  <data name="reportInfo1.Style" xml:space="preserve">
+    <value />
+  </data>
+  <data name="reportInfo1.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="reportInfo1.Width" type="System.Single, mscorlib">
+    <value>2.375</value>
+  </data>
+  <data name="label2.ClassName" xml:space="preserve">
+    <value>Heading3</value>
+  </data>
+  <data name="label2.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="label2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label2.Left" type="System.Single, mscorlib">
+    <value>5.239369</value>
+  </data>
+  <data name="label2.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="label2.Top" type="System.Single, mscorlib">
+    <value>0.2708662</value>
+  </data>
+  <data name="label2.Width" type="System.Single, mscorlib">
+    <value>1.25</value>
+  </data>
+  <data name="label1.ClassName" xml:space="preserve">
+    <value>Heading3</value>
+  </data>
+  <data name="label1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="label1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Style" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="label1.Top" type="System.Single, mscorlib">
+    <value>0.2708662</value>
+  </data>
+  <data name="label1.Width" type="System.Single, mscorlib">
+    <value>5.239369</value>
+  </data>
+  <data name="textBox1.ClassName" xml:space="preserve">
+    <value>Heading2</value>
+  </data>
+  <data name="textBox1.Height" type="System.Single, mscorlib">
+    <value>0.2708662</value>
+  </data>
+  <data name="textBox1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox1.Style" xml:space="preserve">
+    <value>font-size: 14.5pt</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="textBox1.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox1.Width" type="System.Single, mscorlib">
+    <value>6.5</value>
+  </data>
+  <data name="textBox2.ClassName" xml:space="preserve">
+    <value>Heading3</value>
+  </data>
+  <data name="textBox2.DistinctField" xml:space="preserve">
+    <value>CategoryID</value>
+  </data>
+  <data name="textBox2.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="textBox2.Left" type="System.Single, mscorlib">
+    <value>2.562598</value>
+  </data>
+  <data name="textBox2.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="textBox2.SummaryGroup" xml:space="preserve">
+    <value>groupHeaderCategory</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>ProductCount</value>
+  </data>
+  <data name="textBox2.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBox2.Width" type="System.Single, mscorlib">
+    <value>1.03140211</value>
+  </data>
+  <data name="label3.ClassName" xml:space="preserve">
+    <value>Heading3</value>
+  </data>
+  <data name="label3.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="label3.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label3.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Style" xml:space="preserve">
+    <value>text-align: right</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Total Number of Products</value>
+  </data>
+  <data name="label3.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Width" type="System.Single, mscorlib">
+    <value>2.562598</value>
+  </data>
+  <data name="line2.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line2.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line2.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="line2.Width" type="System.Single, mscorlib">
+    <value>6.5</value>
+  </data>
+  <data name="Line1.Height" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Line1.Left" type="System.Single, mscorlib">
+    <value>0.0310000014</value>
+  </data>
+  <data name="Line1.Top" type="System.Single, mscorlib">
+    <value>0.471000016</value>
+  </data>
+  <data name="Line1.Width" type="System.Single, mscorlib">
+    <value>6.45833349</value>
+  </data>
+  <data name="txtProductName1.ClassName" xml:space="preserve">
+    <value>DetailRecord</value>
+  </data>
+  <data name="txtProductName1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtProductName1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtProductName1.Style" xml:space="preserve">
+    <value>vertical-align: middle</value>
+  </data>
+  <data name="txtProductName1.Text" xml:space="preserve">
+    <value>ProductName</value>
+  </data>
+  <data name="txtProductName1.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtProductName1.Width" type="System.Single, mscorlib">
+    <value>5.23900032</value>
+  </data>
+  <data name="txtUnitPrice1.ClassName" xml:space="preserve">
+    <value>DetailRecord</value>
+  </data>
+  <data name="txtUnitPrice1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtUnitPrice1.Left" type="System.Single, mscorlib">
+    <value>5.23900032</value>
+  </data>
+  <data name="txtUnitPrice1.OutputFormat" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="txtUnitPrice1.Style" xml:space="preserve">
+    <value>text-align: right; vertical-align: middle</value>
+  </data>
+  <data name="txtUnitPrice1.Text" xml:space="preserve">
+    <value>UnitPrice</value>
+  </data>
+  <data name="txtUnitPrice1.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtUnitPrice1.Width" type="System.Single, mscorlib">
+    <value>1.25</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

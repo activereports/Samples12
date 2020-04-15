@@ -1,0 +1,13 @@
+using System.Reflection;
+[assembly: AssemblyTitle("Custom Data Provider")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("GrapeCity")]
+[assembly: AssemblyProduct("")]
+[assembly: AssemblyCopyright("Copyright(c) 2019 GrapeCity, inc")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]		
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyDelaySign(false)]
+[assembly: AssemblyKeyFile("")]
+[assembly: AssemblyKeyName("")]

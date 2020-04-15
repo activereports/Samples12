@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="srptTop10.Height" type="System.Single, mscorlib">
+    <value>2.0625</value>
+  </data>
+  <data name="srptTop10.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="srptTop10.Top" type="System.Single, mscorlib">
+    <value>0.3125</value>
+  </data>
+  <data name="srptTop10.Width" type="System.Single, mscorlib">
+    <value>6.4375</value>
+  </data>
+  <data name="lblTop10Products.Height" type="System.Single, mscorlib">
+    <value>0.3125</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTop10Products.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTop10Products.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTop10Products.Style" xml:space="preserve">
+    <value>background-color: IndianRed; color: White; font-size: 16pt; font-weight: bold; text-align: center; vertical-align: middle</value>
+  </data>
+  <data name="lblTop10Products.Text" xml:space="preserve">
+    <value>Top 10 Products</value>
+  </data>
+  <data name="lblTop10Products.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTop10Products.Width" type="System.Single, mscorlib">
+    <value>3.1875</value>
+  </data>
+  <data name="lblTop10Customers.Height" type="System.Single, mscorlib">
+    <value>0.3125</value>
+  </data>
+  <data name="lblTop10Customers.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTop10Customers.Left" type="System.Single, mscorlib">
+    <value>3.25</value>
+  </data>
+  <data name="lblTop10Customers.Style" xml:space="preserve">
+    <value>background-color: IndianRed; color: White; font-size: 16pt; font-weight: bold; text-align: center; vertical-align: middle</value>
+  </data>
+  <data name="lblTop10Customers.Text" xml:space="preserve">
+    <value>Top 10 Customers</value>
+  </data>
+  <data name="lblTop10Customers.Top" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTop10Customers.Width" type="System.Single, mscorlib">
+    <value>3.1875</value>
+  </data>
+  <data name="lblNorthWind.Height" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="lblNorthWind.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNorthWind.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblNorthWind.Style" xml:space="preserve">
+    <value>background-color: rgb(255,224,192); font-family: Times New Roman; font-size: 48pt; font-style: italic; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblNorthWind.Text" xml:space="preserve">
+    <value>NorthWind</value>
+  </data>
+  <data name="lblNorthWind.Top" type="System.Single, mscorlib">
+    <value>0.3125</value>
+  </data>
+  <data name="lblNorthWind.Width" type="System.Single, mscorlib">
+    <value>5.4375</value>
+  </data>
+  <data name="lblTraders.Height" type="System.Single, mscorlib">
+    <value>0.75</value>
+  </data>
+  <data name="lblTraders.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblTraders.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTraders.Style" xml:space="preserve">
+    <value>background-color: rgb(255,224,192); font-family: Times New Roman; font-size: 48pt; font-style: italic; text-align: center</value>
+  </data>
+  <data name="lblTraders.Text" xml:space="preserve">
+    <value>Traders</value>
+  </data>
+  <data name="lblTraders.Top" type="System.Single, mscorlib">
+    <value>1.0625</value>
+  </data>
+  <data name="lblTraders.Width" type="System.Single, mscorlib">
+    <value>5.4375</value>
+  </data>
+  <data name="lblAnnualReport.Height" type="System.Single, mscorlib">
+    <value>0.375</value>
+  </data>
+  <data name="lblAnnualReport.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAnnualReport.Left" type="System.Single, mscorlib">
+    <value>2.3125</value>
+  </data>
+  <data name="lblAnnualReport.Style" xml:space="preserve">
+    <value>background-color: rgb(128,0,0); color: rgb(255,255,255); font-family: Times New Roman; font-size: 24pt; font-weight: bold</value>
+  </data>
+  <data name="lblAnnualReport.Text" xml:space="preserve">
+    <value>1997 Annual Report</value>
+  </data>
+  <data name="lblAnnualReport.Top" type="System.Single, mscorlib">
+    <value>6.4375</value>
+  </data>
+  <data name="lblAnnualReport.Width" type="System.Single, mscorlib">
+    <value>4.1875</value>
+  </data>
+  <data name="PageBreak1.Height" type="System.Single, mscorlib">
+    <value>0.05555556</value>
+  </data>
+  <data name="PageBreak1.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PageBreak1.Top" type="System.Single, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="PageBreak1.Width" type="System.Single, mscorlib">
+    <value>6.5</value>
+  </data>
+  <data name="shpYellowBackground.Height" type="System.Single, mscorlib">
+    <value>8.1875</value>
+  </data>
+  <data name="shpYellowBackground.Left" type="System.Single, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="shpYellowBackground.Top" type="System.Single, mscorlib">
+    <value>7.0625</value>
+  </data>
+  <data name="shpYellowBackground.Width" type="System.Single, mscorlib">
+    <value>3.5</value>
+  </data>
+  <data name="lblMessage1.Height" type="System.Single, mscorlib">
+    <value>1.6875</value>
+  </data>
+  <data name="lblMessage1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMessage1.Left" type="System.Single, mscorlib">
+    <value>3.0625</value>
+  </data>
+  <data name="lblMessage1.Style" xml:space="preserve">
+    <value>font-family: Times New Roman; font-size: 20.5pt; font-style: italic; text-align: center</value>
+  </data>
+  <data name="lblMessage1.Text" xml:space="preserve">
+    <value>"As a new business in this market sector, we have managed to achieve visibility despite the ubiquitous paradigm shifts"</value>
+  </data>
+  <data name="lblMessage1.Top" type="System.Single, mscorlib">
+    <value>7.9375</value>
+  </data>
+  <data name="lblMessage1.Width" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="lblMessageHdr1.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblMessageHdr1.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMessageHdr1.Left" type="System.Single, mscorlib">
+    <value>3.0625</value>
+  </data>
+  <data name="lblMessageHdr1.Style" xml:space="preserve">
+    <value>color: rgb(0,0,192); font-family: Times New Roman; font-size: 12pt; font-style: italic</value>
+  </data>
+  <data name="lblMessageHdr1.Text" xml:space="preserve">
+    <value>The Company</value>
+  </data>
+  <data name="lblMessageHdr1.Top" type="System.Single, mscorlib">
+    <value>10.125</value>
+  </data>
+  <data name="lblMessageHdr1.Width" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="lblMessage2.Height" type="System.Single, mscorlib">
+    <value>1.4375</value>
+  </data>
+  <data name="lblMessage2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMessage2.Left" type="System.Single, mscorlib">
+    <value>3.0625</value>
+  </data>
+  <data name="lblMessage2.Style" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessage2.Text" xml:space="preserve">
+    <value>Annual report body copy goes here, describing the incredible success of the company this year and what a great potential it has for future investors. Annual report body copy goes here, describing the incredible success of the company this year and what a great potential it has for future investors. Annual report body copy goes here, describing the incredible success of the company this year and what a great potential it has for future investors.</value>
+  </data>
+  <data name="lblMessage2.Top" type="System.Single, mscorlib">
+    <value>10.375</value>
+  </data>
+  <data name="lblMessage2.Width" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="lblMessage3.Height" type="System.Single, mscorlib">
+    <value>1.0625</value>
+  </data>
+  <data name="lblMessage3.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMessage3.Left" type="System.Single, mscorlib">
+    <value>3.0625</value>
+  </data>
+  <data name="lblMessage3.Style" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessage3.Text" xml:space="preserve">
+    <value>Annual report body copy goes here, describing the incredible success of the company this year and what a great potential it has for future investors. Annual report body copy goes here, describing the incredible success of the company this year and what a great potential it has for future investors. </value>
+  </data>
+  <data name="lblMessage3.Top" type="System.Single, mscorlib">
+    <value>12.1875</value>
+  </data>
+  <data name="lblMessage3.Width" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="lblAnnualReportTitle.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblAnnualReportTitle.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAnnualReportTitle.Left" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblAnnualReportTitle.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblAnnualReportTitle.Text" xml:space="preserve">
+    <value>A n n u a l   R e p o r t</value>
+  </data>
+  <data name="lblAnnualReportTitle.Top" type="System.Single, mscorlib">
+    <value>7.25</value>
+  </data>
+  <data name="lblAnnualReportTitle.Width" type="System.Single, mscorlib">
+    <value>1.9375</value>
+  </data>
+  <data name="lblARYears.Height" type="System.Single, mscorlib">
+    <value>0.1875</value>
+  </data>
+  <data name="lblARYears.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblARYears.Left" type="System.Single, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblARYears.Style" xml:space="preserve">
+    <value>font-size: 8.5pt; font-weight: bold; text-align: center</value>
+  </data>
+  <data name="lblARYears.Text" xml:space="preserve">
+    <value>1 9 9 6        1 9 9 7</value>
+  </data>
+  <data name="lblARYears.Top" type="System.Single, mscorlib">
+    <value>7.5</value>
+  </data>
+  <data name="lblARYears.Width" type="System.Single, mscorlib">
+    <value>1.9375</value>
+  </data>
+  <data name="lblMessageHdr2.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblMessageHdr2.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMessageHdr2.Left" type="System.Single, mscorlib">
+    <value>3.0625</value>
+  </data>
+  <data name="lblMessageHdr2.Style" xml:space="preserve">
+    <value>color: rgb(0,0,192); font-family: Times New Roman; font-size: 12pt; font-style: italic</value>
+  </data>
+  <data name="lblMessageHdr2.Text" xml:space="preserve">
+    <value>A Year of Achievement</value>
+  </data>
+  <data name="lblMessageHdr2.Top" type="System.Single, mscorlib">
+    <value>11.9375</value>
+  </data>
+  <data name="lblMessageHdr2.Width" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="lblMessageHdr3.Height" type="System.Single, mscorlib">
+    <value>0.25</value>
+  </data>
+  <data name="lblMessageHdr3.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMessageHdr3.Left" type="System.Single, mscorlib">
+    <value>3.0625</value>
+  </data>
+  <data name="lblMessageHdr3.Style" xml:space="preserve">
+    <value>color: rgb(0,0,192); font-family: Times New Roman; font-size: 12pt; font-style: italic</value>
+  </data>
+  <data name="lblMessageHdr3.Text" xml:space="preserve">
+    <value>Financial Hightlights</value>
+  </data>
+  <data name="lblMessageHdr3.Top" type="System.Single, mscorlib">
+    <value>13.375</value>
+  </data>
+  <data name="lblMessageHdr3.Width" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="lblMessage4.Height" type="System.Single, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblMessage4.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMessage4.Left" type="System.Single, mscorlib">
+    <value>3.0625</value>
+  </data>
+  <data name="lblMessage4.Style" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessage4.Text" xml:space="preserve">
+    <value>Annual report body copy goes here, describing the incredible success of the company this year and what a great potential it has for future investors. Annual report body copy goes here, describing the incredible success of the company this year and what a great potential it has for future investors. </value>
+  </data>
+  <data name="lblMessage4.Top" type="System.Single, mscorlib">
+    <value>13.625</value>
+  </data>
+  <data name="lblMessage4.Width" type="System.Single, mscorlib">
+    <value>3.375</value>
+  </data>
+  <data name="imgCompanyLogo.Height" type="System.Single, mscorlib">
+    <value>2.3125</value>
+  </data>
+  <data name="imgCompanyLogo.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="imgCompanyLogo.ImageData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
+        cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
+        b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
+        AQEBCQIAAAAAAAAAAAAAAMk4AADJOAAAAQEBAQoPAgAAAMk4AAACAsQ4AACJUE5HDQoaCgAAAA1JSERS
+        AAAArgAAANwIAwAAAN44ahYAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAA
+        gIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADAFBMVEUAAACAAAAAgACAgAAAAICAAIAAgIDA
+        wMDA3MCmyvAEBAQICAgMDAwREREWFhYcHBwiIiIpKSlVVVVNTU1CQkI5OTn/fID/UFDWAJPM7P/v1sbn
+        59atqZAzAABmAACZAADMAAAAMwAzMwBmMwCZMwDMMwD/MwAAZgAzZgBmZgCZZgDMZgD/ZgAAmQAzmQBm
+        mQCZmQDMmQD/mQAAzAAzzABmzACZzADMzAD/zABm/wCZ/wDM/wAAADMzADNmADOZADPMADP/ADMAMzMz
+        MzNmMzOZMzPMMzP/MzMAZjMzZjNmZjOZZjPMZjP/ZjMAmTMzmTNmmTOZmTPMmTP/mTMAzDMzzDNmzDOZ
+        zDPMzDP/zDMz/zNm/zOZ/zPM/zP//zMAAGYzAGZmAGaZAGbMAGb/AGYAM2YzM2ZmM2aZM2bMM2b/M2YA
+        ZmYzZmZmZmaZZmbMZmYAmWYzmWZmmWaZmWbMmWb/mWYAzGYzzGaZzGbMzGb/zGYA/2Yz/2aZ/2bM/2b/
+        AMzMAP8AmZmZM5mZAJnMAJkAAJkzM5lmAJnMM5n/AJkAZpkzZplmM5mZZpnMZpn/M5kzmZlmmZmZmZnM
+        mZn/mZkAzJkzzJlmzGaZzJnMzJn/zJkA/5kz/5lmzJmZ/5nM/5n//5kAAMwzAJlmAMyZAMzMAMwAM5kz
+        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
+</value>
+  </data>
+  <data name="imgCompanyLogo.Left" type="System.Single, mscorlib">
+    <value>0.5625</value>
+  </data>
+  <data name="imgCompanyLogo.Top" type="System.Single, mscorlib">
+    <value>7.8125</value>
+  </data>
+  <data name="imgCompanyLogo.Width" type="System.Single, mscorlib">
+    <value>1.8125</value>
+  </data>
+  <data name="srptProductSales.Height" type="System.Single, mscorlib">
+    <value>2.25</value>
+  </data>
+  <data name="srptProductSales.Left" type="System.Single, mscorlib">
+    <value>0.0625</value>
+  </data>
+  <data name="srptProductSales.Top" type="System.Single, mscorlib">
+    <value>12.6875</value>
+  </data>
+  <data name="srptProductSales.Width" type="System.Single, mscorlib">
+    <value>2.875</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

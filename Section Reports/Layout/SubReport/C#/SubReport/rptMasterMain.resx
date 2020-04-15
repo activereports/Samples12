@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtOrderDate.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtOrderDate.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOrderDate.OutputFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="txtOrderDate.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 9.75pt; text-align: left; ddo-char-set: 128</value>
+  </data>
+  <data name="txtOrderDate.Text" xml:space="preserve">
+    <value>OrderDate</value>
+  </data>
+  <data name="txtOrderDate.Top" type="System.Single, mscorlib">
+    <value>0.312</value>
+  </data>
+  <data name="txtOrderDate.Width" type="System.Single, mscorlib">
+    <value>0.74</value>
+  </data>
+  <data name="txtShipName.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipName.Left" type="System.Single, mscorlib">
+    <value>0.802</value>
+  </data>
+  <data name="txtShipName.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 9.75pt; text-align: left; ddo-char-set: 128</value>
+  </data>
+  <data name="txtShipName.Text" xml:space="preserve">
+    <value>ShipName</value>
+  </data>
+  <data name="txtShipName.Top" type="System.Single, mscorlib">
+    <value>0.312</value>
+  </data>
+  <data name="txtShipName.Width" type="System.Single, mscorlib">
+    <value>1.4</value>
+  </data>
+  <data name="txtShippedDate.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShippedDate.Left" type="System.Single, mscorlib">
+    <value>2.25</value>
+  </data>
+  <data name="txtShippedDate.OutputFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="txtShippedDate.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 9.75pt; text-align: left; ddo-char-set: 128</value>
+  </data>
+  <data name="txtShippedDate.Text" xml:space="preserve">
+    <value>ShippedDate</value>
+  </data>
+  <data name="txtShippedDate.Top" type="System.Single, mscorlib">
+    <value>0.312</value>
+  </data>
+  <data name="txtShippedDate.Width" type="System.Single, mscorlib">
+    <value>0.74</value>
+  </data>
+  <data name="txtShipAddress.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipAddress.Left" type="System.Single, mscorlib">
+    <value>3.042</value>
+  </data>
+  <data name="txtShipAddress.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 9.75pt; text-align: left; ddo-char-set: 128</value>
+  </data>
+  <data name="txtShipAddress.Text" xml:space="preserve">
+    <value>ShipAddress</value>
+  </data>
+  <data name="txtShipAddress.Top" type="System.Single, mscorlib">
+    <value>0.312</value>
+  </data>
+  <data name="txtShipAddress.Width" type="System.Single, mscorlib">
+    <value>1.45</value>
+  </data>
+  <data name="txtShipCountry.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtShipCountry.Left" type="System.Single, mscorlib">
+    <value>4.545</value>
+  </data>
+  <data name="txtShipCountry.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 9.75pt; text-align: left; ddo-char-set: 128</value>
+  </data>
+  <data name="txtShipCountry.Text" xml:space="preserve">
+    <value>ShipCountry</value>
+  </data>
+  <data name="txtShipCountry.Top" type="System.Single, mscorlib">
+    <value>0.312</value>
+  </data>
+  <data name="txtShipCountry.Width" type="System.Single, mscorlib">
+    <value>0.8</value>
+  </data>
+  <data name="txtFreight.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="txtFreight.Left" type="System.Single, mscorlib">
+    <value>5.4</value>
+  </data>
+  <data name="txtFreight.OutputFormat" xml:space="preserve">
+    <value>¥#,##0</value>
+  </data>
+  <data name="txtFreight.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 9.75pt; text-align: left; ddo-char-set: 128</value>
+  </data>
+  <data name="txtFreight.Text" xml:space="preserve">
+    <value>Freight</value>
+  </data>
+  <data name="txtFreight.Top" type="System.Single, mscorlib">
+    <value>0.312</value>
+  </data>
+  <data name="txtFreight.Width" type="System.Single, mscorlib">
+    <value>0.6000003</value>
+  </data>
+  <data name="ctlSubreport.Height" type="System.Single, mscorlib">
+    <value>1.1875</value>
+  </data>
+  <data name="ctlSubreport.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ctlSubreport.Top" type="System.Single, mscorlib">
+    <value>0.5625</value>
+  </data>
+  <data name="ctlSubreport.Width" type="System.Single, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblOrderDate.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblOrderDate.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblOrderDate.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblOrderDate.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 11pt; text-align: left; ddo-char-set: 1</value>
+  </data>
+  <data name="lblOrderDate.Text" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="lblOrderDate.Top" type="System.Single, mscorlib">
+    <value>0.062</value>
+  </data>
+  <data name="lblOrderDate.Width" type="System.Single, mscorlib">
+    <value>0.74</value>
+  </data>
+  <data name="lblShipName.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblShipName.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipName.Left" type="System.Single, mscorlib">
+    <value>0.802</value>
+  </data>
+  <data name="lblShipName.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 11pt; text-align: left; ddo-char-set: 1</value>
+  </data>
+  <data name="lblShipName.Text" xml:space="preserve">
+    <value>Ship Name</value>
+  </data>
+  <data name="lblShipName.Top" type="System.Single, mscorlib">
+    <value>0.062</value>
+  </data>
+  <data name="lblShipName.Width" type="System.Single, mscorlib">
+    <value>1.4</value>
+  </data>
+  <data name="lblShipDate.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblShipDate.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipDate.Left" type="System.Single, mscorlib">
+    <value>2.25</value>
+  </data>
+  <data name="lblShipDate.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 11pt; text-align: left; ddo-char-set: 1</value>
+  </data>
+  <data name="lblShipDate.Text" xml:space="preserve">
+    <value>Ship Date</value>
+  </data>
+  <data name="lblShipDate.Top" type="System.Single, mscorlib">
+    <value>0.062</value>
+  </data>
+  <data name="lblShipDate.Width" type="System.Single, mscorlib">
+    <value>0.74</value>
+  </data>
+  <data name="lblShipAddress.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblShipAddress.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipAddress.Left" type="System.Single, mscorlib">
+    <value>3.042</value>
+  </data>
+  <data name="lblShipAddress.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 11pt; text-align: left; ddo-char-set: 1</value>
+  </data>
+  <data name="lblShipAddress.Text" xml:space="preserve">
+    <value>Ship Address</value>
+  </data>
+  <data name="lblShipAddress.Top" type="System.Single, mscorlib">
+    <value>0.062</value>
+  </data>
+  <data name="lblShipAddress.Width" type="System.Single, mscorlib">
+    <value>1.45</value>
+  </data>
+  <data name="lblShipCountry.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblShipCountry.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblShipCountry.Left" type="System.Single, mscorlib">
+    <value>4.545</value>
+  </data>
+  <data name="lblShipCountry.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 11pt; text-align: left; ddo-char-set: 1</value>
+  </data>
+  <data name="lblShipCountry.Text" xml:space="preserve">
+    <value>Ship Country</value>
+  </data>
+  <data name="lblShipCountry.Top" type="System.Single, mscorlib">
+    <value>0.062</value>
+  </data>
+  <data name="lblShipCountry.Width" type="System.Single, mscorlib">
+    <value>0.8</value>
+  </data>
+  <data name="lblFreight.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="lblFreight.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblFreight.Left" type="System.Single, mscorlib">
+    <value>5.4</value>
+  </data>
+  <data name="lblFreight.Style" xml:space="preserve">
+    <value>font-family: Arial; font-size: 11pt; text-align: left; ddo-char-set: 1</value>
+  </data>
+  <data name="lblFreight.Text" xml:space="preserve">
+    <value>Freight</value>
+  </data>
+  <data name="lblFreight.Top" type="System.Single, mscorlib">
+    <value>0.062</value>
+  </data>
+  <data name="lblFreight.Width" type="System.Single, mscorlib">
+    <value>0.6000001</value>
+  </data>
+  <data name="lblWhiteLine.Height" type="System.Single, mscorlib">
+    <value>0.22</value>
+  </data>
+  <data name="lblWhiteLine.HyperLink" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWhiteLine.Left" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblWhiteLine.Style" xml:space="preserve">
+    <value>background-color: White; ddo-char-set: 0</value>
+  </data>
+  <data name="lblWhiteLine.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWhiteLine.Top" type="System.Single, mscorlib">
+    <value>1.75</value>
+  </data>
+  <data name="lblWhiteLine.Width" type="System.Single, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="reportInfo1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="reportInfo1.Left" type="System.Single, mscorlib">
+    <value>1.99000013</value>
+  </data>
+  <data name="reportInfo1.Style" xml:space="preserve">
+    <value />
+  </data>
+  <data name="reportInfo1.Top" type="System.Single, mscorlib">
+    <value>0.05</value>
+  </data>
+  <data name="reportInfo1.Width" type="System.Single, mscorlib">
+    <value>1.88600016</value>
+  </data>
+  <data name="textBox1.Height" type="System.Single, mscorlib">
+    <value>0.2</value>
+  </data>
+  <data name="textBox1.Left" type="System.Single, mscorlib">
+    <value>0.121499538</value>
+  </data>
+  <data name="textBox1.Style" xml:space="preserve">
+    <value>background-color: LavenderBlush; font-size: 12pt; font-weight: bold</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Sub report using the data set that contains relationship</value>
+  </data>
+  <data name="textBox1.Top" type="System.Single, mscorlib">
+    <value>0.0249999985</value>
+  </data>
+  <data name="textBox1.Width" type="System.Single, mscorlib">
+    <value>5.757001</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

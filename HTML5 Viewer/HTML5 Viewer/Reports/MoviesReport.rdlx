@@ -1,0 +1,299 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>1.375in</Height>
+		<ReportItems>
+			<Table Name="Table1">
+				<DataSetName>Movies</DataSetName>
+				<Header>
+					<TableRows>
+						<TableRow>
+							<Height>0.291667in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox1">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>#772953</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<FontSize>12pt</FontSize>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value>Title</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox2">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>#772953</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<FontSize>12pt</FontSize>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+											</Style>
+											<Value>Year</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox3">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>#772953</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<FontSize>12pt</FontSize>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value>Country</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox10">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>#772953</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<FontSize>12pt</FontSize>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>User Rating</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Header>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>0.291667in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox4">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>=IIF( RowNumber()  Mod 2 = 0,  "White" , "#F4F9FF" )</BackgroundColor>
+												<Color>#333333</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value>=Fields!Title.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox5">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>=IIF( RowNumber()  Mod 2 = 0,  "White" , "#F4F9FF" )</BackgroundColor>
+												<Color>#333333</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+											</Style>
+											<Value>=Fields!YearReleased.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox6">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>=IIF( RowNumber()  Mod 2 = 0,  "White" , "#F4F9FF" )</BackgroundColor>
+												<Color>#333333</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value>=Fields!Country.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox11">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BackgroundColor>=IIF( RowNumber()  Mod 2 = 0,  "White" , "#F4F9FF" )</BackgroundColor>
+												<Color>#333333</Color>
+												<FontFamily>Tahoma</FontFamily>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<Value>=Fields!UserRating.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<Footer>
+					<TableRows>
+						<TableRow>
+							<Height>0.291666in</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox7">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox8">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox9">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox12">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<Value />
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Footer>
+				<Height>0.875in</Height>
+				<TableColumns>
+					<TableColumn>
+						<Width>3.375in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.125in</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1in</Width>
+					</TableColumn>
+				</TableColumns>
+				<Width>6.5in</Width>
+			</Table>
+		</ReportItems>
+	</Body>
+	<PageHeight>5.5in</PageHeight>
+	<PageWidth>8.5in</PageWidth>
+	<Width>6.5in</Width>
+	<ReportParameters>
+		<ReportParameter Name="GenreName">
+			<DataType>String</DataType>
+			<Prompt>ReportParameter1</Prompt>
+		</ReportParameter>
+	</ReportParameters>
+	<DataSources>
+		<DataSource Name="Reels">
+			<DataSourceReference>C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\ReelsDataSource.rdsx</DataSourceReference>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Movies">
+			<Fields>
+				<Field Name="GenreName">
+					<DataField>GenreName</DataField>
+				</Field>
+				<Field Name="Title">
+					<DataField>Title</DataField>
+				</Field>
+				<Field Name="YearReleased">
+					<DataField>YearReleased</DataField>
+				</Field>
+				<Field Name="UserRating">
+					<DataField>UserRating</DataField>
+				</Field>
+				<Field Name="Country">
+					<DataField>Country</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT Genre.GenreName, Movie.Title, Movie.YearReleased, Movie.UserRating, Movie.Country
+FROM Movie INNER JOIN (Genre INNER JOIN MovieGenres ON Genre.[GenreID] = MovieGenres.[GenreID]) ON Movie.[MovieID] = MovieGenres.[MovieID]
+WHERE Genre.GenreName=[?];</CommandText>
+				<DataSourceName>Reels</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="GenreName">
+						<Value>=Parameters!GenreName.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B76F0B07-DAAA-438D-8B96-AE57E3B44A6B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GrapeCity.ActiveReports.Samples.Web.Professional</RootNamespace>
+    <AssemblyName>ActiveReportsWebPro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GrapeCity.ActiveReports.Chart.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Diagnostics.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Document.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Html.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Image.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Pdf.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Web.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActiveReports.ReportService.asmx" />
+    <Content Include="CSS\default.css" />
+    <Content Include="CustomExportHtml.aspx" />
+    <Content Include="CustomExportPdf.aspx" />
+    <Content Include="Default.aspx" />
+    
+    <Content Include="FlashViewer.aspx" />
+    
+    
+    <Content Include="FlashViewerIntro.aspx" />
+    
+    <Content Include="Grapecity.ActiveReports.Flash.v12.Resources.swf" />
+    <Content Include="Grapecity.ActiveReports.Flash.v12.swf" />
+    <Content Include="HttpHandlers.aspx" />
+    
+    <Content Include="ParameterReport.aspx" />
+    
+    <Content Include="Scripts\default.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Themes\FluorescentBlue.swf" />
+    <Content Include="Themes\Office.swf" />
+    <Content Include="Themes\OliveGreen.swf" />
+    <Content Include="Themes\Orange.swf" />
+    <Content Include="Themes\VistaAero.swf" />
+    <Content Include="Themes\WindowsClassic.swf" />
+    <Content Include="Themes\XP.swf" />
+    <Content Include="Web.config" />
+    <Content Include="WebControl.aspx" />
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeReports\Invoice.Designer.vb">
+      <DependentUpon>Invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeReports\Invoice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CodeReports\InvoiceFiltered.Designer.vb">
+      <DependentUpon>InvoiceFiltered.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeReports\InvoiceFiltered.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CodeReports\NwindLabels.Designer.vb">
+      <DependentUpon>NwindLabels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeReports\NwindLabels.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CodeReports\NwindLabelsFiltered.Designer.vb">
+      <DependentUpon>NwindLabelsFiltered.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeReports\NwindLabelsFiltered.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomExportHtml.aspx.designer.vb">
+      <DependentUpon>CustomExportHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomExportHtml.aspx.vb">
+      <DependentUpon>CustomExportHtml.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustomExportPdf.aspx.designer.vb">
+      <DependentUpon>CustomExportPdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomExportPdf.aspx.vb">
+      <DependentUpon>CustomExportPdf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlashViewer.aspx.designer.vb">
+      <DependentUpon>FlashViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlashViewer.aspx.vb">
+      <DependentUpon>FlashViewer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FlashViewerIntro.aspx.designer.vb">
+      <DependentUpon>FlashViewerIntro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlashViewerIntro.aspx.vb">
+      <DependentUpon>FlashViewerIntro.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HttpHandlers.aspx.designer.vb">
+      <DependentUpon>HttpHandlers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HttpHandlers.aspx.vb">
+      <DependentUpon>HttpHandlers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParameterReport.aspx.designer.vb">
+      <DependentUpon>ParameterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParameterReport.aspx.vb">
+      <DependentUpon>ParameterReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="RdlxHandler.vb" />
+    <Compile Include="RpxHandler.vb" />
+    <Compile Include="WebControl.aspx.designer.vb">
+      <DependentUpon>WebControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControl.aspx.vb">
+      <DependentUpon>WebControl.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WebControl.aspx.resx" />
+    <Content Include="App_LocalResources\FlashViewer.aspx.resx" />
+    
+    <EmbeddedResource Include="CodeReports\Invoice.resx">
+      <DependentUpon>Invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="CodeReports\InvoiceFiltered.resx">
+      <DependentUpon>InvoiceFiltered.vb</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="CodeReports\NwindLabels.resx">
+      <DependentUpon>NwindLabels.vb</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="CodeReports\NwindLabelsFiltered.resx">
+      <DependentUpon>NwindLabelsFiltered.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    
+    
+    
+    
+    <None Include="PageReports\Invoice_Grouped.rdlx" />
+    <None Include="PageReports\PurchaseReport.rdlx" />
+    <None Include="RdlReports\SalesReceipt.rdlx" />
+    <None Include="RpxReports\Invoice.rpx" />
+    <None Include="RpxReports\InvoiceFiltered.rpx" />
+    <None Include="RpxReports\NwindLabels.rpx" />
+    <None Include="RpxReports\NwindLabelsFiltered.rpx" />
+    <None Include="RpxReports\Params.rpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>4707</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

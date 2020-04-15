@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.2" PrintWidth="9360.001" DocumentName="ActiveReports Document" ScriptLang="C#" ShowParamUI="0" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; text-align: left; vertical-align: top; ddo-char-set: 1" />
+    <Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+    <Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader1" Height="615" BackColor="16777215">
+      <Control Type="AR.Field" Name="txtPrdByCustomer" DataField="=&quot;Products purchased by &quot; + FirstName + &quot; &quot; + MiddleInitial + &quot; &quot; + LastName" Left="0" Top="0" Width="9360.001" Height="614.88" Text="Customer Name" Style="color: Black; font-size: 14pt; font-weight: bold; text-align: center" SummaryGroup="" SummaryDistinct="" />
+    </Section>
+    <Section Type="PageHeader" Name="PageHeader" Height="360" BackStyle="1" BackColor="6908265">
+      <Control Type="AR.Label" Name="lblProductID" Left="1716.48" Top="36" Width="1065.6" Height="288" Caption="Product ID" Style="color: White; font-size: 9.75pt; font-weight: bold; ddo-char-set: 0; ddo-font-vertical: none" />
+      <Control Type="AR.Label" Name="lblMediaType" Left="3026.88" Top="36" Width="1199.522" Height="288" Caption="Media Type" Style="color: White; font-size: 9.75pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="lblTitle" Left="4443.84" Top="36" Width="3836.161" Height="288" Caption="Title" Style="color: White; font-size: 9.75pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="lblQuantity" Left="8416.801" Top="36" Width="899.9993" Height="288" Caption="Quantity" Style="color: White; font-size: 9.75pt; font-weight: bold; text-align: right; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="lblOrderID" Left="103.68" Top="36" Width="1065.6" Height="288" Caption="Order ID" Style="color: White; font-size: 9.75pt; font-weight: bold; ddo-char-set: 0; ddo-font-vertical: none" />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="360" DataField="SalesID" BackStyle="1" BackColor="11119017">
+      <Control Type="AR.Field" Name="txtSalesID" DataField="SalesID" Left="103.68" Top="0" Width="1440" Height="288" Text="SalesID" Style="font-weight: bold" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="450" BackStyle="1" BackColor="16119285" CanShrink="1">
+      <Control Type="AR.Field" Name="txtProductID" DataField="ProductID" Left="1716.48" Top="80.64" Width="1065.6" Height="288" Text="ProductID" />
+      <Control Type="AR.Field" Name="txtMediaType" DataField="MediaType" Left="3026.88" Top="80.63998" Width="1199.522" Height="288" Text="Media Type" />
+      <Control Type="AR.Field" Name="txtTitle" DataField="Title" Left="4443.84" Top="80.64" Width="3836.161" Height="288" Text="Title" />
+      <Control Type="AR.Field" Name="txtQuantity" DataField="Quantity" Left="8416.801" Top="80.64" Width="899.9993" Height="288" Text="Quantity" Style="text-align: right" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="360" BackStyle="1" BackColor="8421504">
+      <Control Type="AR.Field" Name="txtQuantitySubTtl" DataField="Quantity" Left="8416.801" Top="28.8" Width="899.9993" Height="288" Text="txtQuantitySubTtl" Style="color: White; font-weight: bold; text-align: right" SummaryType="3" SummaryRunning="1" SummaryGroup="GroupHeader1" />
+      <Control Type="AR.Label" Name="lblOrderTtl" Left="6840" Top="28.8" Width="1440" Height="288" Caption="Order Total:" Style="color: White; font-weight: bold; text-align: right" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Visible="0" Height="360" BackColor="16777215" />
+    <Section Type="ReportFooter" Name="ReportFooter1" Height="360" BackStyle="1" BackColor="9125192">
+      <Control Type="AR.Field" Name="txtQuantityGrTtl" DataField="Quantity" Left="8316" Top="28.8" Width="1000.8" Height="288" Text="txtQuantityGrTtl" Style="color: White; font-weight: bold; text-align: right" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Label" Name="lblCustomerTtl" Left="6569.28" Top="28.8" Width="1710.72" Height="288" Caption="Customer Total:" Style="color: White; font-weight: bold; text-align: right" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <OleDbDataSource Connect="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\Reels.mdb;Persist Security Info=False" SQL="Select * from CustomerOrders where CustomerId=&lt;%param:CustomerID%&gt;" />
+  </DataSources>
+  <Script><![CDATA[
+
+]]></Script>
+  <PageSettings TopMargin="288" BottomMargin="288" />
+  <Parameters>
+    <Parameter Key="CustomerID" />
+  </Parameters>
+</ActiveReportsLayout>

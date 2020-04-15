@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveReports HTML5 viewer - basic sample</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="css/theme-cosmo.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/GrapeCity.ActiveReports.Viewer.Html.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HTML5 Viewer Samples</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/index.html">Basic</a></li>
+                    <li><a href="/customUI.html">Custom UI</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="settingsContainer">
+            <div class="settings-row">
+                
+                <label>Choose report :</label>
+                <div id="btnReport" class="btn-group">
+                    <button type="button" class="btn btn-default" data-bind="BillingInvoice.rdlx">Page Report</button>
+                    <button type="button" class="btn btn-default" data-bind="SalesDashboard.rdlx">RDL Report</button>
+                    <button type="button" class="btn btn-default" data-bind="Invoice.rpx">RPX Report</button>
+                    <button type="button" class="btn btn-default" data-bind="HTML5Viewer.Reports.rpt2DBar">Code-based Report</button>
+                </div>
+                 
+            </div>
+            <div class="settings-row">
+                <label>Choose UI type :</label>
+                <div id="btnUIType" class="btn-group" data-toggle="buttons-checkbox">
+                    <button class="btn btn-default active" data-bind="desktop">Desktop</button>
+                    <button class="btn btn-default" data-bind="mobile">Mobile</button>
+                </div>
+            </div>                        
+        </div>
+        <div id="viewerContainer">
+        </div>
+    </div>
+    <!-- /.container -->
+
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap-3.0.0.js"></script>
+    <script src="Scripts/knockout-2.3.0.js"></script>
+    <script src="Scripts/GrapeCity.ActiveReports.Viewer.Html.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var viewer = GrapeCity.ActiveReports.Viewer({
+                element: '#viewerContainer',
+                reportService: {
+                    url: '/ActiveReports.ReportService.asmx'
+                },
+                uiType: 'desktop',
+                reportLoaded : function () {
+                    reportsButtons.prop('disabled', false);
+                },
+                localeUri: 'Scripts/i18n/Localeuri.txt'
+            });
+            $(window).bind('beforeunload', function () {
+                viewer.destroy();
+            });
+
+            var uiTypeButtons = $('#btnUIType button');
+
+            uiTypeButtons.bind('click', function (ev) {
+                ev.stopImmediatePropagation();
+                uiTypeButtons.removeClass('active');
+                var target = $(ev.target);
+                target.addClass('active');
+                viewer.option('uiType', target.attr('data-bind'));
+            });
+
+            var reportsButtons = $('#btnReport button');
+
+            reportsButtons.bind('click', function (ev) {
+                ev.stopImmediatePropagation();
+                reportsButtons.removeClass('active');
+                var target = $(ev.target);
+                target.addClass('active');
+                var reportOption = {
+                    id: target.attr('data-bind')
+                };
+                reportsButtons.prop('disabled', true);
+                viewer.option('report', reportOption);
+            });
+
+        });
+    </script>
+
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+    <script src="Scripts/jquery.livequery-1.3.6.js"></script>
+    <script src="Scripts/bootstrap-datetimepicker-2.3.11.js"></script>
+	<script src="Scripts/locales/bootstrap-datetimepicker.ja.js"></script>
+	<script src="Scripts/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript">
+    	$(window).load(function () {
+    		if (!Modernizr.inputtypes.date) {
+    			$("input[type^=date]").livequery(function () {
+    				$(this).datetimepicker({
+    					minView: $(this).attr('type') == "date" ? 'month' : 'hour',
+    					language: navigator.language ? navigator.language.split('-')[0] : (navigator.userLanguage ? navigator.userLanguage.split('-')[0] : '')
+    				}).on('hide', function () {
+    					$(this).trigger("change");
+    				});
+    			});
+    		}
+    	});
+    </script>
+
+</body>
+</html>

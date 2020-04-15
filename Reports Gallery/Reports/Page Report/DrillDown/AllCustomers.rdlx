@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>11in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Table Name="Table1">
+								<DataSetName>AllCustomers</DataSetName>
+								<Header>
+									<RepeatOnNewPage>true</RepeatOnNewPage>
+									<TableRows>
+										<TableRow>
+											<Height>0.249997in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="lblCustomer">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>Customer ID</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox2">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>Company Name</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox3">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>Contact Name</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>0.244795in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="txtCustomerID">
+															<Action>
+																<Drillthrough>
+																	<Parameters>
+																		<Parameter Name="CustomerID">
+																			<Value>=Fields!CustomerID.Value</Value>
+																		</Parameter>
+																	</Parameters>
+																	<ReportName>CustomerDetails.rdlx</ReportName>
+																</Drillthrough>
+															</Action>
+															<Style>
+																<Color>Blue</Color>
+																<FontSize>9.75pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+																<TextDecoration>Underline</TextDecoration>
+															</Style>
+															<Value>=Fields!CustomerID.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="txtCompanyName">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>=Fields!CompanyName.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox6">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>=Fields!ContactName.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Height>0.4947917in</Height>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">8.479167in</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">6.5in</dd:FixedWidth>
+								<Style>
+									<TextAlign>Left</TextAlign>
+								</Style>
+								<TableColumns>
+									<TableColumn>
+										<Width>1.404539in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>3.07313in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2.019727in</Width>
+									</TableColumn>
+								</TableColumns>
+								<Top>0.5208333in</Top>
+								<Width>6.497396in</Width>
+							</Table>
+							<Textbox Name="TextBox1">
+								<Height>0.5208in</Height>
+								<Style>
+									<Color>DarkSlateBlue</Color>
+									<FontSize>18pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Value>Customer List</Value>
+								<Width>6.4974in</Width>
+								<ZIndex>1</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>AllCustomers</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=1</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>1in</LeftMargin>
+	<PageHeight>11in</PageHeight>
+	<PageWidth>8.5in</PageWidth>
+	<RightMargin>1in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>8.5in</Width>
+	<DataSources>
+		<DataSource Name="NWind">
+			<DataSourceReference>C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\Nwind.rdsx</DataSourceReference>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="AllCustomers">
+			<Fields>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="CompanyName">
+					<DataField>CompanyName</DataField>
+				</Field>
+				<Field Name="ContactName">
+					<DataField>ContactName</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>Select CustomerID,CompanyName,ContactName from customers order by CustomerID</CommandText>
+				<DataSourceName>NWind</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

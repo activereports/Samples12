@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F58D5C30-1F78-4E30-9FBE-D75B3A874BCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrapeCity.ActiveReports.Samples.ReportWizard</RootNamespace>
+    <AssemblyName>ReportWizard</AssemblyName>
+    <PlatformTarget>x86</PlatformTarget>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="LayoutBuilder.cs" />
+    <Compile Include="MetaData\FieldMetaData.cs" />
+    <Compile Include="MetaData\ReportMetaData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportWizardState.cs" />
+    <Compile Include="UI\DragDropListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TipControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TipControl.Designer.cs">
+      <DependentUpon>TipControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportsForm.designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WizardDialog.Designer.cs">
+      <DependentUpon>WizardDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\BaseStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\BaseStep.Designer.cs">
+      <DependentUpon>BaseStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectGroupingFields.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectGroupingFields.Designer.cs">
+      <DependentUpon>SelectGroupingFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectMasterReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectMasterReport.Designer.cs">
+      <DependentUpon>SelectMasterReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectOutputFields.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectOutputFields.Designer.cs">
+      <DependentUpon>SelectOutputFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectSummaryOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardSteps\SelectSummaryOptions.Designer.cs">
+      <DependentUpon>SelectSummaryOptions.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    
+    <EmbeddedResource Include="UI\TipControl.resx">
+      <DependentUpon>TipControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardDialog.resx">
+      <DependentUpon>WizardDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WizardSteps\BaseStep.resx">
+      <DependentUpon>BaseStep.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectGroupingFields.resx">
+      <DependentUpon>SelectGroupingFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectMasterReport.resx">
+      <DependentUpon>SelectMasterReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectOutputFields.resx">
+      <DependentUpon>SelectOutputFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="UI\WizardSteps\SelectSummaryOptions.resx">
+      <DependentUpon>SelectSummaryOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Bg_Blue.png" />
+    <Content Include="Resources\Info_02.gif" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GenreSales.rdlx-master">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="StoreSales.rdlx-master">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GrapeCity.ActiveReports.Design.Win.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win.v12">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+</Project>

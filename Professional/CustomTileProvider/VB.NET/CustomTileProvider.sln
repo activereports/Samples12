@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TileProviderEndUserDesigner", "TileProviderEndUserDesigner\TileProviderEndUserDesigner.vbproj", "{82592E67-1B68-48A3-82DA-3C22E21F4927}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomTileProviders", "CustomTileProviders\CustomTileProviders.vbproj", "{E78B9209-319C-41F9-B449-A0E4B0A83705}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82592E67-1B68-48A3-82DA-3C22E21F4927}.Debug|x86.ActiveCfg = Debug|x86
+		{82592E67-1B68-48A3-82DA-3C22E21F4927}.Debug|x86.Build.0 = Debug|x86
+		{82592E67-1B68-48A3-82DA-3C22E21F4927}.Release|x86.ActiveCfg = Release|x86
+		{82592E67-1B68-48A3-82DA-3C22E21F4927}.Release|x86.Build.0 = Release|x86
+		{E78B9209-319C-41F9-B449-A0E4B0A83705}.Debug|x86.ActiveCfg = Debug|x86
+		{E78B9209-319C-41F9-B449-A0E4B0A83705}.Debug|x86.Build.0 = Debug|x86
+		{E78B9209-319C-41F9-B449-A0E4B0A83705}.Release|x86.ActiveCfg = Release|x86
+		{E78B9209-319C-41F9-B449-A0E4B0A83705}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

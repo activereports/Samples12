@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>DataSource1</Name>
+    <ConnectionProperties>
+        <ConnectString>Path=C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\MyOrders.csv;Locale=en-US;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=ID,Product,Customer,OrderNumber,Stock,Total,UnitPrice,City,ProductLine,Discount;JoinRowsSeparators=True;JoinColumnsSeparators=True;HasHeaders=True</ConnectString>
+        <Extension>CSV</Extension>
+    </ConnectionProperties>
+    <Transaction>true</Transaction>
+</RptDataSource>

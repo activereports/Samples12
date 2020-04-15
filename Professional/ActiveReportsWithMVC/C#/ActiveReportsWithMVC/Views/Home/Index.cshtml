@@ -1,0 +1,36 @@
+﻿@model IEnumerable<GrapeCity.ActiveReports.Samples.ActiveReportsWithMVC.Models.Customer>
+
+@{
+    Layout = "~/Views/Home/_Layout.cshtml";
+}
+
+<div id="body">
+    <div class="centerheader">
+     <span class="HeaderTxt">Customer Index:</span>
+    </div>
+    <div class="center">
+    
+    
+    <table>
+    
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+          @Html.ActionLink(item.ContactName , "Details", new { id=item.CustomerId})
+        </td>
+       
+    </tr>
+}
+
+</table>
+    </div>
+    
+</div>
+
+
+
+
+
+

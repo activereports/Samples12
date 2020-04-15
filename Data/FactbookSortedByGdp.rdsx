@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>FactbookDataSource</Name>
+  <ConnectionProperties>
+    <Extension>XML</Extension>
+    <ConnectString>XmlDoc=C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\Factbook.xml;TransformationDoc=C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\SortByRegionGdp.xsl</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.2" PrintWidth="9001.44" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; color: Black; font-size: 10pt; vertical-align: top; font-family: &quot;Arial&quot;; ddo-char-set: 186" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="3575.28" BackColor="16777215" CanGrow="0">
+      <Control Type="AR.Shape" Name="Shape2" Left="0" Top="2594.88" Width="7100.64" Height="269.2802" BackColor="3876131" BackStyle="1" LineStyle="0" RoundingRadius="9.999999" />
+      <Control Type="AR.Label" Name="lblTitle" Left="0" Top="1200.96" Width="1712.16" Height="540" Caption="Invoice" Style="background-color: #23253B; color: White; font-family: Arial; font-size: 18pt; font-weight: bold; text-align: right; text-justify: auto; vertical-align: middle; ddo-char-set: 1" PaddingRight="5" />
+      <Control Type="AR.Label" Name="lblBillNo" Left="6952.321" Top="1991.52" Width="336.9597" Height="248.7383" Caption="No:" Style="color: #B6A98D; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; vertical-align: bottom" />
+      <Control Type="AR.Field" Name="txtBillNo" DataField="BillCondition.BillNo" Left="7254.72" Top="1991.52" Width="1307.28" Height="248.7383" Text="BillNo" Style="font-family: Arial; font-weight: bold; text-align: left; vertical-align: bottom; ddo-char-set: 1" PaddingLeft="3" />
+      <Control Type="AR.Field" Name="txtCustomerName" DataField="CustomerName" Left="1985.76" Top="1984.32" Width="3494.881" Height="256.3199" Text="Name" Style="font-family: Arial; font-size: 12pt; font-weight: bold; text-align: left; text-justify: auto; vertical-align: top; white-space: inherit; ddo-char-set: 1; ddo-wrap-mode: inherit" PaddingLeft="5" />
+      <Control Type="AR.Field" Name="txtBillTotal" Left="7153.92" Top="2880" Width="1408.32" Height="360" Text="BillTotal" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="2" />
+      <Control Type="AR.Label" Name="lblZipCode_HQ" Left="5915.521" Top="0" Width="2646.72" Height="629.28" Caption="618 East 138th Street&#xD;&#xA;Bronx, NY 10475" Style="color: #B6A98D; font-family: Arial Narrow; font-size: 9pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="lblURL_HQ" Left="5915.521" Top="629.28" Width="2646.72" Height="296.64" Caption="http://www.grapecity.com" HyperLink="" Style="color: #B6A98D; font-family: Arial Narrow; font-size: 9pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="lblThanks_1" Left="6111.361" Top="1206.72" Width="2485.44" Height="540.0001" Caption="Thank you for your business.&#xD;&#xA;Please find Invoice detais below" Style="color: #B6A98D; font-family: Arial; font-size: 8.5pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="lblCustomerID" Left="171.36" Top="1980" Width="1814.4" Height="256.3199" Caption="Customer:" Style="color: #B6A98D; font-family: Arial; font-size: 10pt; font-weight: bold; text-align: right; vertical-align: top; ddo-char-set: 1" PaddingRight="5" />
+      <Control Type="AR.Label" Name="lblBillTotal" Left="7153.92" Top="2594.88" Width="1409.76" Height="285.1203" Caption="Total Due" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="lblPreInvoice" Left="171.36" Top="2594.88" Width="1229.76" Height="269.2801" Caption="Last Invoice" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="4" />
+      <Control Type="AR.Label" Name="lblPreIncome" Left="1379.52" Top="2594.88" Width="1260" Height="270" Caption="Last Payment" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="4" />
+      <Control Type="AR.Label" Name="lblCarryOver" Left="2639.52" Top="2594.88" Width="1581.12" Height="270" Caption="Balance Due" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="4" />
+      <Control Type="AR.Label" Name="lblTotal" Left="4220.64" Top="2594.88" Width="1440" Height="270" Caption="Current Invoice" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="4" />
+      <Control Type="AR.Label" Name="lblExcise" Left="5660.64" Top="2594.88" Width="1440" Height="270" Caption="Tax" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="4" />
+      <Control Type="AR.Field" Name="txtPreInvoice" DataField="PreInvoice" Left="7.200004" Top="2880" Width="1393.92" Height="360" Text="PreInvoice" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtPreIncome" DataField="PreIncome" Left="1379.52" Top="2880" Width="1260" Height="360" Text="PreIncome" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtCarryOver" DataField="CarryOver" Left="2639.52" Top="2880" Width="1581.12" Height="360" Text="CarryOver" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtTotal" DataField="Price" Left="4220.64" Top="2880" Width="1440" Height="360" Text="Total" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" SummaryType="2" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtExcise" Left="5660.64" Top="2880" Width="1440" Height="360" Text="Excise" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingRight="3" />
+      <Control Type="AR.Image" Name="Picture1" Left="171.36" Top="135.36" Width="4407.84" Height="1065.6" LineWeight="0" SizeMode="2" PictureAlignment="0">0D0D000402C908000089504E470D0A1A0A0000000D49484452000000D400000027080600000077D866AF000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000001974455874536F6674776172650041646F626520496D616765526561647971C9653C0000084E49444154785EED9CCD711C3710859581190233B05C4E40775F1482425008CC40775F18822EBEB31C81AEBE29048620BF0FEEB7D5830166765794BCBBEC57F56A80EEC6CF60BA073FB3E49B8C5F7EFBE3DD19BC17EF3AD916B1A5CC48B7C9E866A1701D90D37E3B830F220E3FD28D882D6546BA4D46370B85EBC0C8898F600554A130829CF669C067D14EFD2564991FC4B7298FCD221042663DB69471DECCE568B3D73F45370B85EB4538B31D7D771F239BC7646F3E867A0AD9E459AE82A7709BC0B993A36F0694F41C38D8B6E75D980D217D0554E1F681732747DF0BA8BC37FA1C74FE21CC8690BE02AA70FBC0B993A3EF0554DE6F112039489EC36C88CEB602AA709BC0B993A34F034A3A0E1A6CF725C4C8F361C38710AF20DD34A028872CF829C485C275404EFB5E64F9F649DC3BE533B3DDD79041D2960F4FEF82A3533E0E38E8473EE8A8D9AB701D08E7CD8171893C29A0FEFEEBCF3BF15DB1F833186ED782891961E4C097C65303EAADF8542CFE0C36A79393E6FDCFC1714566ACBC64F3122C332FC798DD7ABD9967BEBD7A68D3F2BC1484B5E42B5C3670D2E4B038F07DA87ADDEA5042B21C08D30FB87B76926D1D4AE4A0AE802A5C36E4A479F658040D0EBCA1EB3FE41E02B107BACE76F1A157F9AD8062A61AEA0A858B839C342FAB161F6071E0A4EB03EA244797CDF443AFF25717505A33B33F9BBE440AFF3FF47C382CD8FC95CE31A00EEA8AEC36E4A4793906717C8ECE9981B6026A3AB38D804DB25F7CE8ED742F1A341A88F1E651507A746871F8D6A5F443A7CB7C1687BF0091FC43B233DF86FA28C87EAB6DB3B5AFEBA74E3EE3F43B9E74A3B1187E3B1CD88D78181BA5A7FD0BFD68BC5ADB5C3B79D6BDEFE43DBF89BBBE291B02666F0CDB5F3CE88AEDE72437DFB7CAE4C02CC72EF5B89CFD13013EFD28BC07DD288EF92832B8A4F383BE0F1903F235D27E581F458286816EE53A6E05146FC62F226D42EA3F69364BE5DC5EEE236CF714B6381D32F4B94C26F7317530C9190BCABACFF47F66EB3AB1A31FB91DE8B61CF0EE1F5C94093DE3459EFEBBFD5E97EFBF1D538BD8E1DCADAE8EC8D11F1350F4A73DCF09D179ACED1704B3FB415B5F5B65400ECB9F55E4CDFF2592FE9DF49637E2A6A77F53251D83B6981943C60364E056CB06C9709AD91B9CB73D0F131B069B0770D2D243F6F4F910844A2FFA487DD844B6013D76915D41BAA983494E7DF4D30E8AEDE67887CDAC3EEE7DB5DAD82943FF69DF81CDB5D9EADADF3FF9C3AF7246907EDA5646D84D5FDAD211440EA855BB94B57E0139AC7FE63372E84B2033E9C9FB16DDEC3901C51B3BCF323D71BED543900CC77439EAF5DB7AE55CA720EADAAC03BDE859AAA7FB340C92B0414F7F698B34754D5F0461330B8E617F77CAD0873C33B9CFC85BA0354341E9D1336B41DC71F7252C9B699F7A6017F6F4CD6DB417110144F098AB810BB99DB935A8EBD1BF221F8132A97C1B105D577B285D9935D9CBADF678E84F816ED683300C46C9576FD3B0E7CDD36682010F4BAE8C9033C0F9A142EA3B79BC0CCA524F6487887620B6268E48DBF46BE6C8ED0D2CE6FE42EE63FA39443ACACCEA3C77865A8C91F23C032F050FF561278E668A7CEFD3B632C2EEBF3DD000D22DFC863AC5DC0EE37787D366475D352CD922A0C4CDE3EF63401931EFD9FC4F5B9C5F3D04C93E26FD74A6D9826E9887C25B8541CF81E119A47F90C87028062BDB4364CDE1C2161903EBBA68E7309EA443D6DA09EE3E68203B664ACA1310AD5E64A16E509E25A6DB688113A42C2F04DF3BCB5702CC63E0BECCFACC3DA2E3BE0E7D8EB4CBD19EF326F68C9D679BECE88B32A1775F3CBB92765B59079B2E485D5EA2F6F48B64779C65E397C7A81E7878B1E8EAE7B1621F50A30FAE7D401DF521770F7D3DE25E4065FDB90185D3799033DB430AB30342E781EECB58D79613BA32E8BDFE5027E94EB7D06F01BBAEDCAAACF276FCA19DAEDC3BF789CC8175769F07F29E8C593E2D9DF5AF3D4B5DB7DADAD2711FDC4FAF87961F1350BC7408F2D1B36EC124B6C943D7517F1AFB80828B3D81F239A0587E2D6696303B19944DF5B86EA74701950370F36FAB0A85FF0DC94933715E0E279815F247DF1C5C9CB8A1FF1ECEEA468E9E3EF02724FDE9E3D93363A1F043D139EA3590E03A79DFF65AA06587D7F7DE3B791FC2926F2103A49D775AECF767ADCEC83ACFB2A7D9E9EAFD1BF4B208D9599F38AE1A0367CDF94B23B35805D306E4C4FDC6DD7B14F630DE3B59C67E92FD810F56D80760B358F69347176982C9765C09500E206893BA5AF089E8A6A766378B70D2C6C8B3CC62C967F9E817142CC90EE5BE9379D967D2A6F51CD173C277D67E4D0F953725CE744BDCFAF9108E8E638F020A793B980859737AD1B38A036535B3A08BAB038A4D3A57F23E45F4418183AB0518B219A4BFA9E713B7354738F5C2D943F562509DFDCCB8DFB123A19B6C4B9C1BE37429251D8E8E43F380B1CD01C54C83935B861DB3948F831D50AB99055D2449B7594E74398297BA7260FAF3C1E6091B65B0B915C66DCD817377CE7E3856DDC23FBFFF7A2F1EB586A6CEAE8D170BA8D7063D54028AE0C1E9DB5E27E40493976396313B1050ED4339F2E0CA319047D2E5B07300B5EF744D29284D5BF4A10E8FE4CC9CAEE1E0663F7B70EAD67451640805D34718D9215407CB4BEAA2CEDC066DE63EEC477EA170890807CECE3D6514594041F4203E89CF41D2C3E0531DFDEC37E366F0160A170B9CB773E629A3C80A0AA047F15B703AEDAB8E0AA8C26D43CEEB5F9B9B79C9974FDFA6FB1C0511CB3DCF50D3659FEA60A9E7FAF269226D1EDA11A73FAB2F14AE0A38B3684787BB070D0A22967D77C1DDD9853ABB362A800AB7093977FFCB70D22F7648405D5167AEBF3EDE166E1772F0FCC355930FB27C00CEA771A790B2A38FBAAFEFEB7AE1F5418EDE2FFD7E046BA957783D90C3B33CE39060140CDFC3F6EBF268A650B852BC79F32FD8B3B38DD56E5F450000000049454E44AE426082</Control>
+    </Section>
+    <Section Type="GroupHeader" Name="ghColumnCaption" Height="405" DataField="CustomerID" RepeatStyle="1" BackColor="16777215" KeepTogether="1" CanGrow="0">
+      <Control Type="AR.Shape" Name="Shape1" Left="7.2" Top="0" Width="8589.601" Height="378.72" BackColor="3876131" BackStyle="1" LineStyle="0" RoundingRadius="9.999999" />
+      <Control Type="AR.CrossSectionBox" Name="csbDetails" Left="0" Top="0" Right="8588.16" Bottom="14.4" LineColor="16711680" LineStyle="0" />
+      <Control Type="AR.Label" Name="Label30" Left="0" Top="0" Width="764.64" Height="378.72" Caption="Date" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; text-justify: auto; vertical-align: middle; ddo-char-set: 0; ddo-shrink-to-fit: none" PaddingLeft="3" PaddingRight="5" />
+      <Control Type="AR.Label" Name="Label32" Left="1712.16" Top="0" Width="794.8801" Height="378.72" Caption="Category" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; text-justify: auto; vertical-align: middle; ddo-char-set: 0; ddo-shrink-to-fit: none" PaddingLeft="3" PaddingRight="3" />
+      <Control Type="AR.Label" Name="Label35" Left="5541.121" Top="0" Width="887.0403" Height="378.72" Caption="Unit  Price" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; text-justify: auto; vertical-align: middle; ddo-char-set: 0; ddo-shrink-to-fit: none" PaddingLeft="3" PaddingRight="5" />
+      <Control Type="AR.Label" Name="Label33" Left="2507.04" Top="0" Width="3031.2" Height="378.72" Caption="Product Name" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: left; text-justify: auto; vertical-align: middle; ddo-char-set: 0; ddo-shrink-to-fit: none" PaddingLeft="3" PaddingRight="5" />
+      <Control Type="AR.Label" Name="Label34" Left="6428.16" Top="0" Width="826.5598" Height="378.72" Caption="Quantity" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; text-justify: auto; vertical-align: middle; ddo-char-set: 0; ddo-shrink-to-fit: none" PaddingLeft="3" PaddingRight="5" />
+      <Control Type="AR.Label" Name="Label36" Left="7266.24" Top="0" Width="1296" Height="378.72" Caption="Price" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; text-justify: auto; vertical-align: middle; ddo-char-set: 0; ddo-shrink-to-fit: none" PaddingLeft="3" PaddingRight="5" />
+      <Control Type="AR.Label" Name="Label31" Left="764.64" Top="0" Width="944.64" Height="378.72" Caption="PO Number" Style="background-color: #23253B; color: White; font-family: Arial Narrow; font-size: 8.25pt; font-weight: bold; text-align: right; text-justify: auto; vertical-align: middle; ddo-char-set: 0; ddo-shrink-to-fit: none" PaddingLeft="3" PaddingRight="5" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="288" RepeatToFill="1" BackColor="16777215" KeepTogether="1" CanGrow="0">
+      <Control Type="AR.Shape" Name="shpDetailBack" Left="0" Top="0" Width="8582.4" Height="285.12" BackColor="16777215" LineStyle="0" RoundingRadius="0" />
+      <Control Type="AR.Field" Name="txtSlipNo" DataField="SlipNo" Left="764.64" Top="2.88" Width="944.64" Height="285.12" Text="SlipNo" CanGrow="0" Style="font-family: Arial; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 0" PaddingLeft="3" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtDate" DataField="Date" Left="7.2" Top="0" Width="757.4401" Height="285.12" Text="Date" OutputFormat="MM/dd" CanGrow="0" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingLeft="3" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtNumber" DataField="Number" Left="6428.16" Top="0" Width="826.5598" Height="285.12" Text="Number" OutputFormat="#,##0" CanGrow="0" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingLeft="3" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtUnitPrice" DataField="UnitPrice" Left="5541.121" Top="0" Width="887.0399" Height="285.12" Text="UnitPrice" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" CanGrow="0" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingLeft="3" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtCategory" DataField="Category" Left="1709.28" Top="0" Width="797.7599" Height="285.12" Text="Category" CanGrow="0" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingLeft="3" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtProductName" DataField="Products" Left="2507.04" Top="0" Width="3034.08" Height="285.12" Text="ProductName" CanGrow="0" Style="font-family: Arial; font-size: 8.25pt; vertical-align: middle; ddo-char-set: 0" PaddingLeft="3" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtPrice" DataField="Price" Left="7266.24" Top="0" Width="1281.6" Height="283.68" Text="Price" OutputFormat="$#,##0.00;($#,##0.00)" CurrencyCulture="en-US" CanGrow="0" Style="font-family: Arial; font-size: 8.25pt; text-align: right; vertical-align: middle; ddo-char-set: 0" PaddingLeft="3" PaddingRight="3" />
+    </Section>
+    <Section Type="GroupFooter" Name="gfColumnCaption" Height="0" BackColor="16777215" />
+    <Section Type="PageFooter" Name="PageFooter" Height="1800" BackColor="16777215" CanGrow="0">
+      <Control Type="AR.Label" Name="Label40" Left="3754.08" Top="682.5601" Width="1814.4" Height="272.16" Caption="11 Sales" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label44" Left="6111.362" Top="673.9201" Width="1890.718" Height="280.8" Caption="31  Cash deposit" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label41" Left="3754.08" Top="954.7201" Width="1814.4" Height="264.96" Caption="12 Sales Return" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label42" Left="3755.52" Top="1219.68" Width="1812.96" Height="295.2" Caption="13  Sales allowance" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label43" Left="3754.08" Top="1514.88" Width="1814.4" Height="285.12" Caption="14  Other revenue" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label45" Left="6112.8" Top="954.7201" Width="1889.279" Height="264.9601" Caption="32  Cheque Deposit" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label46" Left="6111.362" Top="1219.68" Width="1890.718" Height="295.2" Caption="33  Transfer payment" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label47" Left="6111.362" Top="1514.88" Width="1890.718" Height="285.12" Caption="38  Other deposit" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; ddo-char-set: 0" />
+      <Control Type="AR.Line" Name="Line1" X1="0" Y1="210.24" X2="8588.16" Y2="210.24" LineColor="9284022" />
+      <Control Type="AR.Label" Name="Label1" Left="171.36" Top="257.76" Width="1814.4" Height="264.96" Caption="For Office Use Only:" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label2" Left="3754.08" Top="417.6" Width="1814.4" Height="264.96" Caption="Revenue Category:" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; font-weight: bold; text-decoration: underline; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label5" Left="6112.8" Top="417.6" Width="1889.279" Height="264.96" Caption="Payment Method:" Style="color: #B6A98D; font-family: Arial; font-size: 8.25pt; font-weight: bold; text-decoration: underline; ddo-char-set: 0" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <OleDbDataSource Connect="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\evan.warren\Documents\GrapeCity Samples\ActiveReports 12\Data\BILL.mdb;Persist Security Info=False" SQL="SELECT Bill.*, BillCondition.*, Customers.CustomerName FROM Customers INNER JOIN (Bill INNER JOIN BillCondition ON Bill.BillNo = BillCondition.BillNo) ON Customers.CustomerID = Bill.CustomerID" />
+  </DataSources>
+  <Script><![CDATA[
+
+ private int iRow;	
+        //private int iCnt;	//Line number
+
+public void ActiveReport_ReportEnd()
+{
+
+}public void Detail_Format()
+{
+	// Increment the line number.
+	iRow++;
+
+	// Switch the background color, one per line.
+	if ((iRow % 2) == 1)
+	{
+		this.shpDetailBack.BackColor = Color.White;	// White
+	}
+	else
+	{
+		this.shpDetailBack.BackColor = Color.WhiteSmoke ;	//Light Grey
+	}
+}
+
+
+public void ActiveReport_DataInitialize()
+{
+	
+	// To create an unbound field to display the price.
+	rpt.Fields.Add("Price");
+
+}
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+	
+	// Sets the value of the unbound field.
+	rpt.Fields["Price"].Value = Convert.ToDecimal((rpt.Fields["Number"].Value))* Convert.ToDecimal((rpt.Fields["UnitPrice"].Value));
+	return eof;
+}
+
+
+public void ActiveReport_NoData()
+{
+
+}
+
+
+public void ActiveReport_ReportStart()
+{
+	
+}
+
+
+public void ActiveReport_PageStart()
+{
+	
+}
+
+
+public void ActiveReport_PageEnd()
+{
+	
+}
+
+
+public void PageHeader_BeforePrint()
+{
+	// Refer to the aggregate value, and then set the value to another control Field.
+	this.txtExcise.Value = (object) ((double) this.txtTotal.Value * 0.05);	// Consumption tax
+	this.txtBillTotal.Value = (object) ((double) this.txtTotal.Value * 1.05 + (double) this.txtCarryOver.Value);	//The total amount charged
+}
+
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>
